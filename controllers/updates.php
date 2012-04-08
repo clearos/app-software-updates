@@ -122,7 +122,7 @@ class Updates extends ClearOS_Controller
      * @return JSON
      */
 
-    function get_available_updates()
+    function get_available_updates($type)
     {
         clearos_profile(__METHOD__, __LINE__);
 
@@ -139,7 +139,13 @@ class Updates extends ClearOS_Controller
         header('Content-type: application/json');
 
         try {
-            echo json_encode(array('code' => 0, 'list' => $this->software_updates->get_available_updates()));
+            if ($type === 'app')
+                $data['list'] = $this->software_updates->get_available_app_updates();
+            else
+                $data['list'] = $this->software_updates->get_available_updates();
+
+            $data['code'] = 0;
+            echo json_encode($data);
         } catch (Yum_Busy_Exception $e) {
             echo json_encode(array('code' => clearos_exception_code($e), 'errmsg' => lang('software_updates_updates_system_busy')));
         } catch (Exception $e) {

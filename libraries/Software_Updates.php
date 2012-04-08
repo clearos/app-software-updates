@@ -57,15 +57,18 @@ clearos_load_language('software_updates');
 
 use \clearos\apps\base\Engine as Engine;
 use \clearos\apps\base\Shell as Shell;
+use \clearos\apps\base\Software as Software;
 use \clearos\apps\base\Yum as Yum;
 
 clearos_load_library('base/Engine');
 clearos_load_library('base/Shell');
+clearos_load_library('base/Software');
 clearos_load_library('base/Yum');
 
 // Exceptions
 //-----------
 
+use \Exception as Exception;
 use \clearos\apps\base\Yum_Busy_Exception as Yum_Busy_Exception;
 
 clearos_load_library('base/Yum_Busy_Exception');
@@ -208,6 +211,13 @@ class Software_Updates extends Engine
                 $item['version'] = preg_replace('/.*:/', '', $raw_items[1]);
                 $item['full_version'] = $raw_items[1];
                 $item['repo'] = $raw_items[2];
+
+                try {
+                    $software = new Software($item['package']);
+                    $item['summary'] = $software->get_summary();
+                } catch (Exception $e) {
+                    // Not fatal
+                }
 
                 $list[] = $item;
             } else if (preg_match('/^\s*$/', $line)) {

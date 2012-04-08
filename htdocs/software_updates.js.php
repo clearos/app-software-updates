@@ -59,6 +59,8 @@ $(document).ready(function() {
     // Wizard previous/next button handling
     //-------------------------------------
 
+    $('#theme_wizard_nav_next').hide();
+
     $('#wizard_nav_next').click(function(){
         window.location = '/app/base/wizard/next_step';
     });
@@ -66,20 +68,24 @@ $(document).ready(function() {
     // Main
     //-----
 
-    if ($('#updates_list').length != 0)
-        get_list();
+    if ($('#updates_list').length != 0) {
+        if ($(location).attr('href').match('.*\/first_boot$') != null)
+            get_list('app');
+        else
+            get_list('all');
+    }
 
     if ($('#overall').length != 0)
         get_progress();
 });
 
-function get_list() {
+function get_list(type) {
     $('#updates_list').append('<tr><td valign=\'top\' colspan=\'5\' class=\'dataTables_empty\'><div class=\'theme-loading-small\'>' + lang_loading + '</div></td></tr>');
 
     $.ajax({
         type: 'POST',
         dataType: 'json',
-        url: '/app/software_updates/updates/get_available_updates',
+        url: '/app/software_updates/updates/get_available_updates/' + type,
         data: '',
         success: function(json) {
             show_list(json);
@@ -107,13 +113,26 @@ function get_progress() {
 function show_list(json) {
     table_updates_list.fnClearTable();
 
+    // On the first boot wizard, only "app-" packages are included.
+    // We can use the more human-readable "summary" field instead
+    // of the package name.
+
     for (var index = 0 ; index < json.list.length; index++) {
-        table_updates_list.fnAddData([
-            json.list[index].repo,
-            json.list[index].package,
-            json.list[index].version,
-            json.list[index].arch
-        ]);
+        if ($(location).attr('href').match('.*\/first_boot$') != null) {
+            table_updates_list.fnAddData([
+                json.list[index].summary,
+                json.list[index].version,
+                json.list[index].arch,
+                json.list[index].repo
+            ]);
+        } else {
+            table_updates_list.fnAddData([
+                json.list[index].package,
+                json.list[index].version,
+                json.list[index].arch,
+                json.list[index].repo
+            ]);
+        }
     }
 
     table_updates_list.fnAdjustColumnSizing();

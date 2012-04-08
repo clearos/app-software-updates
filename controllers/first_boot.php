@@ -62,6 +62,14 @@ class First_Boot extends ClearOS_Controller
 
     function index()
     {
+        // Load dependencies
+        //------------------
+
+        $this->lang->load('software_updates');
+
+        // Load views
+        //-----------
+
         $this->page->view_form('software_updates/updates', $data, lang('software_updates_available_updates'));
     }
 }
