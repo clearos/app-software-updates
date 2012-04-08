@@ -1,0 +1,42 @@
+<?php
+
+/////////////////////////////////////////////////////////////////////////////
+// General information
+/////////////////////////////////////////////////////////////////////////////
+
+$app['basename'] = 'software_updates';
+$app['version'] = '1.0.10';
+$app['release'] = '1';
+$app['vendor'] = 'ClearFoundation';
+$app['packager'] = 'ClearFoundation';
+$app['license'] = 'GPLv3';
+$app['license_core'] = 'LGPLv3';
+$app['description'] = lang('software_updates_app_description');
+
+/////////////////////////////////////////////////////////////////////////////
+// App name and categories
+/////////////////////////////////////////////////////////////////////////////
+
+$app['name'] = lang('software_updates_app_name');
+$app['category'] = lang('base_category_system');
+$app['subcategory'] = lang('base_subcategory_operating_system');
+
+/////////////////////////////////////////////////////////////////////////////
+// Controllers
+/////////////////////////////////////////////////////////////////////////////
+
+$app['controllers']['software_updates']['title'] = $app['name'];
+$app['controllers']['settings']['title'] = lang('base_settings');
+$app['controllers']['updates']['title'] = lang('software_updates_updates');
+
+/////////////////////////////////////////////////////////////////////////////
+// Packaging
+/////////////////////////////////////////////////////////////////////////////
+
+$app['requires'] = array(
+    'app-network',
+);
+
+$app['core_requires'] = array(
+    'app-network-core',
+);
