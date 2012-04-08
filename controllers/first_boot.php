@@ -60,16 +60,59 @@ class First_Boot extends ClearOS_Controller
      * @return view
      */
 
-    function index()
+    function index($os_name = '')
     {
         // Load dependencies
         //------------------
 
         $this->lang->load('software_updates');
+        $this->load->library('software_updates/Software_Updates');
+
+        // Load view data
+        //---------------
+
+        try {
+            if (empty($os_name) || ($os_name === 'community'))
+                $data['updates_complete'] = $this->software_updates->get_first_boot_updates_complete_state();
+            else
+                $data['updates_complete'] = FALSE;
+        } catch (Exception $e) {
+            $this->page->view_exception($e);
+            return;
+        }
 
         // Load views
         //-----------
 
+        $data['os_name'] = $os_name; 
+        $data['first_boot'] = TRUE;
+
         $this->page->view_form('software_updates/updates', $data, lang('software_updates_available_updates'));
+    }
+
+    /**
+     * Install all updates.
+     *
+     * @return view
+     */
+
+    function update()
+    {
+        // Load dependencies
+        //------------------
+
+        $this->lang->load('software_updates');
+        $this->load->library('software_updates/Software_Updates');
+
+        // Start update
+        //-------------
+
+        // FIXME
+        // $this->software_updates->.....();
+
+        // Load views
+        //-----------
+
+        $this->page->view_form('software_updates/progress', NULL, lang('software_updates_install_progress'));
     }
 }

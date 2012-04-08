@@ -37,31 +37,33 @@ $this->lang->load('base');
 $this->lang->load('software_repository');
 
 ///////////////////////////////////////////////////////////////////////////////
-// Warning box
+// Infoboxes
 ///////////////////////////////////////////////////////////////////////////////
 
-echo "<div id='software_repository_warning_box' style='display: none'>";
-
-echo infobox_warning(
-    lang('base_warning'),
-    "<div id='software_repository_warning'></div>"
-);
-
-echo "</div>";
-
-if ($highlight)
+if ($updates_complete) {
+    echo "<div id='software_updates_complete'></div>";
     echo infobox_highlight(
-        lang('base_information'),
-        lang('software_repository_add_note') . ": <b>" . $highlight . "</b>."
+        lang('software_updates_updates_complete'), 
+        lang('software_updates_updates_complete_detail')
     );
+    return;
+}
+
+echo "<div id='software_repository_warning_box' style='display: none'>";
+echo infobox_warning(lang('base_warning'), "<div id='software_repository_warning'></div>");
+echo "</div>";
 
 ///////////////////////////////////////////////////////////////////////////////
 // Buttons
 ///////////////////////////////////////////////////////////////////////////////
 
-$buttons = array(
-    anchor_custom('/app/software_updates/updates/update_all', lang('software_updates_update_all'))
-);
+if ($first_boot) {
+    $buttons = array();
+} else {
+    $buttons = array(
+        anchor_custom('/app/software_updates/updates/update_all', lang('software_updates_update_all'))
+    );
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 // Headers

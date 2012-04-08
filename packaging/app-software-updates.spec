@@ -35,6 +35,7 @@ This package provides the core API and libraries.
 mkdir -p -m 755 %{buildroot}/usr/clearos/apps/software_updates
 cp -r * %{buildroot}/usr/clearos/apps/software_updates/
 
+install -d -m 0755 %{buildroot}/var/clearos/software_updates
 
 %post
 logger -p local6.notice -t installer 'app-software-updates - installing'
@@ -74,6 +75,7 @@ exit 0
 %exclude /usr/clearos/apps/software_updates/packaging
 %exclude /usr/clearos/apps/software_updates/tests
 %dir /usr/clearos/apps/software_updates
+%dir /var/clearos/software_updates
 /usr/clearos/apps/software_updates/deploy
 /usr/clearos/apps/software_updates/language
 /usr/clearos/apps/software_updates/libraries

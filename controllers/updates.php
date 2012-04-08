@@ -122,7 +122,7 @@ class Updates extends ClearOS_Controller
      * @return JSON
      */
 
-    function get_available_updates($type)
+    function get_available_updates($type, $os_name = '')
     {
         clearos_profile(__METHOD__, __LINE__);
 
@@ -139,8 +139,8 @@ class Updates extends ClearOS_Controller
         header('Content-type: application/json');
 
         try {
-            if ($type === 'app')
-                $data['list'] = $this->software_updates->get_available_app_updates();
+            if ($type === 'first_boot')
+                $data['list'] = $this->software_updates->get_available_first_boot_updates($os_name);
             else
                 $data['list'] = $this->software_updates->get_available_updates();
 
@@ -216,8 +216,17 @@ class Updates extends ClearOS_Controller
         // Load dependencies
         //------------------
 
+        $this->lang->load('software_updates');
         $this->load->library('software_updates/Software_Updates');
 
-        $this->software_updates->run_update_all();
+        // Start update
+        //-------------
+
+//        $this->software_updates->run_update_all();
+
+        // Load views
+        //-----------
+
+        $this->page->view_form('software_updates/progress', NULL, lang('software_updates_install_progress'));
     }
 }

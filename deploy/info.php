@@ -55,3 +55,8 @@ $app['requires'] = array(
 $app['core_requires'] = array(
     'app-network-core',
 );
+
+$app['core_directory_manifest'] = array(
+    '/var/clearos/software_updates' => array(),
+);
+

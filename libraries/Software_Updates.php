@@ -56,11 +56,13 @@ clearos_load_language('software_updates');
 //--------
 
 use \clearos\apps\base\Engine as Engine;
+use \clearos\apps\base\File as File;
 use \clearos\apps\base\Shell as Shell;
 use \clearos\apps\base\Software as Software;
 use \clearos\apps\base\Yum as Yum;
 
 clearos_load_library('base/Engine');
+clearos_load_library('base/File');
 clearos_load_library('base/Shell');
 clearos_load_library('base/Software');
 clearos_load_library('base/Yum');
@@ -97,6 +99,7 @@ class Software_Updates extends Engine
 
     const COMMAND_WC_YUM = '/usr/sbin/wc-yum';
     const COMMAND_YUM = '/usr/bin/yum';
+    const FILE_FIRST_BOOT_COMPLETE = '/var/clearos/software_updates/first_boot';
 
     ///////////////////////////////////////////////////////////////////////////////
     // M E T H O D S
@@ -128,15 +131,35 @@ class Software_Updates extends Engine
     /**
      * Returns list of available app updates.
      *
+     * @param string $os_name operating system name
+     *
      * @return void
      * @throws Engine_Exception, Yum_Busy_Exception
      */
 
-    public function get_available_app_updates()
+    public function get_available_first_boot_updates($os_name)
     {
         clearos_profile(__METHOD__, __LINE__);
 
-        return $this->_get_updates('app');
+        return $this->_get_updates('first_boot', $os_name);
+    }
+
+    /**
+     * Returns state of first boot updates.
+     *
+     * @return boolean TRUE if updates are complete.
+     */
+
+    public function get_first_boot_updates_complete_state()
+    {
+        clearos_profile(__METHOD__, __LINE__);
+
+        $file = new File(self::FILE_FIRST_BOOT_COMPLETE);
+
+        if ($file->exists())
+            return TRUE;
+        else
+            return FALSE;
     }
 
     /**
@@ -150,7 +173,7 @@ class Software_Updates extends Engine
         clearos_profile(__METHOD__, __LINE__);
 
 //        $list = $this->get_available_updates();
-        $list = $this->get_available_app_updates();
+        $list = $this->get_available_first_boot_updates();
 
         print_r($list);
 
@@ -164,10 +187,13 @@ class Software_Updates extends Engine
     /**
      * Returns update list.
      *
+     * @param string $type    type (normal, first boot)
+     * @param string $os_name operating system name
+     *
      * @return void
      */
 
-    public function _get_updates($filter)
+    public function _get_updates($type, $os_name = '')
     {
         clearos_profile(__METHOD__, __LINE__);
 
@@ -186,24 +212,39 @@ class Software_Updates extends Engine
             $counter++;
         }
 
+        // KLUDGE: if the upgrade to professional was requested, add a fake entry
+        //-----------------------------------------------------------------------
+
+        $list = array();
+
+        // TODO: fix hard-coded items
+        if ($os_name === 'professional') {
+            $item['package'] = 'clearos-release';
+            $item['summary'] = 'ClearOS Professional';
+            $item['arch'] = 'noarch';
+            $item['version'] = '6';
+            $item['full_version'] = '6';
+            $item['repo'] = 'clearos-professional';
+
+            $list[] = $item;
+        }
+
         // Grab updates
         //-------------
 
-        $shell = new Shell();
-
         $options['validate_exit_code'] = FALSE;
 
-        $shell->execute(self::COMMAND_YUM, 'check-update', TRUE, $options);
-
+        $shell = new Shell();
+        $shell->execute(self::COMMAND_YUM, "check-update", TRUE, $options);
         $raw_output = $shell->get_output();
-        $list = array();
+
         $header_done = FALSE;
 
         foreach ($raw_output as $line) {
             if ($header_done)  {
                 $raw_items = preg_split('/\s+/', $line);
 
-                if (($filter === 'app') && !preg_match('/^app-/', $raw_items[0]))
+                if (($type === 'first_boot') && !preg_match('/^app-/', $raw_items[0]))
                     continue;
 
                 $item['package'] = preg_replace('/\..*/', '', $raw_items[0]);

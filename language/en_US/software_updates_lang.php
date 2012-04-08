@@ -25,3 +25,5 @@ $lang['software_updates_no_data_available'] = 'No data available.';
 $lang['software_updates_please_be_patient'] = 'Please be Patient!';
 $lang['software_updates_please_be_patient_detail'] = 'It can take a minute or two to update all the repository and update details.  This information is cached for future use.';
 $lang['software_updates_wizard_description'] = 'Now that you have a connection to the Internet, critical updates to the core system are now installed.';
+$lang['software_updates_updates_complete'] = 'Software Updates Complete';
+$lang['software_updates_updates_complete_detail'] = 'The latest software updates have been installed.';
