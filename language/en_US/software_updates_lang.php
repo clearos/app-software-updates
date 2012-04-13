@@ -27,3 +27,6 @@ $lang['software_updates_please_be_patient_detail'] = 'It can take a minute or tw
 $lang['software_updates_wizard_description'] = 'Now that you have a connection to the Internet, critical updates to the core system are now installed.';
 $lang['software_updates_updates_complete'] = 'Software Updates Complete';
 $lang['software_updates_updates_complete_detail'] = 'The latest software updates have been installed.';
+$lang['software_updates_return_to_overview'] = 'Return to Overview';
+$lang['software_updates_system_is_up_to_date'] = 'System is up-to-date.';
+$lang['software_updates_software_update_in_progress'] = 'Software update is in progress.  Please come back later.';

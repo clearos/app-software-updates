@@ -55,34 +55,34 @@ $(document).ready(function() {
     //-------------
 
     lang_loading = '<?php echo lang("software_updates_loading_updates_message"); ?>';
+    lang_no_updates_required = '<?php echo lang("software_updates_system_is_up_to_date"); ?>';
 
     // Wizard previous/next button handling
     //-------------------------------------
 
     $('#theme_wizard_nav_next').hide();
 
-    if ($('#software_updates_complete').length != 0)
-        $('#theme_wizard_nav_next').show();
-
     $('#wizard_nav_next').click(function(){
-        if ($(location).attr('href').match('.*\/first_boot\/update$') != null)
+        if ($('#software_updates_complete').html() == 'done')
             window.location = '/app/base/wizard/next_step';
-        else if ($('#software_updates_complete').length != 0)
-            window.location = '/app/base/wizard/next_step';
+        else if ($(location).attr('href').match('.*\/first_boot\/index\/community') != null)
+            window.location = '/app/software_updates/updates/run_update/first_boot/community';
+        else if ($(location).attr('href').match('.*\/first_boot\/index\/professional') != null)
+            window.location = '/app/software_updates/updates/run_update/first_boot/professional';
         else
-            window.location = '/app/software_updates/first_boot/update';
+            window.location = '/app/base/wizard/next_step';
     });
 
     // Main
     //-----
 
     if ($('#updates_list').length != 0) {
-        if ($(location).attr('href').match('.*\/first_boot\/index\/community$') != null)
+        if ($(location).attr('href').match('.*\/first_boot\/index\/community') != null)
             get_list('first_boot', 'community');
-        else if ($(location).attr('href').match('.*\/first_boot\/index\/professional$') != null)
+        else if ($(location).attr('href').match('.*\/first_boot\/index\/professional') != null)
             get_list('first_boot', 'professional');
         else
-            get_list('normal', '');
+            get_list('all', '');
     }
 
     if ($('#overall').length != 0)
@@ -101,7 +101,6 @@ function get_list(type, os_name) {
             show_list(json);
         },
         error: function(xhr, text, err) {
-            $('#software_repository_warning').html(json.errmsg);
         }
     });
 }
@@ -115,7 +114,6 @@ function get_progress() {
             show_progress(json);
         },
         error: function(xhr, text, err) {
-            $('#software_repository_warning').html(json.errmsg);
         }
     });
 }
@@ -127,6 +125,14 @@ function show_list(json) {
     // We can use the more human-readable "summary" field instead
     // of the package name.
 
+    if (!json.list) {
+        $('#theme_wizard_nav_next').show();
+        $('#updates_list_container').hide();
+        $('#software_updates_complete_container').show();
+        $('#software_updates_complete').html('done');
+        return;
+    }
+ 
     for (var index = 0 ; index < json.list.length; index++) {
         if ($(location).attr('href').match('.*\/first_boot') != null) {
             table_updates_list.fnAddData([
@@ -173,11 +179,16 @@ function show_progress(json) {
         $('#progress').progressbar({value: 0});
         $('#overall').progressbar({value: 0});
         $('#details').html(json.errmsg);
+        if ($('#theme_wizard_nav_next').length == 0)
+            $('#yum_complete').show();
         return;
     }
 
     if (json.overall == 100) {
-        $('#theme_wizard_nav_next').show();
+        if ($('#theme_wizard_nav_next').length != 0)
+            $('#theme_wizard_nav_next').show();
+        else
+            $('#yum_complete').show();
         window.setTimeout(get_progress, 5000);
     } else {
         window.setTimeout(get_progress, 2000);

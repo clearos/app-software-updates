@@ -36,6 +36,7 @@ mkdir -p -m 755 %{buildroot}/usr/clearos/apps/software_updates
 cp -r * %{buildroot}/usr/clearos/apps/software_updates/
 
 install -d -m 0755 %{buildroot}/var/clearos/software_updates
+install -D -m 0644 packaging/software_updates.conf %{buildroot}/etc/clearos/software_updates.conf
 
 %post
 logger -p local6.notice -t installer 'app-software-updates - installing'
@@ -79,3 +80,4 @@ exit 0
 /usr/clearos/apps/software_updates/deploy
 /usr/clearos/apps/software_updates/language
 /usr/clearos/apps/software_updates/libraries
+%config(noreplace) /etc/clearos/software_updates.conf

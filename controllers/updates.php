@@ -65,50 +65,7 @@ class Updates extends ClearOS_Controller
         // Load dependencies
         //------------------
 
-        $this->load->library('pptpd/PPTPd');
-        $this->lang->load('pptpd');
-
-        // Set validation rules
-        //---------------------
-         
-        $this->form_validation->set_policy('remote_ip', 'pptpd/PPTPd', 'validate_ip_range');
-        $this->form_validation->set_policy('local_ip', 'pptpd/PPTPd', 'validate_ip_range');
-        $this->form_validation->set_policy('wins', 'pptpd/PPTPd', 'validate_wins_server');
-        $this->form_validation->set_policy('dns', 'pptpd/PPTPd', 'validate_dns_server');
-        $form_ok = $this->form_validation->run();
-
-        // Handle form submit
-        //-------------------
-
-        if (($this->input->post('submit') && $form_ok)) {
-            try {
-                $this->pptpd->set_remote_ip($this->input->post('remote_ip'));
-                $this->pptpd->set_local_ip($this->input->post('local_ip'));
-                $this->pptpd->set_wins_server($this->input->post('wins'));
-                $this->pptpd->set_dns_server($this->input->post('dns'));
-                $this->pptpd->reset(TRUE);
-
-                $this->page->set_status_updated();
-            } catch (Exception $e) {
-                $this->page->view_exception($e);
-                return;
-            }
-        }
-
-        // Load view data
-        //---------------
-
-        try {
-            $data['form_type'] = $form_type;
-            $data['local_ip'] = $this->pptpd->get_local_ip();
-            $data['remote_ip'] = $this->pptpd->get_remote_ip();
-            $data['wins'] = $this->pptpd->get_wins_server();
-            $data['dns'] = $this->pptpd->get_dns_server();
-            $data['auto_configure'] = $this->pptpd->get_auto_configure_state();
-        } catch (Exception $e) {
-            $this->page->view_exception($e);
-            return;
-        }
+        $this->lang->load('software_updates');
 
         // Load views
         //-----------
@@ -117,7 +74,26 @@ class Updates extends ClearOS_Controller
     }
 
     /**
+     * Show busy view.
+     *
+     * @return view
+     */
+
+    function busy()
+    {
+        // Load dependencies
+        //------------------
+
+        $this->lang->load('software_updates');
+
+        $this->page->view_form('software_updates/busy', NULL, lang('software_updates_install_progress'));
+    }
+
+    /**
      * Returns list of updates.
+     *
+     * @param string $type    type
+     * @param string $os_name requested OS
      *
      * @return JSON
      */
@@ -131,6 +107,7 @@ class Updates extends ClearOS_Controller
 
         $this->lang->load('software_updates');
         $this->load->library('software_updates/Software_Updates');
+        $this->load->library('base/OS');
 
         // Grab data
         //----------
@@ -139,12 +116,27 @@ class Updates extends ClearOS_Controller
         header('Content-type: application/json');
 
         try {
-            if ($type === 'first_boot')
-                $data['list'] = $this->software_updates->get_available_first_boot_updates($os_name);
-            else
-                $data['list'] = $this->software_updates->get_available_updates();
-
+            $data['list'] = $this->software_updates->get_available_updates($type);
             $data['code'] = 0;
+
+            // KLUDGE: if the upgrade to professional was requested, add a fake entry
+            // instead of showing the geeky technical details.
+            //-----------------------------------------------------------------------
+
+            $installed_os = $this->os->get_name();
+
+            // TODO: fix hard-coded items
+            if (preg_match('/ClearOS Community/', $installed_os) && ($os_name === 'professional')) {
+                $item['package'] = 'clearos-release';
+                $item['summary'] = 'ClearOS Professional';
+                $item['arch'] = 'noarch';
+                $item['version'] = '6';
+                $item['full_version'] = '6';
+                $item['repo'] = 'clearos-professional';
+
+                $data['list'][] = $item;
+            }
+
             echo json_encode($data);
         } catch (Yum_Busy_Exception $e) {
             echo json_encode(array('code' => clearos_exception_code($e), 'errmsg' => lang('software_updates_updates_system_busy')));
@@ -206,27 +198,40 @@ class Updates extends ClearOS_Controller
     }
 
     /**
-     * Install all updates.
+     * Show progress view.
      *
      * @return view
      */
 
-    function update_all()
+    function progress()
     {
         // Load dependencies
         //------------------
 
         $this->lang->load('software_updates');
-        $this->load->library('software_updates/Software_Updates');
-
-        // Start update
-        //-------------
-
-//        $this->software_updates->run_update_all();
-
-        // Load views
-        //-----------
 
         $this->page->view_form('software_updates/progress', NULL, lang('software_updates_install_progress'));
+    }
+
+    /**
+     * Install all updates.
+     *
+     * @param string $type    type
+     * @param string $os_name requested OS
+     *
+     * @return view
+     */
+
+    function run_update($type = 'all', $os_name = '')
+    {
+        $this->load->library('software_updates/Software_Updates');
+
+        $this->software_updates->run_update($type, $os_name);
+
+        // Redirect to avoid page refresh issues
+        if ($type === 'all')
+            redirect('/software_updates/updates/busy');
+        else
+            redirect('/software_updates/updates/progress');
     }
 }

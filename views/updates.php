@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Software repository overview.
+ * Software updates overview.
  *
  * @category   Apps
- * @package    Software_Repository
+ * @package    Software_Updates
  * @subpackage Views
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2011 ClearFoundation
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
- * @link       http://www.clearcenter.com/support/documentation/clearos/software_repository/
+ * @link       http://www.clearcenter.com/support/documentation/clearos/software_updates/
  */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -34,24 +34,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 $this->lang->load('base');
-$this->lang->load('software_repository');
-
-///////////////////////////////////////////////////////////////////////////////
-// Infoboxes
-///////////////////////////////////////////////////////////////////////////////
-
-if ($updates_complete) {
-    echo "<div id='software_updates_complete'></div>";
-    echo infobox_highlight(
-        lang('software_updates_updates_complete'), 
-        lang('software_updates_updates_complete_detail')
-    );
-    return;
-}
-
-echo "<div id='software_repository_warning_box' style='display: none'>";
-echo infobox_warning(lang('base_warning'), "<div id='software_repository_warning'></div>");
-echo "</div>";
+$this->lang->load('software_updates');
 
 ///////////////////////////////////////////////////////////////////////////////
 // Buttons
@@ -61,7 +44,7 @@ if ($first_boot) {
     $buttons = array();
 } else {
     $buttons = array(
-        anchor_custom('/app/software_updates/updates/update_all', lang('software_updates_update_all'))
+        anchor_custom('/app/software_updates/updates/run_update/all', lang('software_updates_update_all'))
     );
 }
 
@@ -86,6 +69,8 @@ $headers = array(
 // List table
 ///////////////////////////////////////////////////////////////////////////////
 
+echo "<div id='updates_list_container'>";
+
 $options['id'] = 'updates_list';
 $options['no_action'] = TRUE;
 
@@ -96,3 +81,12 @@ echo summary_table(
     NULL,
     $options
 );
+echo "</div>";
+
+echo "<div id='software_updates_complete_container' style='display:none;'>";
+echo infobox_highlight(
+    lang('software_updates_updates_complete'), 
+    lang('software_updates_system_is_up_to_date')
+);
+echo "</div>";
+echo "<div id='software_updates_complete' style='display:none;'></div>";

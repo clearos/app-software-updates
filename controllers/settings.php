@@ -70,26 +70,6 @@ class Settings extends ClearOS_Controller
     }
 
     /**
-     * Disables auto configuration.
-     *
-     * @return redirect
-     */
-
-    function disable_auto_configure()
-    {
-        // Load dependencies
-        //------------------
-
-        $this->load->library('pptpd/PPTPd');
-
-        // Disable and redirect
-        //---------------------
-
-        $this->pptpd->set_auto_configure_state(FALSE);
-        redirect('/pptpd/settings/edit');
-    }
-
-    /**
      * View view.
      *
      * @return view
@@ -113,30 +93,18 @@ class Settings extends ClearOS_Controller
         // Load dependencies
         //------------------
 
-        $this->load->library('pptpd/PPTPd');
-        $this->lang->load('pptpd');
-
-        // Set validation rules
-        //---------------------
-         
-        $this->form_validation->set_policy('remote_ip', 'pptpd/PPTPd', 'validate_ip_range');
-        $this->form_validation->set_policy('local_ip', 'pptpd/PPTPd', 'validate_ip_range');
-        $this->form_validation->set_policy('wins', 'pptpd/PPTPd', 'validate_wins_server');
-        $this->form_validation->set_policy('dns', 'pptpd/PPTPd', 'validate_dns_server');
-        $form_ok = $this->form_validation->run();
+        $this->lang->load('software_updates');
+        $this->load->library('software_updates/Software_Updates');
 
         // Handle form submit
         //-------------------
 
-        if (($this->input->post('submit') && $form_ok)) {
+        if ($this->input->post('submit')) {
             try {
-                $this->pptpd->set_remote_ip($this->input->post('remote_ip'));
-                $this->pptpd->set_local_ip($this->input->post('local_ip'));
-                $this->pptpd->set_wins_server($this->input->post('wins'));
-                $this->pptpd->set_dns_server($this->input->post('dns'));
-                $this->pptpd->reset(TRUE);
+                $this->software_updates->set_automatic_updates_state($this->input->post('automatic'));
 
                 $this->page->set_status_updated();
+                redirect('/software_updates');
             } catch (Exception $e) {
                 $this->page->view_exception($e);
                 return;
@@ -148,11 +116,7 @@ class Settings extends ClearOS_Controller
 
         try {
             $data['form_type'] = $form_type;
-            $data['local_ip'] = $this->pptpd->get_local_ip();
-            $data['remote_ip'] = $this->pptpd->get_remote_ip();
-            $data['wins'] = $this->pptpd->get_wins_server();
-            $data['dns'] = $this->pptpd->get_dns_server();
-            $data['auto_configure'] = $this->pptpd->get_auto_configure_state();
+            $data['automatic'] = $this->software_updates->get_automatic_updates_state();
         } catch (Exception $e) {
             $this->page->view_exception($e);
             return;

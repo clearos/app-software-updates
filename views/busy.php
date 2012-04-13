@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Software install progress view.
+ * Software install busy view.
  *
  * @category   Apps
- * @package    Software_Repository
+ * @package    Software_Updates
  * @subpackage Views
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2012 ClearFoundation
@@ -40,36 +40,9 @@ $this->lang->load('software_updates');
 // Busy Infobox
 ///////////////////////////////////////////////////////////////////////////////
 
-echo "<div id='yum_busy' style='display:none;'>";
+echo "<div id='yum_busy' style='iiidisplay:none;'>";
 echo infobox_warning(
     lang('software_updates_progress'), 
-    "<div class='theme-loading-small'></div>" .lang('software_updates_busy_message')
+    lang('software_updates_software_update_in_progress')
 );
-echo "</div>";
-
-///////////////////////////////////////////////////////////////////////////////
-// Form
-///////////////////////////////////////////////////////////////////////////////
-
-echo "<div id='yum_progress' style='display:none;'>";
-
-echo "
-<br>
-<div id='summary-info'>
-    <h3>" . lang('software_updates_overall_progress') . "</h3>" . 
-    progress_bar('overall', array('input' => 'overall')) . "
-
-    <h3>" . lang('software_updates_current_progress') . "</h3>" .
-    progress_bar('progress', array('input' => 'progress')) . "
-
-    <h3>" . lang('software_updates_details') . "</h3>
-    <div id='details'></div>
-</div>
-";
-
-echo "</div>";
-
-echo "<br><br>";
-echo "<div id='yum_complete' style='display:none;'>";
-echo "<p align='center'>" . anchor_custom('/app/software_updates', lang('software_updates_return_to_overview')) . "</p>";
 echo "</div>";

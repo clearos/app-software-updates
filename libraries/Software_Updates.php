@@ -55,12 +55,14 @@ clearos_load_language('software_updates');
 // Classes
 //--------
 
+use \clearos\apps\base\Configuration_File as Configuration_File;
 use \clearos\apps\base\Engine as Engine;
 use \clearos\apps\base\File as File;
 use \clearos\apps\base\Shell as Shell;
 use \clearos\apps\base\Software as Software;
 use \clearos\apps\base\Yum as Yum;
 
+clearos_load_library('base/Configuration_File');
 clearos_load_library('base/Engine');
 clearos_load_library('base/File');
 clearos_load_library('base/Shell');
@@ -71,8 +73,10 @@ clearos_load_library('base/Yum');
 //-----------
 
 use \Exception as Exception;
+use \clearos\apps\base\File_Not_Found_Exception as File_Not_Found_Exception;
 use \clearos\apps\base\Yum_Busy_Exception as Yum_Busy_Exception;
 
+clearos_load_library('base/File_Not_Found_Exception');
 clearos_load_library('base/Yum_Busy_Exception');
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -99,7 +103,9 @@ class Software_Updates extends Engine
 
     const COMMAND_WC_YUM = '/usr/sbin/wc-yum';
     const COMMAND_YUM = '/usr/bin/yum';
-    const FILE_FIRST_BOOT_COMPLETE = '/var/clearos/software_updates/first_boot';
+    const FILE_CONFIG = '/etc/clearos/software_updates.conf';
+    const FILE_PROFESSIONAL_UPGRADE = '/usr/clearos/apps/clearcenter/deploy/clearos-professional.repo';
+    const FILE_PROFESSIONAL_REPO = '/etc/yum.repos.d/clearos-professional.repo';
 
     ///////////////////////////////////////////////////////////////////////////////
     // M E T H O D S
@@ -117,83 +123,13 @@ class Software_Updates extends Engine
     /**
      * Returns list of available updates.
      *
-     * @return void
-     * @throws Engine_Exception, Yum_Busy_Exception
-     */
-
-    public function get_available_updates()
-    {
-        clearos_profile(__METHOD__, __LINE__);
-
-        return $this->_get_updates('all');
-    }
-
-    /**
-     * Returns list of available app updates.
-     *
-     * @param string $os_name operating system name
+     * @param string $type type
      *
      * @return void
      * @throws Engine_Exception, Yum_Busy_Exception
      */
 
-    public function get_available_first_boot_updates($os_name)
-    {
-        clearos_profile(__METHOD__, __LINE__);
-
-        return $this->_get_updates('first_boot', $os_name);
-    }
-
-    /**
-     * Returns state of first boot updates.
-     *
-     * @return boolean TRUE if updates are complete.
-     */
-
-    public function get_first_boot_updates_complete_state()
-    {
-        clearos_profile(__METHOD__, __LINE__);
-
-        $file = new File(self::FILE_FIRST_BOOT_COMPLETE);
-
-        if ($file->exists())
-            return TRUE;
-        else
-            return FALSE;
-    }
-
-    /**
-     * Runs update all.
-     *
-     * @return void
-     */
-
-    public function run_update_all()
-    {
-        clearos_profile(__METHOD__, __LINE__);
-
-//        $list = $this->get_available_updates();
-        $list = $this->get_available_first_boot_updates();
-
-        print_r($list);
-
- //       $yum = new Yum();
-    }
-
-    ///////////////////////////////////////////////////////////////////////////////
-    // P R I V A T E  M E T H O D S
-    ///////////////////////////////////////////////////////////////////////////////
-
-    /**
-     * Returns update list.
-     *
-     * @param string $type    type (normal, first boot)
-     * @param string $os_name operating system name
-     *
-     * @return void
-     */
-
-    public function _get_updates($type, $os_name = '')
+    public function get_available_updates($type = 'all')
     {
         clearos_profile(__METHOD__, __LINE__);
 
@@ -212,23 +148,6 @@ class Software_Updates extends Engine
             $counter++;
         }
 
-        // KLUDGE: if the upgrade to professional was requested, add a fake entry
-        //-----------------------------------------------------------------------
-
-        $list = array();
-
-        // TODO: fix hard-coded items
-        if ($os_name === 'professional') {
-            $item['package'] = 'clearos-release';
-            $item['summary'] = 'ClearOS Professional';
-            $item['arch'] = 'noarch';
-            $item['version'] = '6';
-            $item['full_version'] = '6';
-            $item['repo'] = 'clearos-professional';
-
-            $list[] = $item;
-        }
-
         // Grab updates
         //-------------
 
@@ -238,13 +157,21 @@ class Software_Updates extends Engine
         $shell->execute(self::COMMAND_YUM, "check-update", TRUE, $options);
         $raw_output = $shell->get_output();
 
+        $list = array();
         $header_done = FALSE;
 
         foreach ($raw_output as $line) {
-            if ($header_done)  {
+            if ($header_done) {
                 $raw_items = preg_split('/\s+/', $line);
 
                 if (($type === 'first_boot') && !preg_match('/^app-/', $raw_items[0]))
+                    continue;
+
+                // Skip invalid lines (obsoleting packages)
+                if (preg_match('/^\s/', $line))
+                    continue;
+
+                if (count($raw_items) !== 3)
                     continue;
 
                 $item['package'] = preg_replace('/\..*/', '', $raw_items[0]);
@@ -267,5 +194,109 @@ class Software_Updates extends Engine
         }
 
         return $list;
+    }
+
+    /**
+     * Returns state of automatic updates.
+     *
+     * @return boolean state of automatic updates.
+     * @throws Engine_Exception
+     */
+
+    public function get_automatic_updates_state()
+    {
+        clearos_profile(__METHOD__, __LINE__);
+
+        $config = array();
+
+        try {
+            $file = new Configuration_File(self::FILE_CONFIG);
+            $config = $file->load();
+        } catch (File_Not_Found_Exception $e) {
+            // Not fatal
+        }
+
+        if (! isset($config['automatic']))
+            $automatic = FALSE;
+        else 
+            $automatic = (preg_match('/enabled/i', $config['automatic'])) ? TRUE : FALSE;
+
+        return $automatic;
+    }
+
+    /**
+     * Runs update.
+     *
+     * @param string $type    type of update (all or first_boot)
+     * @param string $os_name requested os (could be a community to pro upgrade)
+     *
+     * @return void
+     */
+
+    public function run_update($type = 'all', $os_name = '')
+    {
+        clearos_profile(__METHOD__, __LINE__);
+
+        $list = array();
+
+        $raw_list = $this->get_available_updates($type);
+
+        foreach ($raw_list as $details)
+            $list[] = $details['package'];
+
+        // TODO: KLUDGY - pro upgrade is a hack, fix at some point
+        // It should really just be a hook in wc-yum
+
+        if ($os_name === 'professional') {
+            $list[] = 'clearos-release-professional';
+            $list[] = 'clearos-logos-professional';
+            $list[] = 'theme-default-professional';
+
+            $file = new File(self::FILE_PROFESSIONAL_UPGRADE);
+            $file->copy_to(self::FILE_PROFESSIONAL_REPO);
+            sleep(2);
+        }
+
+        foreach ($list as $package)
+            clearos_log('software-updates', 'requesting package: ' . $package);
+
+        try {
+            $yum = new Yum();
+            if ($type === 'all')
+                $yum->basic_upgrade($list);
+            else
+                $yum->install($list);
+        } catch (Exception $e) {
+            // Not fatal
+        }
+
+        if ($os_name === 'professional') {
+            $file = new File(self::FILE_PROFESSIONAL_REPO);
+            $file->delete();
+        }
+    }
+
+    /**
+     * Sets state of automatic updates.
+     *
+     * @param boolean $state state
+     *
+     * @return void
+     * @throws Engine_Exception
+     */
+
+    public function set_automatic_updates_state($state)
+    {
+        clearos_profile(__METHOD__, __LINE__);
+
+        $file = new File(self::FILE_CONFIG);
+
+        if ($file->exists())
+            $file->delete();
+
+        $state_value = ($state) ? 'enabled' : 'disabled';
+
+        $file->create('root', 'root', '0644');
+        $file->add_lines("automatic = $state_value\n");
     }
 }

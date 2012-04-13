@@ -31,17 +31,10 @@ $app['controllers']['updates']['title'] = lang('software_updates_updates');
 $app['controllers']['first_boot']['title'] = lang('software_updates_updates');
 
 // Wizard extras
-$app['controllers']['first_boot']['wizard_name'] = lang('software_updates_app_name');
-$app['controllers']['first_boot']['wizard_description'] = lang('software_updates_wizard_description');
-$app['controllers']['first_boot']['inline_help'] = array(
+$app['controllers']['software_updates']['wizard_name'] = lang('software_updates_app_name');
+$app['controllers']['software_updates']['wizard_description'] = lang('software_updates_wizard_description');
+$app['controllers']['software_updates']['inline_help'] = array(
     lang('software_updates_please_be_patient') => lang('software_updates_please_be_patient_detail'),
-);
-
-$app['controllers']['progress']['wizard_name'] = lang('software_updates_app_name');
-$app['controllers']['progress']['wizard_description'] = lang('software_updates_progress_help');
-$app['controllers']['progress']['inline_help'] = array(
-    lang('network_you_can_change_your_mind_later') => lang('network_network_mode_help'),
-    lang('network_best_practices') => lang('network_network_mode_best_practices_help'),
 );
 
 /////////////////////////////////////////////////////////////////////////////
@@ -60,3 +53,10 @@ $app['core_directory_manifest'] = array(
     '/var/clearos/software_updates' => array(),
 );
 
+$app['core_file_manifest'] = array(
+    'software_updates.conf' => array(
+        'target' => '/etc/clearos/software_updates.conf',
+        'config' => TRUE,
+        'config_params' => 'noreplace',
+    ),
+);

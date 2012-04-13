@@ -59,9 +59,19 @@ class Software_Updates extends ClearOS_Controller
         //---------------
 
         $this->lang->load('software_updates');
+        $this->load->library('base/Yum');
 
         // Load views
         //-----------
+
+        // If yum is running, show progress
+        if ($this->yum->is_basic_busy()) {
+            redirect('software_updates/updates/busy');
+            return;
+        } else if ($this->yum->is_busy()) {
+            redirect('software_updates/updates/progress');
+            return;
+        }
 
         $views = array('software_updates/settings', 'software_updates/updates');
 
