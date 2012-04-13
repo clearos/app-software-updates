@@ -101,7 +101,6 @@ class Software_Updates extends Engine
     // C O N S T A N T S
     ///////////////////////////////////////////////////////////////////////////////
 
-    const COMMAND_WC_YUM = '/usr/sbin/wc-yum';
     const COMMAND_YUM = '/usr/bin/yum';
     const FILE_CONFIG = '/etc/clearos/software_updates.conf';
     const FILE_PROFESSIONAL_UPGRADE = '/usr/clearos/apps/clearcenter/deploy/clearos-professional.repo';
@@ -263,7 +262,7 @@ class Software_Updates extends Engine
         try {
             $yum = new Yum();
             if ($type === 'all')
-                $yum->basic_upgrade($list);
+                $yum->run_upgrade($list);
             else
                 $yum->install($list);
         } catch (Exception $e) {

@@ -65,7 +65,7 @@ class Software_Updates extends ClearOS_Controller
         //-----------
 
         // If yum is running, show progress
-        if ($this->yum->is_basic_busy()) {
+        if ($this->yum->is_yum_busy()) {
             redirect('software_updates/updates/busy');
             return;
         } else if ($this->yum->is_busy()) {
