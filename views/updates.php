@@ -85,8 +85,8 @@ echo "</div>";
 
 echo "<div id='software_updates_complete_container' style='display:none;'>";
 echo infobox_highlight(
-    lang('software_updates_updates_complete'), 
-    lang('software_updates_system_is_up_to_date')
+    lang('software_updates_software_up_to_date'), 
+    lang('software_updates_the_latest_software_updates_are_installed')
 );
 echo "</div>";
 echo "<div id='software_updates_complete' style='display:none;'></div>";

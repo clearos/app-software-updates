@@ -30,3 +30,6 @@ $lang['software_updates_updates_complete_detail'] = 'The latest software updates
 $lang['software_updates_return_to_overview'] = 'Return to Overview';
 $lang['software_updates_system_is_up_to_date'] = 'System is up-to-date.';
 $lang['software_updates_software_update_in_progress'] = 'Software update is in progress.  Please come back later.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to-Date';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'The latest software updates are installed.';;
+

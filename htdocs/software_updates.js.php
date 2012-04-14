@@ -125,7 +125,7 @@ function show_list(json) {
     // We can use the more human-readable "summary" field instead
     // of the package name.
 
-    if (!json.list) {
+    if (!json.list || (json.list.length == 0)) {
         $('#theme_wizard_nav_next').show();
         $('#updates_list_container').hide();
         $('#software_updates_complete_container').show();
