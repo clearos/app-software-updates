@@ -1,7 +1,7 @@
 
 Name: app-software-updates
 Epoch: 1
-Version: 1.0.16
+Version: 1.1.0
 Release: 1%{dist}
 Summary: Software Updates
 License: GPLv3
@@ -16,7 +16,7 @@ Requires: app-network
 The Software Updates app provides updates for the underlying operating system components.
 
 %package core
-Summary: Software Updates - APIs and install
+Summary: Software Updates - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
