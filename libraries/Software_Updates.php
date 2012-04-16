@@ -61,6 +61,7 @@ use \clearos\apps\base\File as File;
 use \clearos\apps\base\Shell as Shell;
 use \clearos\apps\base\Software as Software;
 use \clearos\apps\base\Yum as Yum;
+use \clearos\apps\tasks\Cron as Cron;
 
 clearos_load_library('base/Configuration_File');
 clearos_load_library('base/Engine');
@@ -68,6 +69,7 @@ clearos_load_library('base/File');
 clearos_load_library('base/Shell');
 clearos_load_library('base/Software');
 clearos_load_library('base/Yum');
+clearos_load_library('tasks/Cron');
 
 // Exceptions
 //-----------
@@ -102,7 +104,9 @@ class Software_Updates extends Engine
     ///////////////////////////////////////////////////////////////////////////////
 
     const COMMAND_YUM = '/usr/bin/yum';
+    const COMMAND_UPDATE = '/usr/sbin/software-updates';
     const FILE_CONFIG = '/etc/clearos/software_updates.conf';
+    const FILE_CRON_CONFIGLET = 'app-software-updates';
 
     ///////////////////////////////////////////////////////////////////////////////
     // M E T H O D S
@@ -250,6 +254,11 @@ class Software_Updates extends Engine
             $list[] = 'theme-default-professional';
         }
 
+        if (count($list) === 0) {
+            clearos_log('software-updates', 'no updates required');
+            return;
+        }
+
         foreach ($list as $package)
             clearos_log('software-updates', 'requesting package: ' . $package);
 
@@ -286,5 +295,44 @@ class Software_Updates extends Engine
 
         $file->create('root', 'root', '0644');
         $file->add_lines("automatic = $state_value\n");
+    }
+    /**
+     * Sets auto-update taks time.
+     *
+     * Auto-update will set a cron job roughly 24 hours from the time this
+     * method is called.  The time is randomized a bit to spread the load
+     * on the download servers.
+     *
+     * @return void
+     * @throws Engine_Exception
+     */
+
+    public function set_automatic_updates_time()
+    {
+        clearos_profile(__METHOD__, __LINE__);
+
+        $cron = new Cron();
+
+        if ($cron->exists_configlet(self::FILE_CRON_CONFIGLET))
+            $cron->delete_configlet(self::FILE_CRON_CONFIGLET);
+
+        $nextday = date('w') + 1;
+
+        $cron->add_configlet_by_parts(
+            self::FILE_CRON_CONFIGLET,
+            rand(0, 59), rand(1, 7), '*', '*', $nextday,
+            'root',
+            self::COMMAND_UPDATE . ' >/dev/NULL 2>&1'
+        );
+
+        // Clean out cruft files created by rpm upgrades
+        $cruftfiles = array('rpmsave', 'rpmnew', 'rpmorig');
+
+        foreach ($cruftfiles as $cruft) {
+            $file = new File(self::FILE_CRON_CONFIGLET . '.' . $cruft);
+
+            if ($file->exists())
+                $file->delete();
+        }
     }
 }

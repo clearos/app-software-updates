@@ -21,6 +21,7 @@ License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
 Requires: app-network-core
+Requires: app-tasks-core
 
 %description core
 The Software Updates app provides updates for the underlying operating system components.

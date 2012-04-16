@@ -1,0 +1,94 @@
+#!/usr/clearos/sandbox/usr/bin/php
+<?php
+
+/**
+ * Software update script.
+ *
+ * @category   Apps
+ * @package    Software_Updates
+ * @subpackage Scripts
+ * @author     ClearFoundation <developer@clearfoundation.com>
+ * @copyright  2008-2011 ClearFoundation
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
+ * @link       http://www.clearfoundation.com/docs/developer/apps/software_updates/
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// B O O T S T R A P
+///////////////////////////////////////////////////////////////////////////////
+
+$bootstrap = getenv('CLEAROS_BOOTSTRAP') ? getenv('CLEAROS_BOOTSTRAP') : '/usr/clearos/framework/shared';
+require_once $bootstrap . '/bootstrap.php';
+
+///////////////////////////////////////////////////////////////////////////////
+// T R A N S L A T I O N S
+///////////////////////////////////////////////////////////////////////////////
+
+clearos_load_language('software_updates');
+
+///////////////////////////////////////////////////////////////////////////////
+// D E P E N D E N C I E S
+///////////////////////////////////////////////////////////////////////////////
+
+// Classes
+//--------
+
+use \clearos\apps\software_updates\Software_Updates as Software_Updates;
+
+clearos_load_library('software_updates/Software_Updates');
+
+// Exceptions
+//-----------
+
+use \Exception as Exception;
+
+///////////////////////////////////////////////////////////////////////////////
+// M A I N
+///////////////////////////////////////////////////////////////////////////////
+
+clearos_log('software-updates', 'starting automatic update check');
+
+// Check state of automatic updates
+//----------------------------------
+
+$updates = new Software_Updates();
+
+try {
+	$automatic_state = $updates->get_automatic_updates_state();
+} catch (Exception $e) {
+    clearos_log('software-updates', clearos_exception_message($e));
+}
+
+if (!$automatic_state) {
+    clearos_log('software-updates', 'automatic updates disabled');
+	exit(0);
+}
+
+// Set a new update time
+//----------------------
+
+$updates->set_automatic_updates_time();
+
+// Run Update
+//-----------
+
+clearos_log('software-updates', 'starting update');
+
+$updates->run_update('all');
