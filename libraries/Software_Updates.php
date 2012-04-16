@@ -103,8 +103,6 @@ class Software_Updates extends Engine
 
     const COMMAND_YUM = '/usr/bin/yum';
     const FILE_CONFIG = '/etc/clearos/software_updates.conf';
-    const FILE_PROFESSIONAL_UPGRADE = '/usr/clearos/apps/clearcenter/deploy/clearos-professional.repo';
-    const FILE_PROFESSIONAL_REPO = '/etc/yum.repos.d/clearos-professional.repo';
 
     ///////////////////////////////////////////////////////////////////////////////
     // M E T H O D S
@@ -250,10 +248,6 @@ class Software_Updates extends Engine
             $list[] = 'clearos-release-professional';
             $list[] = 'clearos-logos-professional';
             $list[] = 'theme-default-professional';
-
-            $file = new File(self::FILE_PROFESSIONAL_UPGRADE);
-            $file->copy_to(self::FILE_PROFESSIONAL_REPO);
-            sleep(2);
         }
 
         foreach ($list as $package)
@@ -267,11 +261,6 @@ class Software_Updates extends Engine
                 $yum->install($list);
         } catch (Exception $e) {
             // Not fatal
-        }
-
-        if ($os_name === 'professional') {
-            $file = new File(self::FILE_PROFESSIONAL_REPO);
-            $file->delete();
         }
     }
 
