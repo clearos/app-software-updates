@@ -322,7 +322,7 @@ class Software_Updates extends Engine
             self::FILE_CRON_CONFIGLET,
             rand(0, 59), rand(1, 6), '*', '*', $nextday,
             'root',
-            self::COMMAND_UPDATE . ' >/dev/NULL 2>&1'
+            self::COMMAND_UPDATE . ' >/dev/null 2>&1'
         );
 
         // Clean out cruft files created by rpm upgrades
