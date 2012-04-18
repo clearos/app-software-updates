@@ -71,14 +71,14 @@ clearos_log('software-updates', 'starting automatic update check');
 $updates = new Software_Updates();
 
 try {
-	$automatic_state = $updates->get_automatic_updates_state();
+    $automatic_state = $updates->get_automatic_updates_state();
 } catch (Exception $e) {
     clearos_log('software-updates', clearos_exception_message($e));
 }
 
 if (!$automatic_state) {
     clearos_log('software-updates', 'automatic updates disabled');
-	exit(0);
+    exit(0);
 }
 
 // Set a new update time
