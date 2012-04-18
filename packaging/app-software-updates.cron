@@ -1,1 +1,1 @@
-2 2 * * * root /usr/sbin/timesync
+2 3 * * * root /usr/sbin/software-updates

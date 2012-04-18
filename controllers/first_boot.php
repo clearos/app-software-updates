@@ -79,7 +79,7 @@ class First_Boot extends ClearOS_Controller
         $installed_os = $this->os->get_name();
 
         if (empty($os_name)) {
-            if (preg_match('/ClearOS Commnity/', $installed_os))
+            if (preg_match('/ClearOS Community/', $installed_os))
                 $os_name = 'community';
             else
                 $os_name = 'professional';

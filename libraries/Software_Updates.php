@@ -142,7 +142,7 @@ class Software_Updates extends Engine
         $counter = 0;
 
         while ($yum->is_busy()) {
-            if ($counter > 5)
+            if ($counter > 100)
                 throw new Yum_Busy_Exception();
 
             sleep(3);
@@ -320,7 +320,7 @@ class Software_Updates extends Engine
 
         $cron->add_configlet_by_parts(
             self::FILE_CRON_CONFIGLET,
-            rand(0, 59), rand(1, 7), '*', '*', $nextday,
+            rand(0, 59), rand(1, 6), '*', '*', $nextday,
             'root',
             self::COMMAND_UPDATE . ' >/dev/NULL 2>&1'
         );

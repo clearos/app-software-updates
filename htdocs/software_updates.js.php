@@ -85,8 +85,10 @@ $(document).ready(function() {
             get_list('all', '');
     }
 
-    if ($('#overall').length != 0)
+    if ($('#overall').length != 0) {
+        $('#theme_wizard_nav_previous').hide();
         get_progress();
+    }
 });
 
 function get_list(type, os_name) {
@@ -127,6 +129,7 @@ function show_list(json) {
 
     if (!json.list || (json.list.length == 0)) {
         $('#theme_wizard_nav_next').show();
+        $('#theme_wizard_nav_previous').show();
         $('#updates_list_container').hide();
         $('#software_updates_complete_container').show();
         $('#software_updates_complete').html('done');
@@ -142,6 +145,7 @@ function show_list(json) {
                 json.list[index].repo
             ]);
             $('#theme_wizard_nav_next').show();
+            $('#theme_wizard_nav_previous').show();
         } else {
             table_updates_list.fnAddData([
                 json.list[index].package,
@@ -179,12 +183,19 @@ function show_progress(json) {
         $('#progress').progressbar({value: 0});
         $('#overall').progressbar({value: 0});
         $('#details').html(json.errmsg);
-        if ($('#theme_wizard_nav_next').length == 0)
+
+        if ($('#theme_wizard_nav_previous').length != 0)
+            $('#theme_wizard_nav_previous').show();
+        else
             $('#yum_complete').show();
+
         return;
     }
 
     if (json.overall == 100) {
+        if ($('#theme_wizard_nav_previous').length != 0)
+            $('#theme_wizard_nav_previous').show();
+
         if ($('#theme_wizard_nav_next').length != 0)
             $('#theme_wizard_nav_next').show();
         else

@@ -60,4 +60,13 @@ $app['core_file_manifest'] = array(
         'config' => TRUE,
         'config_params' => 'noreplace',
     ),
+    'app-software-updates.cron' => array(
+        'target' => '/etc/cron.d/app-software-updates',
+        'config' => TRUE,
+        'config_params' => 'noreplace',
+    ),
+    'software-updates' => array(
+        'target' => '/usr/sbin/software-updates',
+        'mode' => '0755',
+    ),
 );
