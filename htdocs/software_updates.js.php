@@ -65,10 +65,8 @@ $(document).ready(function() {
     $('#wizard_nav_next').click(function(){
         if ($('#software_updates_complete').html() == 'done')
             window.location = '/app/base/wizard/next_step';
-        else if ($(location).attr('href').match('.*\/first_boot\/index\/community') != null)
-            window.location = '/app/software_updates/updates/run_update/first_boot/community';
-        else if ($(location).attr('href').match('.*\/first_boot\/index\/professional') != null)
-            window.location = '/app/software_updates/updates/run_update/first_boot/professional';
+        else if ($(location).attr('href').match('.*\/first_boot') != null)
+            window.location = '/app/software_updates/updates/run_update/first_boot';
         else
             window.location = '/app/base/wizard/next_step';
     });
@@ -77,12 +75,10 @@ $(document).ready(function() {
     //-----
 
     if ($('#updates_list').length != 0) {
-        if ($(location).attr('href').match('.*\/first_boot\/index\/community') != null)
-            get_list('first_boot', 'community');
-        else if ($(location).attr('href').match('.*\/first_boot\/index\/professional') != null)
-            get_list('first_boot', 'professional');
+        if ($(location).attr('href').match('.*\/first_boot') != null)
+            get_list('first_boot');
         else
-            get_list('all', '');
+            get_list('all');
     }
 
     if ($('#overall').length != 0) {
@@ -91,13 +87,13 @@ $(document).ready(function() {
     }
 });
 
-function get_list(type, os_name) {
+function get_list(type) {
     $('#updates_list').append('<tr><td valign=\'top\' colspan=\'5\' class=\'dataTables_empty\'><div class=\'theme-loading-small\'>' + lang_loading + '</div></td></tr>');
 
     $.ajax({
         type: 'POST',
         dataType: 'json',
-        url: '/app/software_updates/updates/get_available_updates/' + type + '/' + os_name,
+        url: '/app/software_updates/updates/get_available_updates/' + type,
         data: '',
         success: function(json) {
             show_list(json);

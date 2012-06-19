@@ -165,7 +165,12 @@ class Software_Updates extends Engine
             if ($header_done) {
                 $raw_items = preg_split('/\s+/', $line);
 
-                if (($type === 'first_boot') && !preg_match('/^app-/', $raw_items[0]))
+                if (($type === 'first_boot') && !(
+                    preg_match('/^app-/', $raw_items[0]) || 
+                    preg_match('/^clearos-release-/', $raw_items[0]) || 
+                    preg_match('/^clearos-logos-/', $raw_items[0]) || 
+                    preg_match('/^theme-default-/', $raw_items[0])
+                    ))
                     continue;
 
                 // Skip invalid lines (obsoleting packages)
@@ -229,12 +234,11 @@ class Software_Updates extends Engine
      * Runs update.
      *
      * @param string $type    type of update (all or first_boot)
-     * @param string $os_name requested os (could be a community to pro upgrade)
      *
      * @return void
      */
 
-    public function run_update($type = 'all', $os_name = '')
+    public function run_update($type = 'all')
     {
         clearos_profile(__METHOD__, __LINE__);
 
@@ -244,15 +248,6 @@ class Software_Updates extends Engine
 
         foreach ($raw_list as $details)
             $list[] = $details['package'];
-
-        // TODO: KLUDGY - pro upgrade is a hack, fix at some point
-        // It should really just be a hook in wc-yum
-
-        if ($os_name === 'professional') {
-            $list[] = 'clearos-release-professional';
-            $list[] = 'clearos-logos-professional';
-            $list[] = 'theme-default-professional';
-        }
 
         if (count($list) === 0) {
             clearos_log('software-updates', 'no updates required');

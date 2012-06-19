@@ -57,12 +57,10 @@ class First_Boot extends ClearOS_Controller
     /**
      * First boot updates controller.
      *
-     * @param string $os_name requested OS
-     *
      * @return view
      */
 
-    function index($os_name = '')
+    function index()
     {
         // Load dependencies
         //------------------
@@ -74,20 +72,6 @@ class First_Boot extends ClearOS_Controller
         // Load views
         //-----------
 
-        // The os_name is empty when coming from a "back button" on the
-        // next wizard page.  Throw it back to "Select Edition" on
-        $installed_os = $this->os->get_name();
-
-        if (empty($os_name)) {
-            if (preg_match('/ClearOS Community/', $installed_os))
-                $os_name = 'community';
-            else
-                $os_name = 'professional';
-
-            redirect('/software_updates/first_boot/index/' . $os_name);
-        }
-
-        $data['os_name'] = $os_name; 
         $data['first_boot'] = TRUE;
 
         $this->page->view_form('software_updates/updates', $data, lang('software_updates_available_updates'));

@@ -93,12 +93,11 @@ class Updates extends ClearOS_Controller
      * Returns list of updates.
      *
      * @param string $type    type
-     * @param string $os_name requested OS
      *
      * @return JSON
      */
 
-    function get_available_updates($type, $os_name = '')
+    function get_available_updates($type)
     {
         clearos_profile(__METHOD__, __LINE__);
 
@@ -118,24 +117,6 @@ class Updates extends ClearOS_Controller
         try {
             $data['list'] = $this->software_updates->get_available_updates($type);
             $data['code'] = 0;
-
-            // KLUDGE: if the upgrade to professional was requested, add a fake entry
-            // instead of showing the geeky technical details.
-            //-----------------------------------------------------------------------
-
-            $installed_os = $this->os->get_name();
-
-            // TODO: fix hard-coded items
-            if (preg_match('/ClearOS Community/', $installed_os) && ($os_name === 'professional')) {
-                $item['package'] = 'clearos-release';
-                $item['summary'] = 'ClearOS Professional';
-                $item['arch'] = 'noarch';
-                $item['version'] = '6';
-                $item['full_version'] = '6';
-                $item['repo'] = 'clearos-professional';
-
-                $data['list'][] = $item;
-            }
 
             echo json_encode($data);
         } catch (Yum_Busy_Exception $e) {
@@ -217,16 +198,15 @@ class Updates extends ClearOS_Controller
      * Install all updates.
      *
      * @param string $type    type
-     * @param string $os_name requested OS
      *
      * @return view
      */
 
-    function run_update($type = 'all', $os_name = '')
+    function run_update($type = 'all')
     {
         $this->load->library('software_updates/Software_Updates');
 
-        $this->software_updates->run_update($type, $os_name);
+        $this->software_updates->run_update($type);
 
         // Redirect to avoid page refresh issues
         if ($type === 'all')
