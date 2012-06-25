@@ -66,8 +66,19 @@ class First_Boot extends ClearOS_Controller
         //------------------
 
         $this->lang->load('software_updates');
-        $this->load->library('software_updates/Software_Updates');
         $this->load->library('base/OS');
+        $this->load->library('base/Yum');
+
+        // Testing mode
+        //-------------
+
+        // FIXME - fix hard coded repo, find a better way
+        $version = $this->os->get_version();
+
+        if (preg_match('/(alpha|beta|rc)/i', $version)) {
+            $this->yum->set_enabled('clearos-updates-testing', TRUE);
+            $this->yum->clean();
+        }
 
         // Load views
         //-----------
