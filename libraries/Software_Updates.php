@@ -188,7 +188,11 @@ class Software_Updates extends Engine
 
                 try {
                     $software = new Software($item['package']);
-                    $item['summary'] = $software->get_summary();
+
+                    if ($software->is_installed())
+                        $item['summary'] = $software->get_summary();
+                    else
+                        $item['summary'] = $item['package'];
                 } catch (Exception $e) {
                     // Not fatal
                 }
