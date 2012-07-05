@@ -1,7 +1,7 @@
 
 Name: app-software-updates
 Epoch: 1
-Version: 1.2.3
+Version: 1.2.4
 Release: 1%{dist}
 Summary: Software Updates
 License: GPLv3
@@ -11,6 +11,7 @@ Buildarch: noarch
 Requires: %{name}-core = 1:%{version}-%{release}
 Requires: app-base
 Requires: app-network
+Requires: app-edition
 
 %description
 The Software Updates app provides updates for the underlying operating system components.

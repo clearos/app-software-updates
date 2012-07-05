@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'software_updates';
-$app['version'] = '1.2.3';
+$app['version'] = '1.2.4';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -41,8 +41,12 @@ $app['controllers']['software_updates']['inline_help'] = array(
 // Packaging
 /////////////////////////////////////////////////////////////////////////////
 
+// TODO: the app-edition dependency is kludgy.  Better to do this in the 
+// build system.
+
 $app['requires'] = array(
     'app-network',
+    'app-edition',
 );
 
 $app['core_requires'] = array(
