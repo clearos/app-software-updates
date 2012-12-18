@@ -120,7 +120,7 @@ class Updates extends ClearOS_Controller
 
             echo json_encode($data);
         } catch (Yum_Busy_Exception $e) {
-            echo json_encode(array('code' => clearos_exception_code($e), 'errmsg' => lang('software_updates_updates_system_busy')));
+            echo json_encode(array('code' => clearos_exception_code($e), 'errmsg' => lang('software_updates_software_updates_system_busy')));
         } catch (Exception $e) {
             echo json_encode(array('code' => clearos_exception_code($e), 'errmsg' => clearos_exception_message($e)));
         }

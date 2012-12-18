@@ -33,3 +33,6 @@ $lang['software_updates_software_update_in_progress'] = 'Software update is in p
 $lang['software_updates_software_up_to_date'] = 'Software Up-to-Date';
 $lang['software_updates_the_latest_software_updates_are_installed'] = 'The latest software updates are installed.';;
 
+$lang['software_updates_recent_software_activity'] = 'Recent Software Activity';
+$lang['software_updates_software_updates_system_busy'] = 'Software updates system is busy.';
+

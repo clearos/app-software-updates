@@ -1,13 +1,14 @@
 <?php
 
 /**
- * Software updates controller.
+ * Software updates activity controller.
  *
  * @category   Apps
  * @package    Software_Updates
  * @subpackage Controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2012 ClearFoundation
+ * @copyright  2012 Tim Burgess
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
  * @link       http://www.clearfoundation.com/docs/developer/apps/software_updates/
  */
@@ -34,47 +35,47 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 /**
- * Software updates controller.
+ * Software updates activity controller.
  *
  * @category   Apps
  * @package    Software_Updates
  * @subpackage Controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2012 ClearFoundation
+ * @copyright  2012 Tim Burgess
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
  * @link       http://www.clearfoundation.com/docs/developer/apps/software_updates/
  */
 
-class Software_Updates extends ClearOS_Controller
+class Activity extends ClearOS_Controller
 {
     /**
-     * Software_Updates summary view.
+     * Stats default controller
      *
      * @return view
      */
 
     function index()
     {
-        // Load libraries
-        //---------------
+        // Load dependencies
+        //------------------
 
         $this->lang->load('software_updates');
-        $this->load->library('base/Yum');
+        $this->load->library('base/Stats');
+
+        // Load view data
+        //---------------
+
+        try {
+            $data['log'] = $this->stats->get_yum_log();
+        } catch (Exception $e) {
+            $this->page->view_exception($e);
+            return;
+        }
 
         // Load views
         //-----------
 
-        // If yum is running, show progress
-        if ($this->yum->is_yum_busy()) {
-            redirect('software_updates/updates/busy');
-            return;
-        } else if ($this->yum->is_busy()) {
-            redirect('software_updates/updates/progress');
-            return;
-        }
-
-        $views = array('software_updates/settings', 'software_updates/updates', 'software_updates/activity');
-
-        $this->page->view_forms($views, lang('software_updates_app_name'));
+        $this->page->view_form('software_updates/activity', $data, lang('software_updates_recent_software_activity'));
     }
 }
