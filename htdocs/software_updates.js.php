@@ -91,7 +91,7 @@ function get_list(type) {
     $('#updates_list').append('<tr><td valign=\'top\' colspan=\'5\' class=\'dataTables_empty\'><div class=\'theme-loading-small\'>' + lang_loading + '</div></td></tr>');
 
     $.ajax({
-        type: 'POST',
+        type: 'GET',
         dataType: 'json',
         url: '/app/software_updates/updates/get_available_updates/' + type,
         data: '',
