@@ -1,7 +1,7 @@
 
 Name: app-software-updates
 Epoch: 1
-Version: 1.4.8
+Version: 1.4.20
 Release: 1%{dist}
 Summary: Software Updates
 License: GPLv3
