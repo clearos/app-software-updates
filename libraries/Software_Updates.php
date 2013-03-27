@@ -203,22 +203,6 @@ class Software_Updates extends Engine
             }
         }
 
-        // Add bundled Professional apps
-        // FIXME: kludge is below, provide a better way in a future version
-        if (($type === 'first_boot') && file_exists('/etc/yum.repos.d/clearos-professional.repo')) {
-            $software = new Software('app-account-synchronization');
-
-            if (! $software->is_installed()) {
-                $item = array();
-                $item['package'] = 'app-account-synchronization';
-                $item['arch'] = 'noarch';
-                $item['version'] = 'latest';
-                $item['repo'] = 'clearcenter';
-                $item['summary'] = 'Account Synchronization';
-                $list[] = $item;
-            }
-        }
-
         return $list;
     }
 
