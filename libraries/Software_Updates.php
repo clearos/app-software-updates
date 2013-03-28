@@ -198,7 +198,7 @@ class Software_Updates extends Engine
                 }
 
                 $list[] = $item;
-            } else if (preg_match('/^\s*$/', $line)) {
+            } else if (preg_match('/^\s*$/', $line) || preg_match('/^Obsoleting\s+/', $line)) {
                 $header_done = TRUE;
             }
         }

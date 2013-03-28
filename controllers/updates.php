@@ -147,6 +147,7 @@ class Updates extends ClearOS_Controller
         header('Cache-Control: no-cache, must-revalidate');
         header('Content-type: application/json');
 
+        // FIXME: this code (yum->get_status) is now in the Yum class. To merge.
         try {
             $logs = $this->yum->get_logs();
             $logs = array_reverse($logs);
