@@ -3,9 +3,9 @@
 /**
  * Javascript helper for Software_Updates.
  *
- * @category   Apps
- * @package    Software_Updates
- * @subpackage Javascript
+ * @category   apps
+ * @package    software-updates
+ * @subpackage javascript
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2003-2011 ClearFoundation
  * @license    http://www.gnu.org/copyleft/lgpl.html GNU Lesser General Public License version 3 or later

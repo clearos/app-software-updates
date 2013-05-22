@@ -3,9 +3,9 @@
 /**
  * Software updates overview.
  *
- * @category   Apps
- * @package    Software_Updates
- * @subpackage Views
+ * @category   apps
+ * @package    software-updates
+ * @subpackage views
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2011 ClearFoundation
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later

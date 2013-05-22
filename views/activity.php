@@ -3,9 +3,9 @@
 /**
  * Recent updates view.
  *
- * @category   ClearOS
- * @package    Software_Updates
- * @subpackage Views
+ * @category   apps
+ * @package    software-updates
+ * @subpackage views
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2012 ClearFoundation
  * @copyright  2012 Tim Burgess

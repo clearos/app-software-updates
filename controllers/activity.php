@@ -3,9 +3,9 @@
 /**
  * Software updates activity controller.
  *
- * @category   Apps
- * @package    Software_Updates
- * @subpackage Controllers
+ * @category   apps
+ * @package    software-updates
+ * @subpackage controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2012 ClearFoundation
  * @copyright  2012 Tim Burgess
@@ -37,9 +37,9 @@
 /**
  * Software updates activity controller.
  *
- * @category   Apps
- * @package    Software_Updates
- * @subpackage Controllers
+ * @category   apps
+ * @package    software-updates
+ * @subpackage controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2012 ClearFoundation
  * @copyright  2012 Tim Burgess

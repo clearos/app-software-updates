@@ -3,9 +3,9 @@
 /**
  * Software updates controller.
  *
- * @category   Apps
- * @package    Software_Updates
- * @subpackage Controllers
+ * @category   apps
+ * @package    software-updates
+ * @subpackage controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2012 ClearFoundation
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
@@ -36,9 +36,9 @@
 /**
  * Software updates controller.
  *
- * @category   Apps
- * @package    Software_Updates
- * @subpackage Controllers
+ * @category   apps
+ * @package    software-updates
+ * @subpackage controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2012 ClearFoundation
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
