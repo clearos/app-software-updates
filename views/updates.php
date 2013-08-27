@@ -73,6 +73,7 @@ echo "<div id='updates_list_container'>";
 
 $options['id'] = 'updates_list';
 $options['no_action'] = TRUE;
+$options['empty_table_message'] = "<div class='theme-loading-small'>" . lang('software_updates_loading_updates_message') . "</div>";
 
 echo summary_table(
     lang('software_updates_available_updates'),
