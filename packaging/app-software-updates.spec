@@ -21,6 +21,7 @@ Summary: Software Updates - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
+Requires: app-events-core
 Requires: app-network-core
 Requires: app-tasks-core
 
@@ -37,8 +38,10 @@ This package provides the core API and libraries.
 mkdir -p -m 755 %{buildroot}/usr/clearos/apps/software_updates
 cp -r * %{buildroot}/usr/clearos/apps/software_updates/
 
+install -d -m 0755 %{buildroot}/var/clearos/events/software_updates
 install -d -m 0755 %{buildroot}/var/clearos/software_updates
 install -D -m 0644 packaging/app-software-updates.cron %{buildroot}/etc/cron.d/app-software-updates
+install -D -m 0644 packaging/filewatch-software-updates-event.conf %{buildroot}/etc/clearsync.d/filewatch-software-updates-event.conf
 install -D -m 0755 packaging/software-updates %{buildroot}/usr/sbin/software-updates
 install -D -m 0644 packaging/software_updates.conf %{buildroot}/etc/clearos/software_updates.conf
 
@@ -80,10 +83,12 @@ exit 0
 %exclude /usr/clearos/apps/software_updates/packaging
 %exclude /usr/clearos/apps/software_updates/tests
 %dir /usr/clearos/apps/software_updates
+%dir /var/clearos/events/software_updates
 %dir /var/clearos/software_updates
 /usr/clearos/apps/software_updates/deploy
 /usr/clearos/apps/software_updates/language
 /usr/clearos/apps/software_updates/libraries
 %config(noreplace) /etc/cron.d/app-software-updates
+/etc/clearsync.d/filewatch-software-updates-event.conf
 /usr/sbin/software-updates
 %config(noreplace) /etc/clearos/software_updates.conf

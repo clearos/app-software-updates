@@ -50,15 +50,18 @@ $app['requires'] = array(
 );
 
 $app['core_requires'] = array(
+    'app-events-core',
     'app-network-core',
     'app-tasks-core',
 );
 
 $app['core_directory_manifest'] = array(
     '/var/clearos/software_updates' => array(),
+    '/var/clearos/events/software_updates' => array(),
 );
 
 $app['core_file_manifest'] = array(
+    'filewatch-software-updates-event.conf' => array('target' => '/etc/clearsync.d/filewatch-software-updates-event.conf'),
     'software_updates.conf' => array(
         'target' => '/etc/clearos/software_updates.conf',
         'config' => TRUE,
