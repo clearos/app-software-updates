@@ -1,7 +1,7 @@
 
 Name: app-software-updates
 Epoch: 1
-Version: 1.5.10
+Version: 1.5.15
 Release: 1%{dist}
 Summary: Software Updates
 License: GPLv3
@@ -81,7 +81,6 @@ exit 0
 %files core
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/software_updates/packaging
-%exclude /usr/clearos/apps/software_updates/tests
 %dir /usr/clearos/apps/software_updates
 %dir /var/clearos/events/software_updates
 %dir /var/clearos/software_updates
