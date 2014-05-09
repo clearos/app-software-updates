@@ -11,7 +11,6 @@ Buildarch: noarch
 Requires: %{name}-core = 1:%{version}-%{release}
 Requires: app-base
 Requires: app-network
-Requires: app-edition
 
 %description
 The Software Updates app provides updates for the underlying operating system components.

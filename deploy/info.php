@@ -41,12 +41,8 @@ $app['controllers']['software_updates']['inline_help'] = array(
 // Packaging
 /////////////////////////////////////////////////////////////////////////////
 
-// TODO: the app-edition dependency is kludgy.  Better to do this in the 
-// build system.
-
 $app['requires'] = array(
     'app-network',
-    'app-edition',
 );
 
 $app['core_requires'] = array(
