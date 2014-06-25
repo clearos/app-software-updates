@@ -25,6 +25,7 @@ $lang['software_updates_software_updates'] = 'Software Updates';
 $lang['software_updates_software_updates_busy'] = 'Software Updates Busy';
 $lang['software_updates_software_updates_system_busy'] = 'Software updates system is busy.';
 $lang['software_updates_system_is_up_to_date'] = 'System is up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'The latest software updates are installed.';
 $lang['software_updates_type'] = 'Type';
 $lang['software_updates_update_all'] = 'Update All';
 $lang['software_updates_updates'] = 'Updates';
