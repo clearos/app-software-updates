@@ -32,6 +32,5 @@ $lang['software_updates_type'] = 'Type';
 $lang['software_updates_update_all'] = 'Update All';
 $lang['software_updates_updates'] = 'Updates';
 $lang['software_updates_updates_complete'] = 'Software Updates Complete';
-$lang['software_updates_updates_complete_detail'] = 'The latest software updates have been installed.';
 $lang['software_updates_upgrade'] = 'Upgrade';
 $lang['software_updates_wizard_description'] = 'Now that your network is configured, critical updates to the core system are now installed.';
