@@ -7,7 +7,7 @@
  * @package    software-updates
  * @subpackage libraries
  * @author     ClearFoundation <developer@clearfoundation.com>
- * @copyright  2012 ClearFoundation
+ * @copyright  2012-2014 ClearFoundation
  * @license    http://www.gnu.org/copyleft/lgpl.html GNU Lesser General Public License version 3 or later
  * @link       http://www.clearfoundation.com/docs/developer/apps/software_updates/
  */
@@ -92,7 +92,7 @@ clearos_load_library('base/Yum_Busy_Exception');
  * @package    software-updates
  * @subpackage libraries
  * @author     ClearFoundation <developer@clearfoundation.com>
- * @copyright  2012 ClearFoundation
+ * @copyright  2012-2014 ClearFoundation
  * @license    http://www.gnu.org/copyleft/lgpl.html GNU Lesser General Public License version 3 or later
  * @link       http://www.clearfoundation.com/docs/developer/apps/software_updates/
  */
@@ -165,12 +165,12 @@ class Software_Updates extends Engine
             if ($header_done) {
                 $raw_items = preg_split('/\s+/', $line);
 
-                if (($type === 'first_boot') && !(
-                    preg_match('/^app-/', $raw_items[0]) || 
-                    preg_match('/^clearos-release-/', $raw_items[0]) || 
-                    preg_match('/^clearos-logos-/', $raw_items[0]) || 
-                    preg_match('/^theme-default-/', $raw_items[0])
-                    ))
+                if (($type === 'first_boot') 
+                    && !(preg_match('/^app-/', $raw_items[0]) 
+                    || preg_match('/^clearos-release-/', $raw_items[0]) 
+                    || preg_match('/^clearos-logos-/', $raw_items[0]) 
+                    || preg_match('/^theme-default-/', $raw_items[0]))
+                )
                     continue;
 
                 // Skip invalid lines (obsoleting packages)
@@ -237,7 +237,7 @@ class Software_Updates extends Engine
     /**
      * Runs update.
      *
-     * @param string $type    type of update (all or first_boot)
+     * @param string $type type of update (all or first_boot)
      *
      * @return void
      */
