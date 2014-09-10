@@ -88,6 +88,7 @@ $(document).ready(function() {
 });
 
 function get_list(type) {
+    var table_updates_list = get_table_updates_list();
     table_updates_list.fnClearTable();
 
     $.ajax({
@@ -117,6 +118,7 @@ function get_progress() {
 }
 
 function show_list(json) {
+    var table_updates_list = get_table_updates_list();
     table_updates_list.fnClearTable();
 
     // On the first boot wizard, only "app-" packages are included.
