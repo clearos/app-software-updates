@@ -40,7 +40,7 @@ $this->lang->load('software_updates');
 // Busy Infobox
 ///////////////////////////////////////////////////////////////////////////////
 
-echo "<div id='yum_busy' style='iiidisplay:none;'>";
+echo "<div id='yum_busy'>";
 echo infobox_warning(
     lang('software_updates_progress'), 
     lang('software_updates_software_update_in_progress')

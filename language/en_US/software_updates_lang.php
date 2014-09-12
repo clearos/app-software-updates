@@ -18,6 +18,7 @@ $lang['software_updates_progress'] = 'Progress';
 $lang['software_updates_progress_help'] = 'Your system is currently being updated.  This process can take some time, so please be patient!';
 $lang['software_updates_recent_software_activity'] = 'Recent Software Activity';
 $lang['software_updates_repository'] = 'Repository';
+$lang['software_updates_wizard_latest_necessary'] = 'Please update your system software before continuing.';
 $lang['software_updates_return_to_overview'] = 'Return to Overview';
 $lang['software_updates_software_up_to_date'] = 'Software Up-to-date';
 $lang['software_updates_software_update_in_progress'] = 'Software update is in progress.  Please come back later.';

@@ -40,13 +40,9 @@ $this->lang->load('software_updates');
 // Buttons
 ///////////////////////////////////////////////////////////////////////////////
 
-if ($first_boot) {
-    $buttons = array();
-} else {
-    $buttons = array(
-        anchor_custom('/app/software_updates/updates/run_update/all', lang('software_updates_update_all'))
-    );
-}
+$buttons = array(
+    anchor_custom('/app/software_updates/updates/run_update/all', lang('software_updates_update_all'), 'high', array('id' => 'update_all'))
+);
 
 ///////////////////////////////////////////////////////////////////////////////
 // Headers
@@ -91,3 +87,5 @@ echo infobox_highlight(
 );
 echo "</div>";
 echo "<div id='software_updates_complete' style='display:none;'></div>";
+if ($first_boot)
+    echo modal_info("wizard_next_showstopper", lang('base_error'), lang('software_updates_loading_updates_message'), array('type' => 'warning'));

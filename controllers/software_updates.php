@@ -71,6 +71,9 @@ class Software_Updates extends ClearOS_Controller
         } else if ($this->yum->is_busy()) {
             redirect('software_updates/updates/progress');
             return;
+        } else if ($this->session->userdata('wizard')) {
+            redirect('software_updates/first_boot');
+            return;
         }
 
         $views = array('software_updates/settings', 'software_updates/updates', 'software_updates/activity');

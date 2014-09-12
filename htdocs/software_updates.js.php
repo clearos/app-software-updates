@@ -56,19 +56,18 @@ $(document).ready(function() {
 
     lang_loading = '<?php echo lang("software_updates_loading_updates_message"); ?>';
     lang_no_updates_required = '<?php echo lang("software_updates_system_is_up_to_date"); ?>';
+    lang_wizard_updates = '<?php echo lang("software_updates_wizard_latest_necessary"); ?>';
 
     // Wizard previous/next button handling
     //-------------------------------------
 
-    $('#theme_wizard_nav_next').hide();
-
-    $('#wizard_nav_next').click(function(){
-        if ($('#software_updates_complete').html() == 'done')
-            window.location = '/app/base/wizard/next_step';
-        else if ($(location).attr('href').match('.*\/first_boot') != null)
-            window.location = '/app/software_updates/updates/run_update/first_boot';
-        else
-            window.location = '/app/base/wizard/next_step';
+    $('#wizard_nav_next').on('click', function(e) {
+        if ($('#software_updates_complete').html() == 'done') {
+            // Allow to go to next step
+        } else {
+            e.preventDefault();
+            $('#wizard_next_showstopper').modal({show: true, backdrop: 'static'});
+        }
     });
 
     // Main
@@ -126,14 +125,14 @@ function show_list(json) {
     // of the package name.
 
     if (!json.list || (json.list.length == 0)) {
-        $('#theme_wizard_nav_next').show();
-        $('#theme_wizard_nav_previous').show();
         $('#updates_list_container').hide();
         $('#software_updates_complete_container').show();
         $('#software_updates_complete').html('done');
+        $('#wizard_next_showstopper').remove();
         return;
     }
  
+    $('#wizard_next_showstopper-message').html(lang_wizard_updates);
     for (var index = 0 ; index < json.list.length; index++) {
         if ($(location).attr('href').match('.*\/first_boot') != null) {
             table_updates_list.fnAddData([
@@ -142,8 +141,6 @@ function show_list(json) {
                 json.list[index].arch,
                 json.list[index].repo
             ]);
-            $('#theme_wizard_nav_next').show();
-            $('#theme_wizard_nav_previous').show();
         } else {
             table_updates_list.fnAddData([
                 json.list[index].package,
@@ -169,8 +166,8 @@ function show_progress(json) {
         $('#yum_progress').show();
     }
         
-    $('#progress').animate_progressbar(parseInt(json.progress));
-    $('#overall').animate_progressbar(parseInt(json.overall));
+    clearos_set_progress_bar('progress', parseInt(json.progress), null);
+    clearos_set_progress_bar('overall', parseInt(json.overall), null);
 
     if (json.code === 0) {
         $('#details').html(json.details);
@@ -178,8 +175,8 @@ function show_progress(json) {
         // Do nothing...no data yet
     } else {
         // Uh oh...something bad happened
-        $('#progress').progressbar({value: 0});
-        $('#overall').progressbar({value: 0});
+        clearos_set_progress_bar('progress', 0, null);
+        clearos_set_progress_bar('overall', 0, null);
         $('#details').html(json.errmsg);
 
         if ($('#theme_wizard_nav_previous').length != 0)
