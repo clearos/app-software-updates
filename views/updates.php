@@ -80,12 +80,11 @@ echo summary_table(
 );
 echo "</div>";
 
-echo "<div id='software_updates_complete_container' style='display:none;'>";
-echo infobox_highlight(
+echo infobox_info(
     lang('software_updates_software_up_to_date'), 
-    lang('software_updates_the_latest_software_updates_are_installed')
+    lang('software_updates_the_latest_software_updates_are_installed'),
+    array('id' => 'software_updates_complete_container', 'hidden' => TRUE)
 );
-echo "</div>";
 echo "<div id='software_updates_complete' style='display:none;'></div>";
 if ($first_boot)
     echo modal_info("wizard_next_showstopper", lang('base_error'), lang('software_updates_loading_updates_message'), array('type' => 'warning'));
