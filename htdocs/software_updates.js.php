@@ -58,6 +58,8 @@ $(document).ready(function() {
     lang_no_updates_required = '<?php echo lang("software_updates_system_is_up_to_date"); ?>';
     lang_wizard_updates = '<?php echo lang("software_updates_wizard_latest_necessary"); ?>';
 
+    $('#update_all').attr('disabled', 'disabled');
+
     // Wizard previous/next button handling
     //-------------------------------------
 
@@ -132,6 +134,8 @@ function show_list(json) {
         return;
     }
  
+    $('#update_all').removeAttr('disabled');
+
     $('#wizard_next_showstopper-message').html(lang_wizard_updates);
     for (var index = 0 ; index < json.list.length; index++) {
         if ($(location).attr('href').match('.*\/first_boot') != null) {
