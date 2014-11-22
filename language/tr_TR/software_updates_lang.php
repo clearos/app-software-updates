@@ -34,3 +34,4 @@ $lang['software_updates_updates'] = 'Updates';
 $lang['software_updates_updates_complete'] = 'Software Updates Complete';
 $lang['software_updates_upgrade'] = 'Upgrade';
 $lang['software_updates_wizard_description'] = 'Now that your network is configured, critical updates to the core system are now installed.';
+$lang['software_updates_wizard_latest_necessary'] = 'Please update your system software before continuing.';
