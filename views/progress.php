@@ -36,6 +36,8 @@
 $this->lang->load('base');
 $this->lang->load('software_updates');
 
+$first_boot = TRUE;
+
 ///////////////////////////////////////////////////////////////////////////////
 // Busy Infobox
 ///////////////////////////////////////////////////////////////////////////////
@@ -70,6 +72,8 @@ echo "
 echo "</div>";
 
 echo "<br><br>";
+echo "<div id='software_updates_complete' style='display:none;'></div>";
 echo "<div id='yum_complete' style='display:none;'>";
-echo "<p align='center'>" . anchor_custom('/app/software_updates', lang('software_updates_return_to_overview')) . "</p>";
+if (!$first_boot)
+    echo "<p align='center'>" . anchor_custom('/app/software_updates', lang('software_updates_return_to_overview')) . "</p>";
 echo "</div>";

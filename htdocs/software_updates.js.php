@@ -64,6 +64,7 @@ $(document).ready(function() {
     //-------------------------------------
 
     $('#wizard_nav_next').on('click', function(e) {
+console.log('wizard nav next clicked');
         if ($('#software_updates_complete').html() == 'done') {
             // Allow to go to next step
         } else {
@@ -83,7 +84,8 @@ $(document).ready(function() {
     }
 
     if ($('#overall').length != 0) {
-        $('#theme_wizard_nav_previous').hide();
+        $('#wizard_nav_previous').hide();
+        $('#wizard_nav_next').hide();
         get_progress();
     }
 });
@@ -183,22 +185,24 @@ function show_progress(json) {
         clearos_set_progress_bar('overall', 0, null);
         $('#details').html(json.errmsg);
 
-        if ($('#theme_wizard_nav_previous').length != 0)
-            $('#theme_wizard_nav_previous').show();
-        else
+        if ($('#wizard_nav_previous').length != 0) {
+            $('#wizard_nav_previous').show();
+            $('#wizard_nav_next').show();
+        } else {
             $('#yum_complete').show();
+        }
 
         return;
     }
 
     if (json.overall == 100) {
-        if ($('#theme_wizard_nav_previous').length != 0)
-            $('#theme_wizard_nav_previous').show();
+        if ($('#wizard_nav_previous').length != 0) {
+            $('#wizard_nav_previous').show();
+            $('#wizard_nav_next').show();
+        }
 
-        if ($('#theme_wizard_nav_next').length != 0)
-            $('#theme_wizard_nav_next').show();
-        else
-            $('#yum_complete').show();
+        $('#yum_complete').show();
+        $('#software_updates_complete').html('done');
         window.setTimeout(get_progress, 5000);
     } else {
         window.setTimeout(get_progress, 2000);

@@ -40,8 +40,10 @@ $this->lang->load('software_updates');
 // Buttons
 ///////////////////////////////////////////////////////////////////////////////
 
+$update_url = ($first_boot) ? 'first_boot' : 'all' ;
+
 $buttons = array(
-    anchor_custom('/app/software_updates/updates/run_update/all', lang('software_updates_update_all'), 'high', array('id' => 'update_all'))
+    anchor_custom("/app/software_updates/updates/run_update/$update_url", lang('software_updates_update_all'), 'high', array('id' => 'update_all'))
 );
 
 ///////////////////////////////////////////////////////////////////////////////

@@ -70,6 +70,8 @@ class Updates extends ClearOS_Controller
         // Load views
         //-----------
 
+        $data['first_boot'] = FALSE;
+
         $this->page->view_form('software_updates/updates', $data, lang('software_updates_available_updates'));
     }
 
