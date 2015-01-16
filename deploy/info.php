@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'software_updates';
-$app['version'] = '2.0.11';
+$app['version'] = '2.0.14';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -18,8 +18,8 @@ $app['description'] = lang('software_updates_app_description');
 /////////////////////////////////////////////////////////////////////////////
 
 $app['name'] = lang('software_updates_app_name');
-$app['category'] = lang('base_category_system');
-$app['subcategory'] = lang('base_subcategory_operating_system');
+$app['category'] = lang('base_category_cloud');
+$app['subcategory'] = lang('base_subcategory_updates');
 
 /////////////////////////////////////////////////////////////////////////////
 // Controllers
