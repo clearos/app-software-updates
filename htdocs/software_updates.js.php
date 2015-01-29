@@ -64,12 +64,11 @@ $(document).ready(function() {
     //-------------------------------------
 
     $('#wizard_nav_next').on('click', function(e) {
-console.log('wizard nav next clicked');
         if ($('#software_updates_complete').html() == 'done') {
             // Allow to go to next step
         } else {
             e.preventDefault();
-            $('#wizard_next_showstopper').modal({show: true, backdrop: 'static'});
+            clearos_modal_infobox_open('wizard_next_showstopper');
         }
     });
 
@@ -133,6 +132,8 @@ function show_list(json) {
         $('#software_updates_complete_container').show();
         $('#software_updates_complete').html('done');
         $('#wizard_next_showstopper').remove();
+        // hack to remove modal backdrop
+        $('.modal-backdrop').remove();
         return;
     }
  
