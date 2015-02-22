@@ -180,7 +180,7 @@ class Software_Updates extends Engine
                 if (count($raw_items) !== 3)
                     continue;
 
-                $item['package'] = preg_replace('/\..*/', '', $raw_items[0]);
+                $item['package'] = preg_replace('/\.[\w]+$/', '', $raw_items[0]);
                 $item['arch'] = preg_replace('/.*\./', '', $raw_items[0]);
                 $item['version'] = preg_replace('/.*:/', '', $raw_items[1]);
                 $item['full_version'] = $raw_items[1];
