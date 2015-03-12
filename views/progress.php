@@ -54,26 +54,29 @@ echo "</div>";
 ///////////////////////////////////////////////////////////////////////////////
 
 echo "<div id='yum_progress' style='display:none;'>";
+echo "<div id='summary-info'>";
 
+echo box_open(lang('software_updates_software_updates'));
+echo box_content_open();
 echo "
-<br>
-<div id='summary-info'>
     <h3>" . lang('software_updates_overall_progress') . "</h3>" . 
     progress_bar('overall', array('input' => 'overall')) . "
-
     <h3>" . lang('software_updates_current_progress') . "</h3>" .
     progress_bar('progress', array('input' => 'progress')) . "
-
     <h3>" . lang('software_updates_details') . "</h3>
     <div id='details'></div>
-</div>
 ";
+echo box_content_close();
+echo box_close();
 
 echo "</div>";
+echo "</div>";
 
-echo "<br><br>";
 echo "<div id='software_updates_complete' style='display:none;'></div>";
+
 echo "<div id='yum_complete' style='display:none;'>";
-if (!$first_boot)
+if (!$first_boot) {
+    echo "<br><br>";
     echo "<p align='center'>" . anchor_custom('/app/software_updates', lang('software_updates_return_to_overview')) . "</p>";
+}
 echo "</div>";
