@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'software_updates';
-$app['version'] = '2.0.20';
+$app['version'] = '2.0.21';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -72,4 +72,23 @@ $app['core_file_manifest'] = array(
         'target' => '/usr/sbin/software-updates',
         'mode' => '0755',
     ),
+);
+
+/////////////////////////////////////////////////////////////////////////////
+// Dashboard Widgets
+/////////////////////////////////////////////////////////////////////////////
+
+$app['dashboard_widgets'] = array(
+    $app['category'] => array(
+        'software_updates/software_updates_dashboard' => array(
+            'title' => lang('software_updates_available_updates'),
+            'restricted' => FALSE,
+        )
+    ),
+    $app['category'] => array(
+        'software_updates/software_updates_dashboard/activity' => array(
+            'title' => lang('software_updates_recent_software_activity'),
+            'restricted' => FALSE,
+        )
+    )
 );

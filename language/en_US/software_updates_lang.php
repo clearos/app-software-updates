@@ -1,5 +1,6 @@
 <?php
 
+$lang['software_updates_additional_updates'] = 'additional updates';
 $lang['software_updates_app_description'] = 'The Software Updates app provides updates for the underlying operating system components.';
 $lang['software_updates_app_name'] = 'Software Updates';
 $lang['software_updates_automatic_updates'] = 'Automatic Updates';

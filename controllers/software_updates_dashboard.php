@@ -1,14 +1,13 @@
 <?php
 
 /**
- * Software updates activity controller.
+ * Software Updates Dashboard controller.
  *
  * @category   apps
- * @package    software-updates
+ * @package    software_updates
  * @subpackage controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
- * @copyright  2012-2015 ClearFoundation
- * @copyright  2012-2015 Tim Burgess
+ * @copyright  2015 ClearFoundation
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
  * @link       http://www.clearfoundation.com/docs/developer/apps/software_updates/
  */
@@ -30,32 +29,31 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-///////////////////////////////////////////////////////////////////////////////
-// C L A S S
-///////////////////////////////////////////////////////////////////////////////
-
-/**
- * Software updates activity controller.
- *
- * @category   apps
- * @package    software-updates
- * @subpackage controllers
- * @author     ClearFoundation <developer@clearfoundation.com>
- * @copyright  2012-2015 ClearFoundation
- * @copyright  2012-2015 Tim Burgess
- * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
- * @link       http://www.clearfoundation.com/docs/developer/apps/software_updates/
- */
-
-class Activity extends ClearOS_Controller
+class Software_Updates_Dashboard extends ClearOS_Controller
 {
     /**
-     * Stats default controller
+     * Dashboard default controller.
      *
      * @return view
      */
 
     function index()
+    {
+        // Load libraries
+        //---------------
+
+		$this->lang->load('software_updates');
+
+        $this->page->view_form('software_updates/dashboard/available', NULL, lang('software_updates_available_updates'));
+	}
+
+    /**
+     * Recent activity controller
+     *
+     * @return view
+     */
+
+    function recent_activity()
     {
         // Load dependencies
         //------------------
@@ -76,6 +74,6 @@ class Activity extends ClearOS_Controller
         // Load views
         //-----------
 
-        $this->page->view_form('software_updates/activity', $data, lang('software_updates_recent_software_activity'));
+        $this->page->view_form('software_updates/dashboard/activity', $data, lang('software_updates_recent_software_activity'));
     }
 }

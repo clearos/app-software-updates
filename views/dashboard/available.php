@@ -7,7 +7,7 @@
  * @package    software-updates
  * @subpackage views
  * @author     ClearFoundation <developer@clearfoundation.com>
- * @copyright  2011 ClearFoundation
+ * @copyright  2015 ClearFoundation
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
  * @link       http://www.clearcenter.com/support/documentation/clearos/software_updates/
  */
@@ -37,24 +37,20 @@ $this->lang->load('base');
 $this->lang->load('software_updates');
 
 ///////////////////////////////////////////////////////////////////////////////
-// Buttons
-///////////////////////////////////////////////////////////////////////////////
-
-$update_url = ($first_boot) ? 'first_boot' : 'all' ;
-
-$buttons = array(
-    anchor_custom("/app/software_updates/updates/run_update/$update_url", lang('software_updates_update_all'), 'high', array('id' => 'update_all'))
-);
-
-///////////////////////////////////////////////////////////////////////////////
 // Headers
 ///////////////////////////////////////////////////////////////////////////////
 
 $headers = array(
     lang('software_updates_package'),
-    lang('base_version'),
-    lang('software_updates_type'),
-    lang('software_updates_repository'),
+    lang('base_version')
+);
+
+///////////////////////////////////////////////////////////////////////////////
+// Anchor
+///////////////////////////////////////////////////////////////////////////////
+
+$buttons = array(
+    anchor_custom("/app/software_updates", lang('base_view'), 'high')
 );
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -67,16 +63,13 @@ $headers = array(
 // List table
 ///////////////////////////////////////////////////////////////////////////////
 
-echo "<div id='updates_list_container'>";
-
 $options = array(
     'id' => 'updates_list',
     'no_action' => TRUE,
     'empty_table_message' => loading('normal', lang('software_updates_loading_updates_message')),
     'paginate' => TRUE,
     'paginate_large' => TRUE,
-    'default_rows' => 15,
-    'responsive' => array(3 => 'none')
+    'default_rows' => 5,
 );
 
 echo summary_table(
@@ -86,13 +79,32 @@ echo summary_table(
     NULL,
     $options
 );
-echo "</div>";
 
-echo infobox_info(
-    lang('software_updates_software_up_to_date'), 
-    lang('software_updates_the_latest_software_updates_are_installed'),
-    array('id' => 'software_updates_complete_container', 'hidden' => TRUE)
-);
-echo "<div id='software_updates_complete' style='display:none;'></div>";
-if ($first_boot)
-    echo modal_info("wizard_next_showstopper", lang('base_error'), lang('software_updates_loading_updates_message'), array('type' => 'warning'));
+// Script below used to fetch list
+echo "<script type='text/javascript'>
+        $(document).ready(function() {
+
+            var table_updates_list = get_table_updates_list();
+            table_updates_list.fnClearTable();
+
+            $.ajax({
+                type: 'GET',
+                dataType: 'json',
+                url: '/app/software_updates/updates/get_available_updates/all',
+                data: '',
+                success: function(json) {
+                    for (var index = 0 ; index < json.list.length; index++) {
+                        table_updates_list.fnAddData([
+                            json.list[index].package,
+                            json.list[index].version,
+                        ]);
+                    }
+
+                    table_updates_list.fnAdjustColumnSizing();
+                },
+                error: function(xhr, text, err) {
+                }
+            });
+        });
+      </script>
+";

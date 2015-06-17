@@ -1,15 +1,16 @@
 <?php
 
 /**
- * Software updates overview.
+ * Recent activity dashboard view.
  *
  * @category   apps
  * @package    software-updates
  * @subpackage views
  * @author     ClearFoundation <developer@clearfoundation.com>
- * @copyright  2011 ClearFoundation
+ * @copyright  2012-2015 ClearFoundation
+ * @copyright  2012-2015 Tim Burgess
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
- * @link       http://www.clearcenter.com/support/documentation/clearos/software_updates/
+ * @link       http://www.clearfoundation.com/docs/developer/apps/software_updates/
  */
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -26,7 +27,7 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.  
-//  
+//
 ///////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -37,62 +38,44 @@ $this->lang->load('base');
 $this->lang->load('software_updates');
 
 ///////////////////////////////////////////////////////////////////////////////
-// Buttons
+// Anchor
 ///////////////////////////////////////////////////////////////////////////////
-
-$update_url = ($first_boot) ? 'first_boot' : 'all' ;
 
 $buttons = array(
-    anchor_custom("/app/software_updates/updates/run_update/$update_url", lang('software_updates_update_all'), 'high', array('id' => 'update_all'))
+    anchor_custom("/app/software_updates", lang('base_view'), 'high')
 );
-
-///////////////////////////////////////////////////////////////////////////////
-// Headers
-///////////////////////////////////////////////////////////////////////////////
-
 $headers = array(
     lang('software_updates_package'),
-    lang('base_version'),
-    lang('software_updates_type'),
-    lang('software_updates_repository'),
+    lang('base_action'),
+    lang('base_date') . '/' . lang('base_time')
 );
 
-///////////////////////////////////////////////////////////////////////////////
-// Items
-///////////////////////////////////////////////////////////////////////////////
+$rows = array();
 
-// Done in Ajax
+foreach ($log as $logentry)
+{
+    $row['details'] = array(
+        substr($logentry['package'], 0, strrpos($logentry['package'], '.')),
+        $logentry['action'],
+        $logentry['date'] . ', ' . $logentry['time']
+    );
+    $rows[] = $row;
+}
 
 ///////////////////////////////////////////////////////////////////////////////
-// List table
+// Table
 ///////////////////////////////////////////////////////////////////////////////
-
-echo "<div id='updates_list_container'>";
 
 $options = array(
-    'id' => 'updates_list',
+    'id' => 'activity_list',
     'no_action' => TRUE,
-    'empty_table_message' => loading('normal', lang('software_updates_loading_updates_message')),
-    'paginate' => TRUE,
-    'paginate_large' => TRUE,
-    'default_rows' => 15,
-    'responsive' => array(3 => 'none')
+    'responsive' => array(2 => 'none')
 );
 
 echo summary_table(
-    lang('software_updates_available_updates'),
-    $buttons,
-    $headers,
-    NULL,
-    $options
+     lang('software_updates_recent_software_activity'),
+     $buttons,
+     $headers,
+     $rows,
+     $options
 );
-echo "</div>";
-
-echo infobox_info(
-    lang('software_updates_software_up_to_date'), 
-    lang('software_updates_the_latest_software_updates_are_installed'),
-    array('id' => 'software_updates_complete_container', 'hidden' => TRUE)
-);
-echo "<div id='software_updates_complete' style='display:none;'></div>";
-if ($first_boot)
-    echo modal_info("wizard_next_showstopper", lang('base_error'), lang('software_updates_loading_updates_message'), array('type' => 'warning'));

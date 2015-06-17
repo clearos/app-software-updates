@@ -38,17 +38,20 @@ $this->lang->load('base');
 $this->lang->load('software_updates');
 
 $headers = array(
-    lang('base_date'),
-    lang('base_time'),
+    lang('software_updates_package'),
     lang('base_action'),
-    lang('software_updates_package')
+    lang('base_date') . '/' . lang('base_time')
 );
 
 $rows = array();
 
 foreach ($log as $logentry)
 {
-    $row['details'] = array($logentry['date'], $logentry['time'], $logentry['action'], $logentry['package']);
+    $row['details'] = array(
+        substr($logentry['package'], 0, strrpos($logentry['package'], '.')),
+        $logentry['action'],
+        $logentry['date'] . ', ' . $logentry['time']
+    );
     $rows[] = $row;
 }
 
@@ -58,7 +61,12 @@ $anchors = array();
 // Table
 ///////////////////////////////////////////////////////////////////////////////
 
-$options['no_action'] = TRUE;
+$options = array(
+    'id' => 'activity_list',
+    'sort-default-col' => 2,
+    'sort-default-dir' => 'desc',
+    'no_action' => TRUE
+);
 
 echo summary_table(
      lang('software_updates_recent_software_activity'),
