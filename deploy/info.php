@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'software_updates';
-$app['version'] = '2.0.21';
+$app['version'] = '2.0.22';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -86,7 +86,7 @@ $app['dashboard_widgets'] = array(
         )
     ),
     $app['category'] => array(
-        'software_updates/software_updates_dashboard/activity' => array(
+        'software_updates/software_updates_dashboard/recent_activity' => array(
             'title' => lang('software_updates_recent_software_activity'),
             'restricted' => FALSE,
         )

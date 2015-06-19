@@ -54,6 +54,7 @@ $rows = array();
 
 foreach ($log as $logentry)
 {
+    $row = array();
     $row['details'] = array(
         substr($logentry['package'], 0, strrpos($logentry['package'], '.')),
         $logentry['action'],
