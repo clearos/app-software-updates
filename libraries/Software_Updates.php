@@ -169,7 +169,7 @@ class Software_Updates extends Engine
                     && !(preg_match('/^app-/', $raw_items[0]) 
                     || preg_match('/^clearos-release-/', $raw_items[0]) 
                     || preg_match('/^clearos-logos-/', $raw_items[0]) 
-                    || preg_match('/^theme-default-/', $raw_items[0]))
+                    || preg_match('/^theme-/', $raw_items[0]))
                 )
                     continue;
 
