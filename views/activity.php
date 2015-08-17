@@ -47,8 +47,14 @@ $rows = array();
 
 foreach ($log as $logentry) {
     $row = array();
+    $package_name = substr($logentry['package'], 0, strrpos($logentry['package'], '.'));
+
+    // TODO: see tracker 4371
+    if (strlen($package_name) > 40)
+        $package_name = substr($package_name, 0, 40) . ' ...';
+
     $row['details'] = array(
-        substr($logentry['package'], 0, strrpos($logentry['package'], '.')),
+        $package_name,
         $logentry['action'],
         $logentry['date'] . ', ' . $logentry['time']
     );
