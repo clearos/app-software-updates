@@ -50,12 +50,19 @@ $buttons = array(
 // Headers
 ///////////////////////////////////////////////////////////////////////////////
 
-$headers = array(
-    lang('software_updates_package'),
-    lang('base_version'),
-    lang('software_updates_type'),
-    lang('software_updates_repository'),
-);
+if ($first_boot) {
+    $headers = array(
+        lang('software_updates_package'),
+        lang('base_version')
+    );
+} else {
+    $headers = array(
+        lang('software_updates_package'),
+        lang('base_version'),
+        lang('software_updates_type'),
+        lang('software_updates_repository')
+    );
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 // Items
@@ -73,11 +80,16 @@ $options = array(
     'id' => 'updates_list',
     'no_action' => TRUE,
     'empty_table_message' => loading('normal', lang('software_updates_loading_updates_message')),
-    'paginate' => TRUE,
-    'paginate_large' => TRUE,
-    'default_rows' => 15,
-    'responsive' => array(3 => 'none')
 );
+
+if ($first_boot) {
+    $options['paginate'] = FALSE;
+} else {
+    $options['paginate'] = TRUE;
+    $options['paginate_large'] = TRUE;
+    $options['default_rows'] = 20;
+    $options['responsive'] = array(3 => 'none');
+}
 
 echo summary_table(
     lang('software_updates_available_updates'),

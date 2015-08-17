@@ -144,9 +144,7 @@ function show_list(json) {
         if ($(location).attr('href').match('.*\/first_boot') != null) {
             table_updates_list.fnAddData([
                 json.list[index].summary,
-                json.list[index].version,
-                json.list[index].arch,
-                json.list[index].repo
+                json.list[index].version
             ]);
         } else {
             table_updates_list.fnAddData([
