@@ -45,8 +45,7 @@ $headers = array(
 
 $rows = array();
 
-foreach ($log as $logentry)
-{
+foreach ($log as $logentry) {
     $row = array();
     $row['details'] = array(
         substr($logentry['package'], 0, strrpos($logentry['package'], '.')),
@@ -70,9 +69,9 @@ $options = array(
 );
 
 echo summary_table(
-     lang('software_updates_recent_software_activity'),
-     $anchors,
-     $headers,
-     $rows,
-     $options
+    lang('software_updates_recent_software_activity'),
+    $anchors,
+    $headers,
+    $rows,
+    $options
 );
