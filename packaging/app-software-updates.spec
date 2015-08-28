@@ -1,7 +1,7 @@
 
 Name: app-software-updates
 Epoch: 1
-Version: 2.1.14
+Version: 2.1.18
 Release: 1%{dist}
 Summary: Software Updates
 License: GPLv3
@@ -39,6 +39,7 @@ cp -r * %{buildroot}/usr/clearos/apps/software_updates/
 
 install -d -m 0755 %{buildroot}/var/clearos/events/software_updates
 install -d -m 0755 %{buildroot}/var/clearos/software_updates
+install -D -m 0644 packaging/app-software-updates-cache.cron %{buildroot}/etc/cron.d/app-software-updates-cache
 install -D -m 0644 packaging/app-software-updates.cron %{buildroot}/etc/cron.d/app-software-updates
 install -D -m 0644 packaging/filewatch-software-updates-event.conf %{buildroot}/etc/clearsync.d/filewatch-software-updates-event.conf
 install -D -m 0755 packaging/software-updates %{buildroot}/usr/sbin/software-updates
@@ -86,6 +87,7 @@ exit 0
 /usr/clearos/apps/software_updates/deploy
 /usr/clearos/apps/software_updates/language
 /usr/clearos/apps/software_updates/libraries
+/etc/cron.d/app-software-updates-cache
 %config(noreplace) /etc/cron.d/app-software-updates
 /etc/clearsync.d/filewatch-software-updates-event.conf
 /usr/sbin/software-updates

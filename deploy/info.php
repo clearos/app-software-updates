@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'software_updates';
-$app['version'] = '2.1.14';
+$app['version'] = '2.1.18';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -67,6 +67,9 @@ $app['core_file_manifest'] = array(
         'target' => '/etc/cron.d/app-software-updates',
         'config' => TRUE,
         'config_params' => 'noreplace',
+    ),
+    'app-software-updates-cache.cron' => array(
+        'target' => '/etc/cron.d/app-software-updates-cache',
     ),
     'software-updates' => array(
         'target' => '/usr/sbin/software-updates',
