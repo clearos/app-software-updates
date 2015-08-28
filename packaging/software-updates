@@ -91,4 +91,4 @@ $updates->set_automatic_updates_time();
 
 clearos_log('software-updates', 'starting update');
 
-$updates->run_update('all');
+$updates->run_update('all', TRUE);

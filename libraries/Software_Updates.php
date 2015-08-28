@@ -242,9 +242,20 @@ class Software_Updates extends Engine
      * @return void
      */
 
-    public function run_update($type = 'all')
+    public function run_update($type = 'all', $clean = FALSE)
     {
         clearos_profile(__METHOD__, __LINE__);
+
+        // Clean if requsted
+        //------------------
+
+        $yum = new Yum();
+
+        if ($clean)
+            $yum->clean();
+
+        // Grab list of updates
+        //---------------------
 
         $list = array();
 
@@ -258,11 +269,13 @@ class Software_Updates extends Engine
             return;
         }
 
+        // Run update
+        //-----------
+
         foreach ($list as $package)
             clearos_log('software-updates', 'requesting package: ' . $package);
 
         try {
-            $yum = new Yum();
             if ($type === 'all')
                 $yum->run_upgrade($list);
             else
