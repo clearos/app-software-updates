@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'software_updates';
-$app['version'] = '2.1.14';
+$app['version'] = '2.1.15';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -49,6 +49,7 @@ $app['core_requires'] = array(
     'app-events-core',
     'app-network-core',
     'app-tasks-core',
+    'app-dashboard-core => 1:2.1.22'
 );
 
 $app['core_directory_manifest'] = array(

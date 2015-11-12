@@ -61,6 +61,9 @@ foreach ($log as $logentry)
         $logentry['date'] . ', ' . $logentry['time']
     );
     $rows[] = $row;
+    // Pagination looks bad on very small width tables...let's cut out at 20 and not paginate at all
+    if ($layout['total_columns'] >= 3 && count($rows) > 20)
+        break;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -69,9 +72,22 @@ foreach ($log as $logentry)
 
 $options = array(
     'id' => 'activity_list',
-    'no_action' => TRUE,
-    'responsive' => array(2 => 'none')
+    'default_rows' => 10,
+    'no_action' => TRUE
 );
+if ($layout['total_columns'] == 1) {
+    $options['sort-default-col'] = 2;
+    $options['sort-default-dir'] = 'desc';
+} else if ($layout['total_columns'] == 2) {
+    $options['responsive'] = array(2 => 'none');
+    $options['sort'] = FALSE;
+    $options['default_rows'] = 20;
+} else if ($layout['total_columns'] >= 3) {
+    $options['responsive'] = array(1 => 'none', 2 => 'none');
+    $options['paginate'] = FALSE;
+    $options['sort'] = FALSE;
+    $options['default_rows'] = 20;
+}
 
 echo summary_table(
      lang('software_updates_recent_software_activity'),

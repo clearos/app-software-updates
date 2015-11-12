@@ -50,10 +50,12 @@ class Software_Updates_Dashboard extends ClearOS_Controller
     /**
      * Recent activity controller
      *
+     * @param string layout
+     *
      * @return view
      */
 
-    function recent_activity()
+    function recent_activity($layout)
     {
         // Load dependencies
         //------------------
@@ -64,8 +66,12 @@ class Software_Updates_Dashboard extends ClearOS_Controller
         // Load view data
         //---------------
 
+        $data = array();
+        // Layout comes from Dashboard widget in format n-n-n
+        // Last number is number of columns which gives us an idea of how big our table is
+        list($data['layout']['row'], $data['layout']['col'], $data['layout']['total_columns']) = explode('-', $layout);
         try {
-            $data['log'] = $this->stats->get_yum_log(10000);
+            $data['log'] = array_reverse($this->stats->get_yum_log(10000));
         } catch (Exception $e) {
             $this->page->view_exception($e);
             return;
