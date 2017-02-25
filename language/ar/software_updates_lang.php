@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'تحديثات إضافية';
+$lang['software_updates_app_description'] = 'يوفر تطبيق تحديثات البرامج تحديثات لمكونات نظام التشغيل الأساسي.';
+$lang['software_updates_app_name'] = 'تحديثات البرنامج';
+$lang['software_updates_automatic_updates'] = 'التحديثات التلقائية';
+$lang['software_updates_available_updates'] = 'تتوفر تحديثات';
+$lang['software_updates_busy_message'] = 'المستخدم أو خدمة أخرى تستخدم حاليا نظام تحديثات البرامج. عندما اكتمال العملية، وسوف تصبح هذه التطبيقات متوفرة مرة أخرى.';
+$lang['software_updates_current_progress'] = 'التقدم الحالي';
+$lang['software_updates_details'] = 'تفاصيل';
+$lang['software_updates_install_progress'] = 'تثبيت التقدم';
+$lang['software_updates_loading_updates_message'] = 'تحميل قائمة تحديثات البرامج، يرجى التحلي بالصبر.';
+$lang['software_updates_no_data_available'] = 'لا تتوافر بيانات.';
+$lang['software_updates_overall_progress'] = 'التقدم العام';
+$lang['software_updates_package'] = 'صفقة';
+$lang['software_updates_please_be_patient_detail'] = 'يمكن أن يستغرق دقيقة أو دقيقتين لتحديث كل مستودع وتحديث تفاصيل. حيث يتم تخزين هذه المعلومات لاستخدامها في المستقبل.';
+$lang['software_updates_please_be_patient'] = 'يرجى أن يكون المريض!';
+$lang['software_updates_progress_help'] = 'ويجري حاليا تحديث النظام الخاص بك. هذه العملية يمكن أن تستغرق بعض الوقت، لذا يرجى التحلي بالصبر!';
+$lang['software_updates_progress'] = 'تقدم';
+$lang['software_updates_recent_software_activity'] = 'الزوار آخر البرامج';
+$lang['software_updates_repository'] = 'مستودع';
+$lang['software_updates_return_to_overview'] = 'العودة إلى النظرة العامة';
+$lang['software_updates_software_update_in_progress'] = 'تحديث البرامج قيد التقدم. يرجى العودة في وقت لاحق.';
+$lang['software_updates_software_updates_busy'] = 'تحديثات البرامج مشغول';
+$lang['software_updates_software_updates'] = 'تحديثات البرنامج';
+$lang['software_updates_software_updates_system_busy'] = 'نظام تحديثات البرامج مشغول.';
+$lang['software_updates_software_up_to_date'] = 'البرنامج يصل إلى تاريخ';
+$lang['software_updates_system_is_up_to_date'] = 'النظام هو ما يصل إلى التاريخ.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'يتم تثبيت آخر تحديثات البرامج.';
+$lang['software_updates_type'] = 'اكتب';
+$lang['software_updates_update_all'] = 'تحديث الجميع';
+$lang['software_updates_updates_complete'] = 'تحديثات البرامج كاملة';
+$lang['software_updates_updates'] = 'التحديثات';
+$lang['software_updates_upgrade'] = 'تطوير';
+$lang['software_updates_wizard_description'] = 'والآن بعد أن تم تكوين شبكة الاتصال، يتم تثبيت التحديثات الهامة للنظام الأساسي الآن.';
+$lang['software_updates_wizard_latest_necessary'] = 'يرجى تحديث برنامج النظام قبل المتابعة.';
