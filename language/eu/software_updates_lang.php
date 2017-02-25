@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'eguneratze gehigarriak';
+$lang['software_updates_app_description'] = 'Software eguneraketak Aplikazioa azpiko sistema eragilearen osagai eguneraketak eskaintzen.';
+$lang['software_updates_app_name'] = 'Software eguneraketak';
+$lang['software_updates_automatic_updates'] = 'Automatic Updates';
+$lang['software_updates_available_updates'] = 'Eskuragarri eguneraketak';
+$lang['software_updates_busy_message'] = 'Erabiltzaile edo zerbitzua Another Une software eguneraketak sistema erabiltzen ari da. Noiz prozesua amaitutakoan, aplikazio hau eskuragarri izango da berriro.';
+$lang['software_updates_current_progress'] = 'Oraingo Eraikitzen';
+$lang['software_updates_details'] = 'Xehetasunak';
+$lang['software_updates_install_progress'] = 'Instalatu Eraikitzen';
+$lang['software_updates_loading_updates_message'] = 'software eguneratzeak zerrenda kargatzen, mesedez izan pazientzia.';
+$lang['software_updates_no_data_available'] = 'Ez dago daturik.';
+$lang['software_updates_overall_progress'] = 'Eraikitzen orokorra';
+$lang['software_updates_package'] = 'Package';
+$lang['software_updates_please_be_patient_detail'] = 'Minutu bat edo bi hartu ahal izango da repository eta eguneratzea xehetasun guztiak eguneratzeko. Informazio hori etorkizunean erabiltzeko cached.';
+$lang['software_updates_please_be_patient'] = 'Pazientzia izan ezazu!';
+$lang['software_updates_progress_help'] = 'Une honetan sistema eguneratzen ari da. Prozesu hau luzea izan daiteke, beraz, pazientzia izan!';
+$lang['software_updates_progress'] = 'Eraikitzen';
+$lang['software_updates_recent_software_activity'] = 'Berriki Software Activity';
+$lang['software_updates_repository'] = 'Biltegi';
+$lang['software_updates_return_to_overview'] = 'Return to Orokorra';
+$lang['software_updates_software_update_in_progress'] = 'Software eguneratze prozesuan zehar. Itzuli berriro.';
+$lang['software_updates_software_updates_busy'] = 'Software eguneraketak okupatuta';
+$lang['software_updates_software_updates'] = 'Software eguneraketak';
+$lang['software_updates_software_updates_system_busy'] = 'Software eguneraketak sistema lanpetuta dago.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to-data';
+$lang['software_updates_system_is_up_to_date'] = 'Sistema up-to-data.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Azken software eguneratzeak instalatu dira.';
+$lang['software_updates_type'] = 'Mota';
+$lang['software_updates_update_all'] = 'Update guztiak';
+$lang['software_updates_updates_complete'] = 'Software eguneraketak osoa';
+$lang['software_updates_updates'] = 'Updates';
+$lang['software_updates_upgrade'] = 'Upgrade';
+$lang['software_updates_wizard_description'] = 'Orain zure sarea konfiguratuta dagoela, core sistema eguneratzeak kritikoa instalatu dira.';
+$lang['software_updates_wizard_latest_necessary'] = 'Mesedez, eguneratu zure sistema software jarraitu aurretik.';
