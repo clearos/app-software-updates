@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'додаткові поновлення';
+$lang['software_updates_app_description'] = 'Додаток Оновлення програмного забезпечення надає оновлення для основних компонентів операційної системи.';
+$lang['software_updates_app_name'] = 'Оновлення програмного забезпечення';
+$lang['software_updates_automatic_updates'] = 'автоматичне оновлення';
+$lang['software_updates_available_updates'] = 'доступні оновлення';
+$lang['software_updates_busy_message'] = 'Інший користувач або послуга в даний час використовує систему оновлень програмного забезпечення. Коли процес буде завершений, це додаток стане доступним знову.';
+$lang['software_updates_current_progress'] = 'Поточний прогрес';
+$lang['software_updates_details'] = 'деталі';
+$lang['software_updates_install_progress'] = 'встановити Прогрес';
+$lang['software_updates_loading_updates_message'] = 'Завантаження списку оновлень програмного забезпечення, будь ласка, будьте терплячі.';
+$lang['software_updates_no_data_available'] = 'Немає даних.';
+$lang['software_updates_overall_progress'] = 'Загальний прогрес';
+$lang['software_updates_package'] = 'пакет';
+$lang['software_updates_please_be_patient_detail'] = 'Це може зайняти хвилину або дві, щоб оновити всі сховище і оновити дані. Ця інформація кешируєтся для використання в майбутньому.';
+$lang['software_updates_please_be_patient'] = 'Будь ласка, будьте терплячі!';
+$lang['software_updates_progress_help'] = 'Ваша система в даний час оновлюється. Цей процес може зайняти деякий час, тому, будь ласка, будьте терплячі!';
+$lang['software_updates_progress'] = 'прогрес';
+$lang['software_updates_recent_software_activity'] = 'Останні версії програмного забезпечення активність';
+$lang['software_updates_repository'] = 'вмістилище';
+$lang['software_updates_return_to_overview'] = 'Повернутися до огляду';
+$lang['software_updates_software_update_in_progress'] = 'Оновлення програмного забезпечення в процесі. Будь ласка, зайдіть пізніше.';
+$lang['software_updates_software_updates_busy'] = 'Оновлення програмного забезпечення зайнятості';
+$lang['software_updates_software_updates'] = 'Оновлення програмного забезпечення';
+$lang['software_updates_software_updates_system_busy'] = 'Система оновлень програмного забезпечення зайнята.';
+$lang['software_updates_software_up_to_date'] = 'Програмне забезпечення до сучасних';
+$lang['software_updates_system_is_up_to_date'] = 'Система до сучасних.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Останні оновлення програмного забезпечення встановлюються.';
+$lang['software_updates_type'] = 'тип';
+$lang['software_updates_update_all'] = 'Оновити все';
+$lang['software_updates_updates_complete'] = 'Оновлення програмного забезпечення Повна';
+$lang['software_updates_updates'] = 'оновлення';
+$lang['software_updates_upgrade'] = 'модернізація';
+$lang['software_updates_wizard_description'] = 'Тепер, коли мережа налаштована, критичні оновлення ядра системи тепер встановлені.';
+$lang['software_updates_wizard_latest_necessary'] = 'Необхідно оновити системне програмне забезпечення, перш ніж продовжити.';
