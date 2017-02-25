@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'lisäpäivityksiä';
+$lang['software_updates_app_description'] = 'Software Updates sovellus tarjoaa päivityksiä taustalla käyttöjärjestelmä komponentteja.';
+$lang['software_updates_app_name'] = 'Ohjelmistopäivitykset';
+$lang['software_updates_automatic_updates'] = 'Automaattiset päivitykset';
+$lang['software_updates_available_updates'] = 'Saatavilla päivitykset';
+$lang['software_updates_busy_message'] = 'Toinen käyttäjä tai palvelu käyttää parhaillaan ohjelmistopäivitykset järjestelmään. Kun prosessi on valmis, tämä sovellus tulee jälleen käytettävissä.';
+$lang['software_updates_current_progress'] = 'nykyinen Progress';
+$lang['software_updates_details'] = 'Yksityiskohdat';
+$lang['software_updates_install_progress'] = 'Asenna Progress';
+$lang['software_updates_loading_updates_message'] = 'Ladataan ohjelmistopäivitykset lista, olkaa kärsivällisiä.';
+$lang['software_updates_no_data_available'] = 'Tietoja ei ole käytettävissä.';
+$lang['software_updates_overall_progress'] = 'Kokonaisedistyminen';
+$lang['software_updates_package'] = 'Paketti';
+$lang['software_updates_please_be_patient_detail'] = 'Se voi kestää minuutin tai kaksi päivittää kaikki arkistoon ja päivittää tiedot. Tämä tieto on välimuistissa tulevaa käyttöä varten.';
+$lang['software_updates_please_be_patient'] = 'Olkaa kärsivällisiä!';
+$lang['software_updates_progress_help'] = 'Järjestelmä päivitetään parhaillaan. Tämä prosessi voi kestää jonkin aikaa, joten ole kärsivällinen!';
+$lang['software_updates_progress'] = 'edistyminen';
+$lang['software_updates_recent_software_activity'] = 'Viimeaikaiset Software Activity';
+$lang['software_updates_repository'] = 'säilytyspaikka';
+$lang['software_updates_return_to_overview'] = 'Paluu Yleistä';
+$lang['software_updates_software_update_in_progress'] = 'Ohjelmiston päivitys on käynnissä. Tule takaisin myöhemmin.';
+$lang['software_updates_software_updates_busy'] = 'Software Updates Varattu';
+$lang['software_updates_software_updates'] = 'Ohjelmistopäivitykset';
+$lang['software_updates_software_updates_system_busy'] = 'Ohjelmistopäivitykset järjestelmä on kiireinen.';
+$lang['software_updates_software_up_to_date'] = 'Ohjelmisto Ajan tasalla';
+$lang['software_updates_system_is_up_to_date'] = 'Järjestelmä on ajan tasalla.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Uusimmat ohjelmistopäivitykset on asennettu.';
+$lang['software_updates_type'] = 'Tyyppi';
+$lang['software_updates_update_all'] = 'Päivitä kaikki';
+$lang['software_updates_updates_complete'] = 'Software Updates Complete';
+$lang['software_updates_updates'] = 'päivitykset';
+$lang['software_updates_upgrade'] = 'parantaa';
+$lang['software_updates_wizard_description'] = 'Nyt kun verkko on määritetty, kriittisiä päivityksiä järjestelmän ytimen on nyt asennettu.';
+$lang['software_updates_wizard_latest_necessary'] = 'Päivitä järjestelmän ohjelmisto ennen jatkamista.';
