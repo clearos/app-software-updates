@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'Dodatkowe aktualizacje';
+$lang['software_updates_app_description'] = 'Aplikacja Aktualizacje oprogramowania zapewnia aktualizacje dla podstawowych składników systemu operacyjnego.';
+$lang['software_updates_app_name'] = 'Aktualizacje oprogramowania';
+$lang['software_updates_automatic_updates'] = 'Automatyczne aktualizacje';
+$lang['software_updates_available_updates'] = 'dostępne Aktualizacje';
+$lang['software_updates_busy_message'] = 'Inny użytkownik lub usługa jest obecnie za pomocą systemu aktualizacji oprogramowania. Po zakończeniu tego procesu, ta aplikacja będzie dostępna ponownie.';
+$lang['software_updates_current_progress'] = 'Aktualny postęp';
+$lang['software_updates_details'] = 'Detale';
+$lang['software_updates_install_progress'] = 'install Progress';
+$lang['software_updates_loading_updates_message'] = 'Ładowanie listę aktualizacji oprogramowania, prosimy o cierpliwość.';
+$lang['software_updates_no_data_available'] = 'Brak dostępnych danych.';
+$lang['software_updates_overall_progress'] = 'Ogólny postęp';
+$lang['software_updates_package'] = 'Pakiet';
+$lang['software_updates_please_be_patient_detail'] = 'To może zająć minutę lub dwie, aby zaktualizować wszystkie składowiska oraz Aktualizuj dane. Ta informacja jest buforowany do wykorzystania w przyszłości.';
+$lang['software_updates_please_be_patient'] = 'Proszę być cierpliwym!';
+$lang['software_updates_progress_help'] = 'System jest obecnie aktualizowany. Proces ten może zająć trochę czasu, więc proszę o cierpliwość!';
+$lang['software_updates_progress'] = 'Postęp';
+$lang['software_updates_recent_software_activity'] = 'Ostatnia aktywność Software';
+$lang['software_updates_repository'] = 'Magazyn';
+$lang['software_updates_return_to_overview'] = 'Powrót do spisu';
+$lang['software_updates_software_update_in_progress'] = 'Aktualizacja oprogramowania jest w toku. Proszę przyjść później.';
+$lang['software_updates_software_updates_busy'] = 'Aktualizacje oprogramowania Busy';
+$lang['software_updates_software_updates'] = 'Aktualizacje oprogramowania';
+$lang['software_updates_software_updates_system_busy'] = 'System aktualizacji oprogramowania jest zajęta.';
+$lang['software_updates_software_up_to_date'] = 'Program Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'System jest up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Najnowsze aktualizacje oprogramowania są zainstalowane.';
+$lang['software_updates_type'] = 'Rodzaj';
+$lang['software_updates_update_all'] = 'aktualizacja Wszystko';
+$lang['software_updates_updates_complete'] = 'Aktualizacje oprogramowania pełna';
+$lang['software_updates_updates'] = 'aktualizacje';
+$lang['software_updates_upgrade'] = 'Aktualizacja';
+$lang['software_updates_wizard_description'] = 'Teraz, że sieć została skonfigurowana, krytyczne aktualizacje do systemu podstawowego są już zainstalowane.';
+$lang['software_updates_wizard_latest_necessary'] = 'Należy zaktualizować oprogramowanie systemowe przed kontynuowaniem.';
