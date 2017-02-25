@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'Додатне исправке';
+$lang['software_updates_app_description'] = 'Овај софтвер ажурирања апликација обезбеђује допуне за основни компоненти оперативног система.';
+$lang['software_updates_app_name'] = 'Ажурирање софтвера';
+$lang['software_updates_automatic_updates'] = 'Аутоматско ажурирање';
+$lang['software_updates_available_updates'] = 'доступне исправке';
+$lang['software_updates_busy_message'] = 'Други корисник или услуга тренутно користи системског софтвера. Када се процес заврши, ова апликација ће поново постати доступна.';
+$lang['software_updates_current_progress'] = 'Тренутни напредак';
+$lang['software_updates_details'] = 'Детаљи';
+$lang['software_updates_install_progress'] = 'Инсталл Прогресс';
+$lang['software_updates_loading_updates_message'] = 'Лоадинг листу ажурирање софтвера, будите стрпљиви.';
+$lang['software_updates_no_data_available'] = 'Нема расположивих података.';
+$lang['software_updates_overall_progress'] = 'Општи напредак';
+$lang['software_updates_package'] = 'пакет';
+$lang['software_updates_please_be_patient_detail'] = 'То може да траје минут или два да ажурира све спремишта и ажурирања детаље. Ове информације ухваћен за будућу употребу.';
+$lang['software_updates_please_be_patient'] = 'Будите стрпљиви!';
+$lang['software_updates_progress_help'] = 'Ваш систем се тренутно ажурира. Овај процес може потрајати неко време, па будите стрпљиви!';
+$lang['software_updates_progress'] = 'напредак';
+$lang['software_updates_recent_software_activity'] = 'Недавно Софтвер активност';
+$lang['software_updates_repository'] = 'складиште';
+$lang['software_updates_return_to_overview'] = 'Повратак на преглед';
+$lang['software_updates_software_update_in_progress'] = 'ажурирање софтвера је у току. Молим вратите се касније.';
+$lang['software_updates_software_updates_busy'] = 'Ажурирање софтвера Заузет';
+$lang['software_updates_software_updates'] = 'Ажурирање софтвера';
+$lang['software_updates_software_updates_system_busy'] = 'ажурирања софтвера систем је заузет.';
+$lang['software_updates_software_up_to_date'] = 'Софтвер до-то-дате';
+$lang['software_updates_system_is_up_to_date'] = 'Систем је до-то-дате.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Најновија ажурирања софтвера су инсталирани.';
+$lang['software_updates_type'] = 'Тип';
+$lang['software_updates_update_all'] = 'Упдате Алл';
+$lang['software_updates_updates_complete'] = 'Ажурирање софтвера Комплетна';
+$lang['software_updates_updates'] = 'упдатес';
+$lang['software_updates_upgrade'] = 'упграде';
+$lang['software_updates_wizard_description'] = 'Сада када је мрежа конфигурисана, критичне допуне до сржи система су сада инсталирани.';
+$lang['software_updates_wizard_latest_necessary'] = 'Аћурирајте системског софтвера пре него што наставите.';
