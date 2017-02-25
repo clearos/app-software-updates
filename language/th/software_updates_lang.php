@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'การปรับปรุงเพิ่มเติม';
+$lang['software_updates_app_description'] = 'ซอฟแวร์อัพเดท App ให้ปรับปรุงสำหรับส่วนประกอบของระบบปฏิบัติการที่รองรับ';
+$lang['software_updates_app_name'] = 'อัปเดตซอฟต์แวร์';
+$lang['software_updates_automatic_updates'] = 'การปรับปรุงอัตโนมัติ';
+$lang['software_updates_available_updates'] = 'การปรับปรุงที่มี';
+$lang['software_updates_busy_message'] = 'ผู้ใช้หรือบริการอื่นในปัจจุบันคือการใช้ระบบการปรับปรุงซอฟต์แวร์ เมื่อกระบวนการเสร็จสมบูรณ์ app นี้จะกลายเป็นใช้ได้อีกครั้ง';
+$lang['software_updates_current_progress'] = 'ความคืบหน้าปัจจุบัน';
+$lang['software_updates_details'] = 'รายละเอียด';
+$lang['software_updates_install_progress'] = 'ความคืบหน้าการติดตั้ง';
+$lang['software_updates_loading_updates_message'] = 'โหลดรายชื่อการปรับปรุงซอฟต์แวร์โปรดอดทน';
+$lang['software_updates_no_data_available'] = 'ไม่มีข้อมูลที่สามารถใช้ได้.';
+$lang['software_updates_overall_progress'] = 'ความคืบหน้าโดยรวม';
+$lang['software_updates_package'] = 'บรรจุภัณฑ์';
+$lang['software_updates_please_be_patient_detail'] = 'มันสามารถใช้เวลาหนึ่งหรือสองนาทีเพื่ออัปเดตทุกพื้นที่เก็บข้อมูลและการปรับปรุงรายละเอียด ข้อมูลนี้จะถูกเก็บไว้ชั่วคราวสำหรับใช้ในอนาคต';
+$lang['software_updates_please_be_patient'] = 'โปรดอดใจรอ!';
+$lang['software_updates_progress_help'] = 'ระบบของคุณกำลังมีการอัปเดต ขั้นตอนนี้อาจใช้เวลาบางส่วนดังนั้นโปรดอดทน!';
+$lang['software_updates_progress'] = 'ความคืบหน้า';
+$lang['software_updates_recent_software_activity'] = 'กิจกรรมซอฟต์แวร์ล่าสุด';
+$lang['software_updates_repository'] = 'กรุ';
+$lang['software_updates_return_to_overview'] = 'กลับไปที่ภาพรวม';
+$lang['software_updates_software_update_in_progress'] = 'ปรับปรุงซอฟแวร์ที่อยู่ในความคืบหน้า โปรดกลับมาใหม่.';
+$lang['software_updates_software_updates_busy'] = 'ซอฟแวร์อัพเดทไม่ว่าง';
+$lang['software_updates_software_updates'] = 'อัปเดตซอฟต์แวร์';
+$lang['software_updates_software_updates_system_busy'] = 'ซอฟต์แวร์ระบบการปรับปรุงไม่ว่าง';
+$lang['software_updates_software_up_to_date'] = 'ซอฟท์แว Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'ระบบจะขึ้นไปวันที่';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'การอัปเดตซอฟต์แวร์ล่าสุดมีการติดตั้ง';
+$lang['software_updates_type'] = 'ชนิด';
+$lang['software_updates_update_all'] = 'อัพเดททั้งหมด';
+$lang['software_updates_updates_complete'] = 'การปรับปรุงซอฟต์แวร์ที่สมบูรณ์';
+$lang['software_updates_updates'] = 'อัพเดท';
+$lang['software_updates_upgrade'] = 'อัพเกรด';
+$lang['software_updates_wizard_description'] = 'ขณะที่เครือข่ายของคุณมีการกำหนดค่าการปรับปรุงที่สำคัญกับระบบหลักในขณะนี้มีการติดตั้ง';
+$lang['software_updates_wizard_latest_necessary'] = 'โปรดอัปเดตซอฟต์แวร์ระบบของคุณก่อนที่จะดำเนินการต่อไป';
