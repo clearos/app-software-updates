@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'අමතර යාවත්කාලීන';
+$lang['software_updates_app_description'] = 'මෘදුකාංග යාවත්කාලීනයන් යෙදුම යටින් මෙහෙයුම් පද්ධති කොටස් සඳහා යාවත්කාලීන කිරීම් ලබාදේ.';
+$lang['software_updates_app_name'] = 'මෘදුකාංග යාවත්කාලීනයන්';
+$lang['software_updates_automatic_updates'] = 'ස්වයංක්රීය යාවත්කාලීන';
+$lang['software_updates_available_updates'] = 'ලබා ගත හැකි යාවත්කාලීන කිරීම්';
+$lang['software_updates_busy_message'] = 'තවත් පරිශීලකයෙකුගේ හෝ සේවාව දැනට මෘදුකාංග යාවත්කාලීන ක්රමය භාවිතා කර ඇත. මෙම ක්රියාවලිය සම්පූර්ණ වූ විට, මෙම යෙදුම නැවත ලබා ගත හැකි වනු ඇත.';
+$lang['software_updates_current_progress'] = 'වත්මන් ප්රගතිය';
+$lang['software_updates_details'] = 'විස්තර';
+$lang['software_updates_install_progress'] = 'ප්රගති ස්ථාපනය';
+$lang['software_updates_loading_updates_message'] = 'මෘදුකාංග යාවත්කාලීන ලැයිස්තුව පූරණය කරමින්, ඉවසීමෙන් වන්න.';
+$lang['software_updates_no_data_available'] = 'ලබා ගත හැකි දත්ත නැත.';
+$lang['software_updates_overall_progress'] = 'සමස්ත ප්රගතිය';
+$lang['software_updates_package'] = 'පැකේජය';
+$lang['software_updates_please_be_patient_detail'] = 'එය සියලු නිධිය හා යාවත්කාලීන තොරතුරු යාවත්කාලීන කිරීම සඳහා විනාඩි හෝ දෙකක් ගත විය හැක. මෙම තොරතුරු අනාගත භාවිතය සඳහා කැච්.';
+$lang['software_updates_please_be_patient'] = 'කරුණාකර ඉවසන්න!';
+$lang['software_updates_progress_help'] = 'ඔබේ පද්ධතිය දැනට යාවත්කාලීන කොට ඇත. මෙම ක්රියාවලිය යම් කාලයක් ගත හැකි, ඒ නිසා ඉවසීමෙන් කටයුතු කරන්න!';
+$lang['software_updates_progress'] = 'ප්රගතිය';
+$lang['software_updates_recent_software_activity'] = 'මෑත මෘදුකාංග ක්රියාකාරිත්වය';
+$lang['software_updates_repository'] = 'ඉෙල ෙ';
+$lang['software_updates_return_to_overview'] = 'දළ විශ්ලේෂණය වෙත ආපසු යන්න';
+$lang['software_updates_software_update_in_progress'] = 'මෘදුකාංග යාවත්කාලීන කිරීම සිදු වෙමින් පවතී. කරුණාකර පසුව නැවත එන්න.';
+$lang['software_updates_software_updates_busy'] = 'මෘදුකාංග යාවත්කාලීනයන් කාර්යබහුල';
+$lang['software_updates_software_updates'] = 'මෘදුකාංග යාවත්කාලීනයන්';
+$lang['software_updates_software_updates_system_busy'] = 'මෘදුකාංග යාවත්කාලීන පද්ධතිය කාර්ය බහුල වේ.';
+$lang['software_updates_software_up_to_date'] = 'මෘදුකාංග යාවත්කාලීන';
+$lang['software_updates_system_is_up_to_date'] = 'පද්ධතිය යාවත්කාලීන වේ.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'නවතම මෘදුකාංග යාවත්කාලීන ස්ථාපනය කෙරේ.';
+$lang['software_updates_type'] = 'වර්ගය';
+$lang['software_updates_update_all'] = 'සියලු යාවත්කාලීන';
+$lang['software_updates_updates_complete'] = 'මෘදුකාංග යාවත්කාලීනයන් සම්පූර්ණ';
+$lang['software_updates_updates'] = 'යාවත්කාලීන';
+$lang['software_updates_upgrade'] = 'උත්ශ්රේණි කිරීම';
+$lang['software_updates_wizard_description'] = 'දැන් ඔබේ ජාලය සැකසූ බව, මූලික පද්ධතිය සඳහා තීරණාත්මක යාවත්කාලීන ස්ථාපනය කර ඇත.';
+$lang['software_updates_wizard_latest_necessary'] = 'තවදුරටත් පවත්වාගෙන යාමට පෙර ඔබේ පද්ධතිය මෘදුකාංග යාවත් කාලීන කරන්න.';
