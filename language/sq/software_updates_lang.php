@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'updates shtesë';
+$lang['software_updates_app_description'] = 'App Software Updates ofron përditësime për komponentët themelore të sistemit operativ.';
+$lang['software_updates_app_name'] = 'Software Updates';
+$lang['software_updates_automatic_updates'] = 'Automatic Updates';
+$lang['software_updates_available_updates'] = 'Në dispozicion Updates';
+$lang['software_updates_busy_message'] = 'Një përdorues tjetër ose shërbimi është duke përdorur sistemin përditësime të softuerit. Kur procesi është i plotë, kjo app do të jetë në dispozicion përsëri.';
+$lang['software_updates_current_progress'] = 'Progresi aktual';
+$lang['software_updates_details'] = 'Detaje';
+$lang['software_updates_install_progress'] = 'Install Progresit';
+$lang['software_updates_loading_updates_message'] = 'Loading listë përditësime të softuerit, ju lutemi të jetë i durueshëm.';
+$lang['software_updates_no_data_available'] = 'Nuk ka të dhëna në dispozicion.';
+$lang['software_updates_overall_progress'] = 'Progresi i përgjithshëm';
+$lang['software_updates_package'] = 'paketë';
+$lang['software_updates_please_be_patient_detail'] = 'Ajo mund të marrë një minutë apo dy për të rinovuar të gjitha gjegjëse dhe përditësimin detajet. Ky informacion është kopje e ruajtur për përdorim në të ardhmen.';
+$lang['software_updates_please_be_patient'] = 'Ju lutemi të jenë të durueshëm!';
+$lang['software_updates_progress_help'] = 'Sistemi juaj është duke u përditësuar. Ky proces mund të marrë disa kohë, kështu që ju lutemi të jetë i durueshëm!';
+$lang['software_updates_progress'] = 'progres';
+$lang['software_updates_recent_software_activity'] = 'E fundit Aktiviteti Software';
+$lang['software_updates_repository'] = 'depo';
+$lang['software_updates_return_to_overview'] = 'Kthehu në vështrimin e përgjithshëm';
+$lang['software_updates_software_update_in_progress'] = 'Përditësimi i softuerit është në progres. Ju lutemi të kthehen më vonë.';
+$lang['software_updates_software_updates_busy'] = 'Software Updates Busy';
+$lang['software_updates_software_updates'] = 'Software Updates';
+$lang['software_updates_software_updates_system_busy'] = 'Përditësimet e softuerit sistemit është i zënë.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'Sistemi është up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Përditësimet më të fundit software janë instaluar.';
+$lang['software_updates_type'] = 'lloj';
+$lang['software_updates_update_all'] = 'Update All';
+$lang['software_updates_updates_complete'] = 'Software Updates Complete';
+$lang['software_updates_updates'] = 'Updates';
+$lang['software_updates_upgrade'] = 'upgrade';
+$lang['software_updates_wizard_description'] = 'Tani që rrjeti juaj është i konfiguruar, përditësimet kritike të sistemit bazë tashmë janë instaluar.';
+$lang['software_updates_wizard_latest_necessary'] = 'Please update të sistemit software tuaj para se të vazhdoni.';
