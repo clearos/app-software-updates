@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'addisionele updates';
+$lang['software_updates_app_description'] = 'Die sagteware updates app bied updates vir die onderliggende bedryfstelsel komponente.';
+$lang['software_updates_app_name'] = 'sagteware Updates';
+$lang['software_updates_automatic_updates'] = 'outomatiese updates';
+$lang['software_updates_available_updates'] = 'beskikbare updates';
+$lang['software_updates_busy_message'] = 'Nog &#39;n gebruiker of diens gebruik tans die sagteware-bywerkings stelsel. Wanneer die proses voltooi is, sal hierdie inligting beskikbaar weer raak.';
+$lang['software_updates_current_progress'] = 'Huidige Progress';
+$lang['software_updates_details'] = 'besonderhede';
+$lang['software_updates_install_progress'] = 'installeer Progress';
+$lang['software_updates_loading_updates_message'] = 'Laai lys sagteware opgraderings, asseblief wees geduldig.';
+$lang['software_updates_no_data_available'] = 'Geen inligting beskikbaar.';
+$lang['software_updates_overall_progress'] = 'algehele vordering';
+$lang['software_updates_package'] = 'pakket';
+$lang['software_updates_please_be_patient_detail'] = 'Dit kan &#39;n minuut of twee neem om al die bewaarplek en werk besonderhede op te dateer. Hierdie inligting is die kas vir toekomstige gebruik.';
+$lang['software_updates_please_be_patient'] = 'Wees asseblief geduldig!';
+$lang['software_updates_progress_help'] = 'Jou stelsel word tans opgedateer. Hierdie proses kan enige tyd neem, so wees asseblief geduldig!';
+$lang['software_updates_progress'] = 'vordering';
+$lang['software_updates_recent_software_activity'] = 'Onlangse sagteware aktiwiteit';
+$lang['software_updates_repository'] = 'Repository';
+$lang['software_updates_return_to_overview'] = 'Terug na Oorsig';
+$lang['software_updates_software_update_in_progress'] = 'Sagteware-update is aan die gang. Kom asseblief later terug.';
+$lang['software_updates_software_updates_busy'] = 'Sagteware updates Besige';
+$lang['software_updates_software_updates'] = 'sagteware Updates';
+$lang['software_updates_software_updates_system_busy'] = 'Sagteware-bywerkings stelsel is besig.';
+$lang['software_updates_software_up_to_date'] = 'Sagteware Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'Stelsel is up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Die nuutste sagteware-bywerkings geïnstalleer.';
+$lang['software_updates_type'] = 'tipe';
+$lang['software_updates_update_all'] = 'Werk Alle';
+$lang['software_updates_updates_complete'] = 'Sagteware updates Volledige';
+$lang['software_updates_updates'] = 'updates';
+$lang['software_updates_upgrade'] = 'opgradering';
+$lang['software_updates_wizard_description'] = 'Nou dat jou netwerk is ingestel, is van kritieke belang updates vir die kern stelsel nou geïnstalleer.';
+$lang['software_updates_wizard_latest_necessary'] = 'Werk u stelsel sagteware voordat u verder gaan.';
