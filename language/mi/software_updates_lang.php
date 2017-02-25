@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'whakahōunga atu';
+$lang['software_updates_app_description'] = 'Te taupānga Whakahōunga Pūmanawa whakarato whakahōunga mō te wae pūnaha whakahaere e whāriki ana.';
+$lang['software_updates_app_name'] = 'Whakahōunga pūmanawa';
+$lang['software_updates_automatic_updates'] = 'Ngā Whakahōunga Aunoa';
+$lang['software_updates_available_updates'] = 'Whakahōunga wātea';
+$lang['software_updates_busy_message'] = 'Kei te tētahi atu kaiwhakamahi ratonga ranei tēnei wā mā te whakamahi i te pūnaha whakahōunga pūmanawa. A, no te he oti te tukanga, ka riro ano i tēnei taupānga e wātea ana.';
+$lang['software_updates_current_progress'] = 'Kaunuku nāianei';
+$lang['software_updates_details'] = 'taipitopito';
+$lang['software_updates_install_progress'] = 'tāuta Kaunuku';
+$lang['software_updates_loading_updates_message'] = 'Uta rārangi whakahōunga pūmanawa, tēnā kia manawanui.';
+$lang['software_updates_no_data_available'] = 'No raraunga e wātea ana.';
+$lang['software_updates_overall_progress'] = 'Kaunuku whānui';
+$lang['software_updates_package'] = 'mōkī';
+$lang['software_updates_please_be_patient_detail'] = 'Ka taea e te tango te reira i te rua ranei meneti ki te whakahou i nga kōrero katoa pupuru me te whakahou. keteroki tēnei mōhiohio mō te whakamahi heke mai.';
+$lang['software_updates_please_be_patient'] = 'Koa kia faaoroma&#39;i!';
+$lang['software_updates_progress_help'] = 'Kei te whakahoutia tou pūnaha tēnei wā. Ka taea e tēnei tukanga te tango i etahi wa, na tēnā kia manawanui!';
+$lang['software_updates_progress'] = 'te ahunga whakamua';
+$lang['software_updates_recent_software_activity'] = 'Mahi Pūmanawa Tata';
+$lang['software_updates_repository'] = 'pupuru';
+$lang['software_updates_return_to_overview'] = 'Hoki ki te tirohanga whānui';
+$lang['software_updates_software_update_in_progress'] = 'He whakahou pūmanawa i roto i te ahunga whakamua. Tena hoki mai i muri mai.';
+$lang['software_updates_software_updates_busy'] = 'Whakahōunga Pūmanawa Korewātea';
+$lang['software_updates_software_updates'] = 'Whakahōunga pūmanawa';
+$lang['software_updates_software_updates_system_busy'] = 'He pukumahi pūnaha whakahōunga pūmanawa.';
+$lang['software_updates_software_up_to_date'] = 'Pūmanawa Up-ki-rā';
+$lang['software_updates_system_is_up_to_date'] = 'Ko runga-ki-te rā Pūnaha.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Kua tāuta te whakahōunga pūmanawa hou.';
+$lang['software_updates_type'] = 'momo';
+$lang['software_updates_update_all'] = 'Whakahōu katoa';
+$lang['software_updates_updates_complete'] = 'Whakahōunga Pūmanawa Whakaoti';
+$lang['software_updates_updates'] = 'whakahōunga';
+$lang['software_updates_upgrade'] = 'whakamohoa';
+$lang['software_updates_wizard_description'] = 'Na e whirihora koutou whatunga te, kua tāuta inaianei whakahōu tino ki te pūnaha matua.';
+$lang['software_updates_wizard_latest_necessary'] = 'Koa te whakahōu i tō pūmanawa pūnaha i mua i tonu.';
