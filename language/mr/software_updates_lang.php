@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'अगाऊ सुधारणा';
+$lang['software_updates_app_description'] = 'सॉफ्टवेअर सुधारणा अनुप्रयोग मूलभूत कार्य प्रणाली घटक सुधारणा पुरवते.';
+$lang['software_updates_app_name'] = 'सॉफ्टवेअर सुधारणा';
+$lang['software_updates_automatic_updates'] = 'स्वयंचलित अद्यतने';
+$lang['software_updates_available_updates'] = 'उपलब्ध सुधारणा';
+$lang['software_updates_busy_message'] = 'दुसरा प्रयोक्ता किंवा सेवा सध्या सॉफ्टवेअर सुधारणा प्रणाली वापरत आहे. प्रक्रिया पूर्ण झाल्यावर, या अनुप्रयोग पुन्हा उपलब्ध होईल.';
+$lang['software_updates_current_progress'] = 'वर्तमान प्रगती';
+$lang['software_updates_details'] = 'माहिती';
+$lang['software_updates_install_progress'] = 'प्रगती स्थापित';
+$lang['software_updates_loading_updates_message'] = 'सॉफ्टवेअर सुधारणा सूची लोड, कृपया धीर धरा.';
+$lang['software_updates_no_data_available'] = 'डेटा उपलब्ध नाही.';
+$lang['software_updates_overall_progress'] = 'एकूण प्रगती';
+$lang['software_updates_package'] = 'पॅकेज';
+$lang['software_updates_please_be_patient_detail'] = 'हे सर्व भांडार आणि अद्यतन तपशील अद्यतनित करण्यासाठी एक किंवा दोन मिनिटे लागू शकतात. ही माहिती भविष्यात वापरण्यासाठी कॅशे केलेली आहे.';
+$lang['software_updates_please_be_patient'] = 'कृपया धीर धरा!';
+$lang['software_updates_progress_help'] = 'तुमची प्रणाली सध्या अद्यतनित होत आहे. या प्रक्रियेस काही वेळ लागू शकतात, म्हणून कृपया धीर धरा!';
+$lang['software_updates_progress'] = 'प्रगती';
+$lang['software_updates_recent_software_activity'] = 'अलीकडील सॉफ्टवेअर क्रियाकलाप';
+$lang['software_updates_repository'] = 'भांडार';
+$lang['software_updates_return_to_overview'] = 'विहंगावलोकन परत';
+$lang['software_updates_software_update_in_progress'] = 'सॉफ्टवेअर सुधारणा प्रगतीपथावर आहे. कृपया नंतर पुन्हा.';
+$lang['software_updates_software_updates_busy'] = 'सॉफ्टवेअर सुधारणा व्यस्त';
+$lang['software_updates_software_updates'] = 'सॉफ्टवेअर सुधारणा';
+$lang['software_updates_software_updates_system_busy'] = 'सॉफ्टवेअर सुधारणा प्रणाली व्यस्त आहे.';
+$lang['software_updates_software_up_to_date'] = 'अप-टू-डेट सॉफ्टवेअर';
+$lang['software_updates_system_is_up_to_date'] = 'प्रणाली अप-टू-डेट आहे.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'नवीन सॉफ्टवेअर अद्यतने स्थापित आहेत.';
+$lang['software_updates_type'] = 'प्रकार';
+$lang['software_updates_update_all'] = 'सर्व सुधारणा';
+$lang['software_updates_updates_complete'] = 'सॉफ्टवेअर सुधारणा पूर्ण';
+$lang['software_updates_updates'] = 'अद्यतने';
+$lang['software_updates_upgrade'] = 'सुधारणा';
+$lang['software_updates_wizard_description'] = 'तुमचे नेटवर्क संरचीत केले आहे याची, कोर प्रणाली गंभीर सुधारणा आता स्थापित केले आहेत.';
+$lang['software_updates_wizard_latest_necessary'] = 'पुढे जाण्यापूर्वी आपल्या सिस्टीम सॉफ्टवेअर अद्यतनित करा.';
