@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'apdet tambahan';
+$lang['software_updates_app_description'] = 'Nu Software Apdet aplikasi nyadiakeun apdet pikeun komponén sistem operasi kaayaan.';
+$lang['software_updates_app_name'] = 'software Apdet';
+$lang['software_updates_automatic_updates'] = 'Apdet otomatis';
+$lang['software_updates_available_updates'] = 'sadia Apdet';
+$lang['software_updates_busy_message'] = 'Lain pamaké atawa service ayeuna ngagunakeun sistim apdet software. Lamun prosés geus réngsé, app ieu bakal sadia deui.';
+$lang['software_updates_current_progress'] = 'kamajuan Wayah';
+$lang['software_updates_details'] = 'rincian';
+$lang['software_updates_install_progress'] = 'masang kamajuan';
+$lang['software_updates_loading_updates_message'] = 'Loading daptar apdet software, mangga jadi sabar.';
+$lang['software_updates_no_data_available'] = 'No data sadia.';
+$lang['software_updates_overall_progress'] = 'Gemblengna kamajuan';
+$lang['software_updates_package'] = 'paket';
+$lang['software_updates_please_be_patient_detail'] = 'Hal ieu bisa nyokot hiji atawa dua menit pikeun ngapdet kabéh Repository jeung update écésna. Inpo ieu sindangan keur dipake ka hareup.';
+$lang['software_updates_please_be_patient'] = 'Mangga jadi Sabar!';
+$lang['software_updates_progress_help'] = 'sistim anjeun ayeuna keur diropéa. Prosés ieu bisa nyokot sababaraha waktu, jadi mangga jadi sabar!';
+$lang['software_updates_progress'] = 'kamajuan';
+$lang['software_updates_recent_software_activity'] = 'Software aktipitas anyar';
+$lang['software_updates_repository'] = 'Repository';
+$lang['software_updates_return_to_overview'] = 'Balik deui ka Tinjauan';
+$lang['software_updates_software_update_in_progress'] = 'update Software aya dina kamajuan. Mangga datang deui saterusna.';
+$lang['software_updates_software_updates_busy'] = 'Software Apdet Sibuk';
+$lang['software_updates_software_updates'] = 'software Apdet';
+$lang['software_updates_software_updates_system_busy'] = 'sistim apdet sofwer nyaeta riweuh.';
+$lang['software_updates_software_up_to_date'] = 'Software Nepi-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'System nyaéta up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Apdet software panganyarna nu dipasang.';
+$lang['software_updates_type'] = 'ngetik';
+$lang['software_updates_update_all'] = 'Update Sadaya';
+$lang['software_updates_updates_complete'] = 'Software Apdet lengkep';
+$lang['software_updates_updates'] = 'apdet';
+$lang['software_updates_upgrade'] = 'pamutahiran';
+$lang['software_updates_wizard_description'] = 'Ayeuna jaringan Anjeun ngonpigurasi, apdet kritis ka sistim inti ayeuna dipasang.';
+$lang['software_updates_wizard_latest_necessary'] = 'Mangga ngamutahirkeun software sistim Anjeun saencan neraskeun.';
