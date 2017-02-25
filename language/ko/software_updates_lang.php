@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = '추가 업데이트';
+$lang['software_updates_app_description'] = '소프트웨어 업데이트 응용 프로그램은 기본 운영 체제 구성 요소에 대한 업데이트를 제공합니다.';
+$lang['software_updates_app_name'] = '소프트웨어 업데이트';
+$lang['software_updates_automatic_updates'] = '자동 업데이트';
+$lang['software_updates_available_updates'] = '사용 가능한 업데이트';
+$lang['software_updates_busy_message'] = '다른 사용자 또는 서비스는 현재 소프트웨어 업데이트 시스템을 사용한다. 프로세스가 완료되면,이 응용 프로그램은 다시 사용할 수있게됩니다.';
+$lang['software_updates_current_progress'] = '현재 진행';
+$lang['software_updates_details'] = '세부';
+$lang['software_updates_install_progress'] = '설치 진행';
+$lang['software_updates_loading_updates_message'] = '소프트웨어 업데이트 목록을로드 기다려 주시기 바랍니다.';
+$lang['software_updates_no_data_available'] = '자료 없음.';
+$lang['software_updates_overall_progress'] = '전체 진행';
+$lang['software_updates_package'] = '꾸러미';
+$lang['software_updates_please_be_patient_detail'] = '그것은 모든 저장소 및 업데이트 정보를 업데이트하기 위해 2 분 정도 걸릴 수 있습니다. 이 정보는 나중에 사용하기 위해 캐시됩니다.';
+$lang['software_updates_please_be_patient'] = '기다려주십시오!';
+$lang['software_updates_progress_help'] = '시스템은 현재 업데이트 중입니다. 이 과정은 약간의 시간이 걸릴 수 있으므로 기다려주십시오 수 있습니다!';
+$lang['software_updates_progress'] = '진행';
+$lang['software_updates_recent_software_activity'] = '최근 소프트웨어 활동';
+$lang['software_updates_repository'] = '저장소';
+$lang['software_updates_return_to_overview'] = '개요로 돌아 가기';
+$lang['software_updates_software_update_in_progress'] = '소프트웨어 업데이트가 진행 중입니다. 나중에 다시하십시오.';
+$lang['software_updates_software_updates_busy'] = '소프트웨어 업데이트 중';
+$lang['software_updates_software_updates'] = '소프트웨어 업데이트';
+$lang['software_updates_software_updates_system_busy'] = '소프트웨어 업데이트 시스템이 사용 중입니다.';
+$lang['software_updates_software_up_to_date'] = '소프트웨어 최신';
+$lang['software_updates_system_is_up_to_date'] = '시스템은 최신입니다.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = '최신 소프트웨어 업데이트가 설치됩니다.';
+$lang['software_updates_type'] = '유형';
+$lang['software_updates_update_all'] = '모두 업데이트';
+$lang['software_updates_updates_complete'] = '소프트웨어 업데이트 완료';
+$lang['software_updates_updates'] = '업데이트';
+$lang['software_updates_upgrade'] = '업그레이드';
+$lang['software_updates_wizard_description'] = '이제 네트워크가 구성되어 있는지, 핵심 시스템에 대한 중요 업데이트가 설치되었습니다.';
+$lang['software_updates_wizard_latest_necessary'] = '계속하기 전에 시스템 소프트웨어를 업데이트하십시오.';
