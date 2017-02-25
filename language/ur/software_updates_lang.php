@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'اضافی اپ ڈیٹس';
+$lang['software_updates_app_description'] = 'سافٹ ویئر اپ ڈیٹ اپلی کیشن بنیادی آپریٹنگ سسٹم کے اجزاء کے لئے اپ ڈیٹ فراہم کرتا ہے.';
+$lang['software_updates_app_name'] = 'سافٹ ویئر اپ ڈیٹ';
+$lang['software_updates_automatic_updates'] = 'خودکار تازہ کاریاں';
+$lang['software_updates_available_updates'] = 'دستیاب اپ ڈیٹس';
+$lang['software_updates_busy_message'] = 'کسی دوسرے صارف یا سروس فی الحال سافٹ ویئر اپ ڈیٹ کا نظام استعمال کر رہا ہے. عمل مکمل ہونے کے بعد، اس ایپ کو دوبارہ دستیاب ہو جائے گا.';
+$lang['software_updates_current_progress'] = 'موجودہ پیش رفت';
+$lang['software_updates_details'] = 'تفصیلات دیکھیں';
+$lang['software_updates_install_progress'] = 'پروگریس انسٹال';
+$lang['software_updates_loading_updates_message'] = 'لوڈ ہو رہا ہے سافٹ ویئر اپ ڈیٹ فہرست، صبر کریں.';
+$lang['software_updates_no_data_available'] = 'اعداد و شمار دستیاب نہیں.';
+$lang['software_updates_overall_progress'] = 'مجموعی ترقی';
+$lang['software_updates_package'] = 'پیکیج';
+$lang['software_updates_please_be_patient_detail'] = 'یہ سب مخزن اور اپ ڈیٹ کی تفصیلات کو اپ ڈیٹ کرنے کے لئے ایک یا دو منٹ لے سکتے ہیں. یہ معلومات مستقبل کے استعمال کے لئے محفوظ ہے.';
+$lang['software_updates_please_be_patient'] = 'صبر کرو!';
+$lang['software_updates_progress_help'] = 'آپ کا نظام اس وقت اپ ڈیٹ کیا جا رہا ہے. اس عمل میں کچھ وقت لگ سکتا ہے، تو صبر کرو!';
+$lang['software_updates_progress'] = 'پیش رفت';
+$lang['software_updates_recent_software_activity'] = 'حالیہ سافٹ ویئر کی سرگرمی';
+$lang['software_updates_repository'] = 'مخزن';
+$lang['software_updates_return_to_overview'] = 'جائزہ پر واپس جائیں';
+$lang['software_updates_software_update_in_progress'] = 'سافٹ ویئر اپ ڈیٹ جاری ہے. براہ کرم بعد میں واپس آئیں.';
+$lang['software_updates_software_updates_busy'] = 'سافٹ ویئر اپ ڈیٹ مصروف';
+$lang['software_updates_software_updates'] = 'سافٹ ویئر اپ ڈیٹ';
+$lang['software_updates_software_updates_system_busy'] = 'سافٹ ویئر اپ ڈیٹ کے نظام میں مصروف ہے.';
+$lang['software_updates_software_up_to_date'] = 'اپ ڈیٹ کرنے کے لئے سافٹ ویئر';
+$lang['software_updates_system_is_up_to_date'] = 'سسٹم اپ ڈیٹ کرنے کے لئے ہے.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'تازہ ترین سافٹ ویئر اپ ڈیٹ انسٹال کر رہے ہیں.';
+$lang['software_updates_type'] = 'قسم';
+$lang['software_updates_update_all'] = 'تمام تجدید کریں';
+$lang['software_updates_updates_complete'] = 'سافٹ ویئر اپ ڈیٹ مکمل';
+$lang['software_updates_updates'] = 'تازہ ترین معلومات کے';
+$lang['software_updates_upgrade'] = 'اپ گریڈ';
+$lang['software_updates_wizard_description'] = 'اب جب کہ آپ کے نیٹ ورک ترتیب دیا گیا ہے، بنیادی نظام کے لئے اہم اپ ڈیٹس اب نصب کر رہے ہیں.';
+$lang['software_updates_wizard_latest_necessary'] = 'جاری رکھنے سے پہلے آپ کے سسٹم سوفٹ ویئر اپ ڈیٹ کریں.';
