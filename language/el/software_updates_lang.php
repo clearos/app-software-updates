@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'πρόσθετες ενημερώσεις';
+$lang['software_updates_app_description'] = 'Η εφαρμογή ενημερώσεων λογισμικού παρέχει ενημερώσεις για τα υποκείμενα στοιχεία του λειτουργικού συστήματος.';
+$lang['software_updates_app_name'] = 'Ενημερώσεις λογισμικού';
+$lang['software_updates_automatic_updates'] = 'Αυτόματες ενημερώσεις';
+$lang['software_updates_available_updates'] = 'διαθέσιμες ενημερώσεις';
+$lang['software_updates_busy_message'] = 'Ένας άλλος χρήστης ή η υπηρεσία χρησιμοποιεί προς το παρόν το σύστημα ενημερώσεων λογισμικού. Όταν ολοκληρωθεί η διαδικασία, αυτό το app θα γίνει και πάλι διαθέσιμο.';
+$lang['software_updates_current_progress'] = 'τρέχουσα πρόοδος';
+$lang['software_updates_details'] = 'Λεπτομέριες';
+$lang['software_updates_install_progress'] = 'εγκαταστήστε Progress';
+$lang['software_updates_loading_updates_message'] = 'Φόρτωση λίστα των ενημερωμένων εκδόσεων λογισμικού, παρακαλώ να είστε υπομονετικοί.';
+$lang['software_updates_no_data_available'] = 'Δεν υπάρχουν διαθέσιμα δεδομένα.';
+$lang['software_updates_overall_progress'] = 'Συνολική πρόοδος';
+$lang['software_updates_package'] = 'Πακέτο';
+$lang['software_updates_please_be_patient_detail'] = 'Μπορεί να πάρει ένα ή δύο λεπτά για να ενημερώσετε όλες τις λεπτομέρειες αποθετήριο και ενημέρωση. Αυτές οι πληροφορίες αποθηκεύονται προσωρινά για μελλοντική χρήση.';
+$lang['software_updates_please_be_patient'] = 'Παρακαλώ να είστε υπομονετικοί!';
+$lang['software_updates_progress_help'] = 'Το σύστημά σας είναι προς το παρόν υπό ενημέρωση. Αυτή η διαδικασία μπορεί να πάρει κάποιο χρόνο, γι &#39;αυτό παρακαλώ να είστε υπομονετικοί!';
+$lang['software_updates_progress'] = 'Πρόοδος';
+$lang['software_updates_recent_software_activity'] = 'Πρόσφατη δραστηριότητα Λογισμικό';
+$lang['software_updates_repository'] = 'Αποθήκη';
+$lang['software_updates_return_to_overview'] = 'Επιστροφή στην επισκόπηση';
+$lang['software_updates_software_update_in_progress'] = 'ενημερωμένη έκδοση λογισμικού είναι σε εξέλιξη. Παρακαλώ επιστρέψτε αργότερα.';
+$lang['software_updates_software_updates_busy'] = 'Ενημερώσεις λογισμικού Busy';
+$lang['software_updates_software_updates'] = 'Ενημερώσεις λογισμικού';
+$lang['software_updates_software_updates_system_busy'] = 'σύστημα ενημερώσεων λογισμικού είναι απασχολημένος.';
+$lang['software_updates_software_up_to_date'] = 'Λογισμικό Up-to-ημερομηνία';
+$lang['software_updates_system_is_up_to_date'] = 'Το σύστημα είναι up-to-ημερομηνία.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Οι πιο πρόσφατες ενημερώσεις λογισμικού που έχει εγκατασταθεί.';
+$lang['software_updates_type'] = 'Τύπος';
+$lang['software_updates_update_all'] = 'Ενημέρωση όλων';
+$lang['software_updates_updates_complete'] = 'Ενημερώσεις λογισμικού Πλήρης';
+$lang['software_updates_updates'] = 'ενημερώσεις';
+$lang['software_updates_upgrade'] = 'Αναβαθμίζω';
+$lang['software_updates_wizard_description'] = 'Τώρα που το δίκτυό σας έχει ρυθμιστεί, κρίσιμες ενημερώσεις για το κεντρικό σύστημα έχουν εγκατασταθεί.';
+$lang['software_updates_wizard_latest_necessary'] = 'Παρακαλείστε να ενημερώσετε το λογισμικό του συστήματός σας πριν συνεχίσετε.';
