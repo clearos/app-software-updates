@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'zosintha zina';
+$lang['software_updates_app_description'] = 'The app mapulogalamu Zosintha amapereka zosintha chifukwa chachikulu zigawo opaleshoni dongosolo.';
+$lang['software_updates_app_name'] = 'mapulogalamu Zosintha';
+$lang['software_updates_automatic_updates'] = 'Makinawa Zosintha';
+$lang['software_updates_available_updates'] = 'likupezeka Zosintha';
+$lang['software_updates_busy_message'] = 'wosuta kapena msonkhano wina omwenso ntchito mapulogalamu zosintha dongosolo. Pamene njira chokwanira, app adzakhala alipo kachiwiri.';
+$lang['software_updates_current_progress'] = 'Current Patsogolo';
+$lang['software_updates_details'] = 'tsatanetsatane';
+$lang['software_updates_install_progress'] = 'kukhazikitsa Patsogolo';
+$lang['software_updates_loading_updates_message'] = 'Tsegula mapulogalamu zosintha mndandanda, chonde pirira.';
+$lang['software_updates_no_data_available'] = 'No deta likupezeka.';
+$lang['software_updates_overall_progress'] = 'Cacikulu Patsogolo';
+$lang['software_updates_package'] = 'phukusi';
+$lang['software_updates_please_be_patient_detail'] = 'Zimatenga mphindi imodzi kapena ziwiri kusintha ndi zapamwamba ndipo pomwe zonse. Mfundozi Losungidwa ntchito m&#39;tsogolo.';
+$lang['software_updates_please_be_patient'] = 'Chonde Wodwala!';
+$lang['software_updates_progress_help'] = 'Makina anu, omwenso kusinthidwa. Ntchito imeneyi nthawi yaitali, kotero chonde pirira!';
+$lang['software_updates_progress'] = 'patsogolo';
+$lang['software_updates_recent_software_activity'] = 'Recent mapulogalamu Ntchito';
+$lang['software_updates_repository'] = 'zapamwamba';
+$lang['software_updates_return_to_overview'] = 'Kubwerera mwachidule';
+$lang['software_updates_software_update_in_progress'] = 'Mapulogalamu pomwe ali patsogolo. Ndaphata nthawi ina.';
+$lang['software_updates_software_updates_busy'] = 'Mapulogalamu Zosintha Kutanganidwa';
+$lang['software_updates_software_updates'] = 'mapulogalamu Zosintha';
+$lang['software_updates_software_updates_system_busy'] = 'Mapulogalamu zosintha dongosolo ali wotanganidwa.';
+$lang['software_updates_software_up_to_date'] = 'Mapulogalamu Up chamakono';
+$lang['software_updates_system_is_up_to_date'] = 'System zili chamakono.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'The zosintha atsopano mapulogalamu anaika.';
+$lang['software_updates_type'] = 'Type';
+$lang['software_updates_update_all'] = 'pomwe onse';
+$lang['software_updates_updates_complete'] = 'Mapulogalamu Zosintha Complete';
+$lang['software_updates_updates'] = 'zosintha';
+$lang['software_updates_upgrade'] = 'Mokweza';
+$lang['software_updates_wizard_description'] = 'Tsopano Intaneti wanu kukhazikitsidwa, zosintha ovuta dongosolo pakati tsopano anaika.';
+$lang['software_updates_wizard_latest_necessary'] = 'Chonde kusintha dongosolo mapulogalamu anu pamaso kupitiriza.';
