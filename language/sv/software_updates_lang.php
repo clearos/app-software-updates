@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'ytterligare uppdateringar';
+$lang['software_updates_app_description'] = 'Den programuppdateringar app ger uppdateringar för det underliggande operativsystemet komponenter.';
+$lang['software_updates_app_name'] = 'Programuppdateringar';
+$lang['software_updates_automatic_updates'] = 'Automatiska uppdateringar';
+$lang['software_updates_available_updates'] = 'tillgängliga uppdateringar';
+$lang['software_updates_busy_message'] = 'En annan användare eller tjänsten använder för närvarande programuppdateringar systemet. När processen är klar kommer denna applikation blir tillgänglig igen.';
+$lang['software_updates_current_progress'] = 'Nuvarande framsteg';
+$lang['software_updates_details'] = 'detaljer';
+$lang['software_updates_install_progress'] = 'installera framsteg';
+$lang['software_updates_loading_updates_message'] = 'Laddar programuppdateringar lista, ha tålamod.';
+$lang['software_updates_no_data_available'] = 'Ingen data tillgänglig.';
+$lang['software_updates_overall_progress'] = 'Generell framgång';
+$lang['software_updates_package'] = 'Paket';
+$lang['software_updates_please_be_patient_detail'] = 'Det kan ta en minut eller två för att uppdatera alla detaljer förvaret och uppdatera. Denna information cachas för framtida användning.';
+$lang['software_updates_please_be_patient'] = 'Var tålmodig!';
+$lang['software_updates_progress_help'] = 'Systemet håller på att uppdateras. Denna process kan ta lite tid, så ha tålamod!';
+$lang['software_updates_progress'] = 'Framsteg';
+$lang['software_updates_recent_software_activity'] = 'Senaste Software aktivitet';
+$lang['software_updates_repository'] = 'Repository';
+$lang['software_updates_return_to_overview'] = 'Återgå till översikt';
+$lang['software_updates_software_update_in_progress'] = 'Programuppdatering pågår. Kom tillbaka senare.';
+$lang['software_updates_software_updates_busy'] = 'Programvaruuppdateringar Upptagen';
+$lang['software_updates_software_updates'] = 'Programuppdateringar';
+$lang['software_updates_software_updates_system_busy'] = 'Programuppdateringar systemet är upptaget.';
+$lang['software_updates_software_up_to_date'] = 'Programvara Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'System är up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'De senaste programuppdateringarna är installerade.';
+$lang['software_updates_type'] = 'Typ';
+$lang['software_updates_update_all'] = 'Uppdatera alla';
+$lang['software_updates_updates_complete'] = 'Programvaruuppdateringar Komplett';
+$lang['software_updates_updates'] = 'uppdateringar';
+$lang['software_updates_upgrade'] = 'uppgradering';
+$lang['software_updates_wizard_description'] = 'Nu när ditt nätverk är konfigurerat, är viktiga uppdateringar till det centrala systemet nu installerat.';
+$lang['software_updates_wizard_latest_necessary'] = 'Uppdatera systemprogramvaran innan du fortsätter.';
