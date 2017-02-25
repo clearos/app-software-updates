@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'veel uudiseid';
+$lang['software_updates_app_description'] = 'Tarkvara uuendused app annab uuendused operatsioonisüsteemi komponente.';
+$lang['software_updates_app_name'] = 'Tarkvara uuendused';
+$lang['software_updates_automatic_updates'] = 'automaatsed uuendused';
+$lang['software_updates_available_updates'] = 'saadaval uuendused';
+$lang['software_updates_busy_message'] = 'Teine kasutaja või teenus on praegu kasutades tarkvara uuendused süsteemi. Kui protsess on lõppenud, see app saab uuesti kättesaadavaks.';
+$lang['software_updates_current_progress'] = 'Praegune Progress';
+$lang['software_updates_details'] = 'detailid';
+$lang['software_updates_install_progress'] = 'Paigaldage Progress';
+$lang['software_updates_loading_updates_message'] = 'Laadimine tarkvarauuendused nimekirja, palun kannatlik.';
+$lang['software_updates_no_data_available'] = 'Andmed ei ole kättesaadavad.';
+$lang['software_updates_overall_progress'] = 'üldine edu';
+$lang['software_updates_package'] = 'pakend';
+$lang['software_updates_please_be_patient_detail'] = 'See võib võtta paar minutit, et uuendada kõik hoidlasse ja Amp. See teave on puhverdatud kasutamiseks tulevikus.';
+$lang['software_updates_please_be_patient'] = 'Palun ole kannatlik!';
+$lang['software_updates_progress_help'] = 'Teie süsteem on praegu ajakohastatakse. See protsess võib võtta aega, nii et palun kannatlik!';
+$lang['software_updates_progress'] = 'edu';
+$lang['software_updates_recent_software_activity'] = 'Viimased Tarkvara Aktiivsus';
+$lang['software_updates_repository'] = 'Hoidla';
+$lang['software_updates_return_to_overview'] = 'Tagasi ülevaatesse';
+$lang['software_updates_software_update_in_progress'] = 'Tarkvara uuendus on pooleli. Proovige hiljem uuesti.';
+$lang['software_updates_software_updates_busy'] = 'Tarkvara uuendused Kinni';
+$lang['software_updates_software_updates'] = 'Tarkvara uuendused';
+$lang['software_updates_software_updates_system_busy'] = 'Tarkvarauuendused süsteem on hõivatud.';
+$lang['software_updates_software_up_to_date'] = 'Tarkvara Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'Süsteem on up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Viimane tarkvara uuendused on paigaldatud.';
+$lang['software_updates_type'] = 'tüüp';
+$lang['software_updates_update_all'] = 'Värskenda kõik';
+$lang['software_updates_updates_complete'] = 'Tarkvara uuendused Complete';
+$lang['software_updates_updates'] = 'uuendused';
+$lang['software_updates_upgrade'] = 'upgrade';
+$lang['software_updates_wizard_description'] = 'Nüüd, kui teie võrk on seadistatud, kriitiline uudiseid põhisüsteemi on nüüd paigaldatud.';
+$lang['software_updates_wizard_latest_necessary'] = 'Palun uuendage oma tarkvara enne jätkamist.';
