@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'updates dheeraad ah';
+$lang['software_updates_app_description'] = 'The app Software Updates bixisaa updates ee qaybaha nidaamka qalliinka dahsoon.';
+$lang['software_updates_app_name'] = 'Software Updates';
+$lang['software_updates_automatic_updates'] = 'automatic Updates';
+$lang['software_updates_available_updates'] = 'Available Updates';
+$lang['software_updates_busy_message'] = 'Kale user ama adeeg waxaa hadda la isticmaalayo nidaamka updates software. Marka geeddi-socodka waa dhameystiran yahay, app this noqon doonaa mar kale diyaar.';
+$lang['software_updates_current_progress'] = 'Progress hadda';
+$lang['software_updates_details'] = 'Details';
+$lang['software_updates_install_progress'] = 'Ku rakib Progress';
+$lang['software_updates_loading_updates_message'] = 'Loading liiska updates software, fadlan samir.';
+$lang['software_updates_no_data_available'] = 'xogta lagama hayo.';
+$lang['software_updates_overall_progress'] = 'Horumarka Guud';
+$lang['software_updates_package'] = 'Xidhmada';
+$lang['software_updates_please_be_patient_detail'] = 'Waxay qaadan kartaa Daqiiqad ama laba si aad u cusboonaysiiso dhan faahfaahin bakhaar oo update. Macluumaadkan waxaa loo kaydin doono si loogu isticmaalo mustaqbalka.';
+$lang['software_updates_please_be_patient'] = 'Fadlan bukaanka!';
+$lang['software_updates_progress_help'] = 'Your nidaamka hadda la simay. Marxaladani waxay qaadan kartaa waqti qaar ka mid ah, sidaas darteed fadlan samir!';
+$lang['software_updates_progress'] = 'Horumarka';
+$lang['software_updates_recent_software_activity'] = 'Activity Software Recent';
+$lang['software_updates_repository'] = 'bakhaar';
+$lang['software_updates_return_to_overview'] = 'Ku noqo Arimo guud';
+$lang['software_updates_software_update_in_progress'] = 'update Software waa in horumarka. Fadlan ku soo laabto ka dib.';
+$lang['software_updates_software_updates_busy'] = 'Software Updates mashquul';
+$lang['software_updates_software_updates'] = 'Software Updates';
+$lang['software_updates_software_updates_system_busy'] = 'nidaamka updates Software waa mashquul.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'System waa kor-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'The updates software ugu dambeeyay waxa loo xiraa.';
+$lang['software_updates_type'] = 'Nooca';
+$lang['software_updates_update_all'] = 'Update All';
+$lang['software_updates_updates_complete'] = 'Software Updates Buuxi';
+$lang['software_updates_updates'] = 'updates';
+$lang['software_updates_upgrade'] = 'casriyayn';
+$lang['software_updates_wizard_description'] = 'Hadda oo aad network loo qaybiyay, updates muhiim u ah nidaamka asaasiga ah ayaa hadda ku rakiban.';
+$lang['software_updates_wizard_latest_necessary'] = 'Fadlan cusboonaysiiso software nidaam ka hor sii.';
