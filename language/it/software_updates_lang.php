@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'ulteriori aggiornamenti';
+$lang['software_updates_app_description'] = 'L&#39;applicazione aggiornamenti software fornisce gli aggiornamenti per i componenti del sistema operativo sottostante.';
+$lang['software_updates_app_name'] = 'Aggiornamenti software';
+$lang['software_updates_automatic_updates'] = 'Aggiornamenti automatici';
+$lang['software_updates_available_updates'] = 'Aggiornamenti disponibili';
+$lang['software_updates_busy_message'] = 'Un altro utente o il servizio non è al momento utilizzano il sistema di aggiornamenti software. Quando il processo è completo, questa applicazione diventerà di nuovo disponibile.';
+$lang['software_updates_current_progress'] = 'Progresso corrente';
+$lang['software_updates_details'] = 'Dettagli';
+$lang['software_updates_install_progress'] = 'progresso installazione';
+$lang['software_updates_loading_updates_message'] = 'Caricamento elenco degli aggiornamenti software, si prega di essere paziente.';
+$lang['software_updates_no_data_available'] = 'Nessun dato disponibile.';
+$lang['software_updates_overall_progress'] = 'Progressi generali';
+$lang['software_updates_package'] = 'Pacchetto';
+$lang['software_updates_please_be_patient_detail'] = 'Si può prendere un paio di minuti per aggiornare tutti i repository e aggiornare i dettagli. Queste informazioni vengono memorizzate nella cache per un utilizzo futuro.';
+$lang['software_updates_please_be_patient'] = 'Perfavore sii paziente!';
+$lang['software_updates_progress_help'] = 'Il sistema è attualmente in fase di aggiornamento. Questo processo può richiedere un certo tempo, quindi per favore siate pazienti!';
+$lang['software_updates_progress'] = 'Progresso';
+$lang['software_updates_recent_software_activity'] = 'Attività recente Software';
+$lang['software_updates_repository'] = 'deposito';
+$lang['software_updates_return_to_overview'] = 'Torna alla panoramica';
+$lang['software_updates_software_update_in_progress'] = 'Aggiornamento software è in corso. Per favore ritorna più tardi.';
+$lang['software_updates_software_updates_busy'] = 'Aggiornamenti software Occupato';
+$lang['software_updates_software_updates'] = 'Aggiornamenti software';
+$lang['software_updates_software_updates_system_busy'] = 'Gli aggiornamenti del software di sistema è occupato.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'Il sistema è up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Gli aggiornamenti software sono installati.';
+$lang['software_updates_type'] = 'Tipo';
+$lang['software_updates_update_all'] = 'Aggiorna tutto';
+$lang['software_updates_updates_complete'] = 'Aggiornamenti software completa';
+$lang['software_updates_updates'] = 'aggiornamenti';
+$lang['software_updates_upgrade'] = 'aggiornamento';
+$lang['software_updates_wizard_description'] = 'Ora che la rete sia configurata, aggiornamenti critici per il sistema centrale sono ora installati.';
+$lang['software_updates_wizard_latest_necessary'] = 'Si prega di aggiornare il software di sistema prima di continuare.';
