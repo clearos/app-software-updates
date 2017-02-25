@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'به روز رسانی اضافی';
+$lang['software_updates_app_description'] = 'برنامه نرم افزار به روز رسانی به روز رسانی برای اجزای سیستم عامل فراهم می کند.';
+$lang['software_updates_app_name'] = 'بروز رسانی نرم افزار';
+$lang['software_updates_automatic_updates'] = 'بروزرسانی های خودکار';
+$lang['software_updates_available_updates'] = 'در دسترس به روز رسانی';
+$lang['software_updates_busy_message'] = 'یکی دیگر از کاربر و یا سرویس در حال حاضر با استفاده از سیستم به روز رسانی نرم افزار. وقتی که این فرایند کامل است، این برنامه را دوباره در دسترس باشد.';
+$lang['software_updates_current_progress'] = 'پیشرفت فعلی';
+$lang['software_updates_details'] = 'جزئیات';
+$lang['software_updates_install_progress'] = 'نصب پیشرفت';
+$lang['software_updates_loading_updates_message'] = 'در حال بارگذاری لیست به روز رسانی نرم افزار، لطفا صبور باشید.';
+$lang['software_updates_no_data_available'] = 'اطلاعاتی موجود نیست.';
+$lang['software_updates_overall_progress'] = 'پیشرفت کلی';
+$lang['software_updates_package'] = 'بسته';
+$lang['software_updates_please_be_patient_detail'] = 'این می تواند یک یا دو دقیقه به روز رسانی تمام مخزن و به روز رسانی جزئیات است. این اطلاعات برای استفاده در آینده ذخیره سازی.';
+$lang['software_updates_please_be_patient'] = 'لطفا صبور باشید!';
+$lang['software_updates_progress_help'] = 'سیستم شما در حال حاضر به روز شد. این فرآیند می تواند برخی از زمان، پس لطفا صبور باشید!';
+$lang['software_updates_progress'] = 'پیش رفتن';
+$lang['software_updates_recent_software_activity'] = 'آخرین فعالیت نرم افزار';
+$lang['software_updates_repository'] = 'مخزن';
+$lang['software_updates_return_to_overview'] = 'بازگشت به نمای کلی';
+$lang['software_updates_software_update_in_progress'] = 'به روز رسانی نرم افزار در حال پیشرفت است. لطفا بعدا بیا.';
+$lang['software_updates_software_updates_busy'] = 'نرم افزار به روز رسانی مشغول';
+$lang['software_updates_software_updates'] = 'بروز رسانی نرم افزار';
+$lang['software_updates_software_updates_system_busy'] = 'سیستم به روز رسانی نرم افزار مشغول است.';
+$lang['software_updates_software_up_to_date'] = 'نرم افزار تا به روز';
+$lang['software_updates_system_is_up_to_date'] = 'سیستم تا به امروز است.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'آخرین به روز رسانی نرم افزار نصب شده است.';
+$lang['software_updates_type'] = 'نوع';
+$lang['software_updates_update_all'] = 'همه را بروز رسانی کن';
+$lang['software_updates_updates_complete'] = 'نرم افزار به روز رسانی کامل';
+$lang['software_updates_updates'] = 'به روز رسانی';
+$lang['software_updates_upgrade'] = 'ارتقا';
+$lang['software_updates_wizard_description'] = 'حالا که شبکه خود را پیکربندی شده است، به روز رسانی حیاتی برای سیستم اصلی در حال حاضر نصب شده است.';
+$lang['software_updates_wizard_latest_necessary'] = 'لطفا نرم افزار سیستم شما قبل از ادامه به روز رسانی.';
