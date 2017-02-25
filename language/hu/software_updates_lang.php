@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'további frissítések';
+$lang['software_updates_app_description'] = 'A szoftverfrissítések app frissítéseket kínál az operációs rendszer összetevőit.';
+$lang['software_updates_app_name'] = 'szoftverfrissítések';
+$lang['software_updates_automatic_updates'] = 'Automatikus frissítések';
+$lang['software_updates_available_updates'] = 'elérhető frissítések';
+$lang['software_updates_busy_message'] = 'Egy másik felhasználó vagy szolgáltatás jelenleg a szoftverfrissítéseket rendszer. Amikor a folyamat befejeződött, ez app lesz újra elérhető.';
+$lang['software_updates_current_progress'] = 'Jelenlegi folyamat';
+$lang['software_updates_details'] = 'Részletek';
+$lang['software_updates_install_progress'] = 'Telepítse haladás';
+$lang['software_updates_loading_updates_message'] = 'Betöltése szoftverfrissítések lista, kérjük, legyen türelemmel.';
+$lang['software_updates_no_data_available'] = 'Nincs elérhető adat.';
+$lang['software_updates_overall_progress'] = 'Összesített előrehaladás';
+$lang['software_updates_package'] = 'Csomag';
+$lang['software_updates_please_be_patient_detail'] = 'Ez eltarthat egy-két percig, hogy frissítse a tároló és frissítése. Ez információt tároljuk későbbi használatra.';
+$lang['software_updates_please_be_patient'] = 'Kérjük várjon!';
+$lang['software_updates_progress_help'] = 'A rendszer jelenleg frissítés alatt áll. Ez a folyamat eltarthat egy ideig, ezért kérjük, legyen türelemmel!';
+$lang['software_updates_progress'] = 'Haladás';
+$lang['software_updates_recent_software_activity'] = 'Legutóbbi Software tevékenység';
+$lang['software_updates_repository'] = 'raktár';
+$lang['software_updates_return_to_overview'] = 'Vissza a Áttekintés';
+$lang['software_updates_software_update_in_progress'] = 'Szoftver frissítés folyamatban van. Légyszíves gyere vissza később.';
+$lang['software_updates_software_updates_busy'] = 'Szoftverfrissítések Busy';
+$lang['software_updates_software_updates'] = 'szoftverfrissítések';
+$lang['software_updates_software_updates_system_busy'] = 'A szoftverfrissítések rendszer foglalt.';
+$lang['software_updates_software_up_to_date'] = 'Szoftver Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'A rendszer up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'A szoftver legfrissebb verzió van telepítve.';
+$lang['software_updates_type'] = 'típus';
+$lang['software_updates_update_all'] = 'Mindent frissíteni';
+$lang['software_updates_updates_complete'] = 'Szoftverfrissítések Complete';
+$lang['software_updates_updates'] = 'Frissítés';
+$lang['software_updates_upgrade'] = 'frissítés';
+$lang['software_updates_wizard_description'] = 'Most, hogy a hálózatban konfigurálva, a kritikus frissítéseket a központi rendszer már telepítve van.';
+$lang['software_updates_wizard_latest_necessary'] = 'Kérjük, frissítse rendszerszoftver folytatás előtt.';
