@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'fleiri uppfærslur';
+$lang['software_updates_app_description'] = 'The Software Updates app afla uppfærslur fyrir undirliggjandi stýrikerfi hluti.';
+$lang['software_updates_app_name'] = 'Hugbúnaðaruppfærslur';
+$lang['software_updates_automatic_updates'] = 'Automatic Updates';
+$lang['software_updates_available_updates'] = 'Laus uppfærslur';
+$lang['software_updates_busy_message'] = 'Annar notandi eða þjónustu er nú með Hugbúnaðaruppfærslur kerfi. Þegar ferlinu er lokið, þetta app mun verða í boði á ný.';
+$lang['software_updates_current_progress'] = 'Núverandi Progress';
+$lang['software_updates_details'] = 'Nánar';
+$lang['software_updates_install_progress'] = 'setja Framfarir';
+$lang['software_updates_loading_updates_message'] = 'Hleður hugbúnaðaruppfærslur lista, vinsamlegast sýndu þolinmæði.';
+$lang['software_updates_no_data_available'] = 'Engin gögn í boði.';
+$lang['software_updates_overall_progress'] = 'heildar Progress';
+$lang['software_updates_package'] = 'pakki';
+$lang['software_updates_please_be_patient_detail'] = 'Það getur tekið eina mínútu eða tvær til að uppfæra alla geymsla og uppfæra upplýsingar. Þessar upplýsingar eru í skyndiminninu til notkunar í framtíðinni.';
+$lang['software_updates_please_be_patient'] = 'Vinsamlegast vertu þolinmóður!';
+$lang['software_updates_progress_help'] = 'Kerfið þitt er að uppfæra. Þetta ferli getur tekið nokkurn tíma, svo vinsamlegast vertu þolinmóð!';
+$lang['software_updates_progress'] = 'progress';
+$lang['software_updates_recent_software_activity'] = 'Nýleg Software Activity';
+$lang['software_updates_repository'] = 'geymsla';
+$lang['software_updates_return_to_overview'] = 'Return to Yfirlit';
+$lang['software_updates_software_update_in_progress'] = 'Hugbúnaðaruppfærsla er í gangi. Vinsamlegast komið aftur síðar.';
+$lang['software_updates_software_updates_busy'] = 'Hugbúnaðaruppfærslur Busy';
+$lang['software_updates_software_updates'] = 'Hugbúnaðaruppfærslur';
+$lang['software_updates_software_updates_system_busy'] = 'Hugbúnaðaruppfærslur kerfi er upptekinn.';
+$lang['software_updates_software_up_to_date'] = 'Hugbúnaður Upp-til-dagsetning';
+$lang['software_updates_system_is_up_to_date'] = 'Kerfi er upp-til-dagsetning.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Nýjustu hugbúnaður uppfærslur eru sett.';
+$lang['software_updates_type'] = 'Gerð';
+$lang['software_updates_update_all'] = 'Uppfæra All';
+$lang['software_updates_updates_complete'] = 'Hugbúnaðaruppfærslur Complete';
+$lang['software_updates_updates'] = 'uppfærslur';
+$lang['software_updates_upgrade'] = 'uppfærsla';
+$lang['software_updates_wizard_description'] = 'Nú þegar netið er stillt, eru mikilvægar uppfærslur kjarna kerfisins núna uppsett.';
+$lang['software_updates_wizard_latest_necessary'] = 'Uppfærðu hugbúnaðinn þinn en lengra er haldið.';
