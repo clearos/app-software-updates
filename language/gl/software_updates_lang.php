@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'actualizacións adicionais';
+$lang['software_updates_app_description'] = 'A aplicación Software Updates ofrece actualizacións para os compoñentes do sistema operativo subxacente.';
+$lang['software_updates_app_name'] = 'Actualizacións de software';
+$lang['software_updates_automatic_updates'] = 'actualizacións automáticas';
+$lang['software_updates_available_updates'] = 'actualizacións dispoñibles';
+$lang['software_updates_busy_message'] = 'Outro usuario ou servizo está a usar o sistema de actualizacións de software. Cando o proceso estea concluído, esta aplicación estará dispoñible de novo.';
+$lang['software_updates_current_progress'] = 'O progreso actual';
+$lang['software_updates_details'] = 'detalles';
+$lang['software_updates_install_progress'] = 'Progreso de Instalación';
+$lang['software_updates_loading_updates_message'] = 'Cargando lista de actualizacións de software, por favor, sexa paciente.';
+$lang['software_updates_no_data_available'] = 'Non hai datos dispoñibles.';
+$lang['software_updates_overall_progress'] = 'progreso global';
+$lang['software_updates_package'] = 'paquete';
+$lang['software_updates_please_be_patient_detail'] = 'Pode levar un ou dous minutos para actualizar todos os repositorios e actualizar detalles. Esta información é almacenada en caché para uso futuro.';
+$lang['software_updates_please_be_patient'] = 'Por favor, sexa paciente!';
+$lang['software_updates_progress_help'] = 'O sistema está a ser actualizado. Isto pode levar algún tempo, por favor sexa paciente!';
+$lang['software_updates_progress'] = 'progreso';
+$lang['software_updates_recent_software_activity'] = 'Actividade recente software';
+$lang['software_updates_repository'] = 'depósito';
+$lang['software_updates_return_to_overview'] = 'Return to overview';
+$lang['software_updates_software_update_in_progress'] = 'actualización de software está en marcha. Por favor, volva máis tarde.';
+$lang['software_updates_software_updates_busy'] = 'Software Updates Busy';
+$lang['software_updates_software_updates'] = 'Actualizacións de software';
+$lang['software_updates_software_updates_system_busy'] = 'sistema de actualizacións de software está ocupado.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'O sistema está up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'As actualizacións de software están instalados.';
+$lang['software_updates_type'] = 'tipo';
+$lang['software_updates_update_all'] = 'actualizar Todo';
+$lang['software_updates_updates_complete'] = 'Software Updates completa';
+$lang['software_updates_updates'] = 'actualizacións';
+$lang['software_updates_upgrade'] = 'actualización';
+$lang['software_updates_wizard_description'] = 'Agora que a súa rede está configurada, actualizacións críticas para o núcleo do sistema están instalados.';
+$lang['software_updates_wizard_latest_necessary'] = 'Por favor, actualiza o software do sistema antes de continuar.';
