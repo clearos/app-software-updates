@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'थप अपडेटहरू';
+$lang['software_updates_app_description'] = 'सफ्टवेयर अपडेट अनुप्रयोग जन्माउने अपरेटिङ सिस्टम घटक लागि अद्यावधिक प्रदान गर्दछ।';
+$lang['software_updates_app_name'] = 'सफ्टवेयर अपडेट';
+$lang['software_updates_automatic_updates'] = 'स्वचालित अद्यावधिक';
+$lang['software_updates_available_updates'] = 'उपलब्ध अपडेट';
+$lang['software_updates_busy_message'] = 'अन्य प्रयोगकर्ता वा सेवा हाल सफ्टवेयर अद्यावधिक सिस्टम प्रयोग गरिएको छ। प्रक्रिया पूरा गर्दा, यो अनुप्रयोग फेरि उपलब्ध हुनेछ।';
+$lang['software_updates_current_progress'] = 'वर्तमान प्रगति';
+$lang['software_updates_details'] = 'विवरण';
+$lang['software_updates_install_progress'] = 'प्रगति स्थापना';
+$lang['software_updates_loading_updates_message'] = 'सफ्टवेयर अद्यावधिक सूची लोड, कृपया धैर्य गर्नुहोस्।';
+$lang['software_updates_no_data_available'] = 'कुनै डाटा उपलब्ध छैन।';
+$lang['software_updates_overall_progress'] = 'समग्र प्रगति';
+$lang['software_updates_package'] = 'प्याकेज';
+$lang['software_updates_please_be_patient_detail'] = 'यो सबै भण्डार र अद्यावधिक विवरण अद्यावधिक गर्न एक वा दुई मिनेट लाग्न सक्छ। यो जानकारी भविष्यको लागि क्यास छ।';
+$lang['software_updates_please_be_patient'] = 'कृपया धैर्य!';
+$lang['software_updates_progress_help'] = 'तपाईँको प्रणाली हाल अद्यावधिक भइरहेको छ। यो प्रक्रिया केही समय लाग्न सक्छ, त्यसैले कृपया धैर्य!';
+$lang['software_updates_progress'] = 'प्रगति';
+$lang['software_updates_recent_software_activity'] = 'हाल सफ्टवेयर गतिविधि';
+$lang['software_updates_repository'] = 'भण्डार';
+$lang['software_updates_return_to_overview'] = 'अवलोकन फर्कन';
+$lang['software_updates_software_update_in_progress'] = 'सफ्टवेयर अद्यावधिक प्रगतिमा छ। कृपया पछि आउनुहोस्।';
+$lang['software_updates_software_updates_busy'] = 'सफ्टवेयर अपडेट व्यस्त';
+$lang['software_updates_software_updates'] = 'सफ्टवेयर अपडेट';
+$lang['software_updates_software_updates_system_busy'] = 'सफ्टवेयर अद्यावधिक प्रणाली व्यस्त छ।';
+$lang['software_updates_software_up_to_date'] = 'सफ्टवेयर-को मिति';
+$lang['software_updates_system_is_up_to_date'] = 'सिस्टम माथि-गर्न-मिति छ।';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'नवीनतम सफ्टवेयर अद्यावधिक स्थापित छन्।';
+$lang['software_updates_type'] = 'प्रकार';
+$lang['software_updates_update_all'] = 'सबै अपडेट';
+$lang['software_updates_updates_complete'] = 'सफ्टवेयर अपडेट पूरा';
+$lang['software_updates_updates'] = 'अपडेट';
+$lang['software_updates_upgrade'] = 'अपग्रेड गर्नुहोस्';
+$lang['software_updates_wizard_description'] = 'अब तपाईंको नेटवर्क कन्फिगर गरिएको छ कि, कोर प्रणाली महत्वपूर्ण अपडेट अब स्थापना।';
+$lang['software_updates_wizard_latest_necessary'] = 'कृपया जारी गर्नु अघि आफ्नो सिस्टम सफ्टवेयर अद्यावधिक गर्नुहोस्।';
