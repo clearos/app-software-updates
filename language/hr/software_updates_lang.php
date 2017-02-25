@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'dodatna ažuriranja';
+$lang['software_updates_app_description'] = 'Aplikacija Softverska ažuriranja pruža ažuriranja za komponente temeljni operativni sustav.';
+$lang['software_updates_app_name'] = 'Softver Obnove';
+$lang['software_updates_automatic_updates'] = 'Automatska ažuriranja';
+$lang['software_updates_available_updates'] = 'Dostupno ažuriranja';
+$lang['software_updates_busy_message'] = 'Drugi korisnik ili uslugu trenutno koristi sustav ažuriranja softvera. Kada se proces završi, ovaj app će postati ponovno dostupan.';
+$lang['software_updates_current_progress'] = 'Trenutno Napredak';
+$lang['software_updates_details'] = 'Detalji';
+$lang['software_updates_install_progress'] = 'Instalacija Progress';
+$lang['software_updates_loading_updates_message'] = 'Učitavanje popisa ažuriranja softvera, budite strpljivi.';
+$lang['software_updates_no_data_available'] = 'Nema dostupnih podataka.';
+$lang['software_updates_overall_progress'] = 'Sveukupno Napredak';
+$lang['software_updates_package'] = 'Paket';
+$lang['software_updates_please_be_patient_detail'] = 'To može potrajati minutu ili dvije u obnovu odlagališta i ažuriranje podataka u. Te se informacije spremljene za buduću uporabu.';
+$lang['software_updates_please_be_patient'] = 'Molimo vas za strpljenje!';
+$lang['software_updates_progress_help'] = 'Vaš sustav trenutno se ažurira. Ovaj proces može potrajati neko vrijeme, pa budite strpljivi!';
+$lang['software_updates_progress'] = 'Napredak';
+$lang['software_updates_recent_software_activity'] = 'Nedavna Software Aktivnost';
+$lang['software_updates_repository'] = 'skladište';
+$lang['software_updates_return_to_overview'] = 'Povratak na pregled';
+$lang['software_updates_software_update_in_progress'] = 'Ažuriranje softvera je u tijeku. Vratite se kasnije.';
+$lang['software_updates_software_updates_busy'] = 'Softver Obnove Zauzeto';
+$lang['software_updates_software_updates'] = 'Softver Obnove';
+$lang['software_updates_software_updates_system_busy'] = 'Softverska ažuriranja sustava je zauzet.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'Sustav je up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Najnovija ažuriranja softvera instalirane.';
+$lang['software_updates_type'] = 'Tip';
+$lang['software_updates_update_all'] = 'Ažuriraj sve';
+$lang['software_updates_updates_complete'] = 'Softver Obnove Kompletna';
+$lang['software_updates_updates'] = 'nadogradnje';
+$lang['software_updates_upgrade'] = 'Nadogradnja';
+$lang['software_updates_wizard_description'] = 'Sada kada je vaša mreža konfigurirana, kritična ažuriranja jezgre sustav sada su instalirani.';
+$lang['software_updates_wizard_latest_necessary'] = 'Ažurirajte svoj softver sustava prije nastavka.';
