@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'afikun awọn imudojuiwọn';
+$lang['software_updates_app_description'] = 'Awọn Software imudojuiwọn app pese awọn imudojuiwọn fun awọn amuye ẹrọ eto irinše.';
+$lang['software_updates_app_name'] = 'software imudojuiwọn';
+$lang['software_updates_automatic_updates'] = 'laifọwọyi imudojuiwọn';
+$lang['software_updates_available_updates'] = 'wa imudojuiwọn';
+$lang['software_updates_busy_message'] = 'Miran olumulo tabi iṣẹ ti wa ni Lọwọlọwọ lilo software imudojuiwọn eto. Nigba ti o ti ilana jẹ pari, yi app yoo di wa lẹẹkansi.';
+$lang['software_updates_current_progress'] = 'lọwọlọwọ Progress';
+$lang['software_updates_details'] = 'awọn alaye';
+$lang['software_updates_install_progress'] = 'fi sori ẹrọ Progress';
+$lang['software_updates_loading_updates_message'] = 'Ikojọpọ software imudojuiwọn akojọ, jọwọ jẹ alaisan.';
+$lang['software_updates_no_data_available'] = 'Ko si data wa.';
+$lang['software_updates_overall_progress'] = 'ìwò Progress';
+$lang['software_updates_package'] = 'package';
+$lang['software_updates_please_be_patient_detail'] = 'O le ya a iseju kan tabi meji lati mu gbogbo awọn ibi ipamọ ati imudojuiwọn awọn alaye. Alaye yi ti wa ni kashi fun ojo iwaju lilo.';
+$lang['software_updates_please_be_patient'] = 'Jọwọ jẹ Alaisan!';
+$lang['software_updates_progress_help'] = 'Rẹ eto wa ni Lọwọlọwọ ni imudojuiwọn. Ilana yi le ya diẹ ninu awọn akoko, ki jọwọ jẹ alaisan!';
+$lang['software_updates_progress'] = 'Progress';
+$lang['software_updates_recent_software_activity'] = 'Recent Software aṣayan iṣẹ';
+$lang['software_updates_repository'] = 'ibi ipamọ';
+$lang['software_updates_return_to_overview'] = 'Pada si Akopọ';
+$lang['software_updates_software_update_in_progress'] = 'Software imudojuiwọn jẹ ni ilọsiwaju. Jọwọ pada wa nigbamii.';
+$lang['software_updates_software_updates_busy'] = 'Software imudojuiwọn Sisẹ';
+$lang['software_updates_software_updates'] = 'software imudojuiwọn';
+$lang['software_updates_software_updates_system_busy'] = 'Software awọn imudojuiwọn eto ni o nšišẹ.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-si-ọjọ';
+$lang['software_updates_system_is_up_to_date'] = 'System jẹ soke-to-ọjọ.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Software titun imudojuiwọn ti wa ni sori ẹrọ.';
+$lang['software_updates_type'] = 'iru';
+$lang['software_updates_update_all'] = 'Update Gbogbo';
+$lang['software_updates_updates_complete'] = 'Software imudojuiwọn Pari';
+$lang['software_updates_updates'] = 'awọn imudojuiwọn';
+$lang['software_updates_upgrade'] = 'igbesoke';
+$lang['software_updates_wizard_description'] = 'Bayi wipe nẹtiwọki rẹ ti wa ni tunto, lominu ni awọn imudojuiwọn to mojuto eto ti wa ni bayi ti fi sori ẹrọ.';
+$lang['software_updates_wizard_latest_necessary'] = 'Jọwọ mu rẹ eto software ṣaaju ki o to tẹsiwaju.';
