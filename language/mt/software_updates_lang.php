@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'aġġornamenti addizzjonali';
+$lang['software_updates_app_description'] = 'Il-app Software Aġġornamenti jipprovdi aġġornamenti għall-komponenti sottostanti tas-sistema operattiva.';
+$lang['software_updates_app_name'] = 'softwer Aġġornamenti';
+$lang['software_updates_automatic_updates'] = 'Aġġornamenti awtomatiċi';
+$lang['software_updates_available_updates'] = 'disponibbli Aġġornamenti';
+$lang['software_updates_busy_message'] = 'utent ieħor jew servizz bħalissa qed jużaw is-sistema aġġornamenti tas-softwer. Meta l-proċess ikun komplut, dan app se jsiru disponibbli għal darb&#39;oħra.';
+$lang['software_updates_current_progress'] = 'Il-progress attwali';
+$lang['software_updates_details'] = 'Dettalji';
+$lang['software_updates_install_progress'] = 'Installa Progress';
+$lang['software_updates_loading_updates_message'] = 'Tagħbija aġġornamenti tas-softwer lista, jekk jogħġbok kun pazjent.';
+$lang['software_updates_no_data_available'] = 'M&#39;hemmx data disponibbli.';
+$lang['software_updates_overall_progress'] = 'Il-progress globali';
+$lang['software_updates_package'] = 'pakkett';
+$lang['software_updates_please_be_patient_detail'] = 'Hija tista &#39;tieħu minuta jew tnejn biex taġġorna l-repożitorju u taġġorna d-dettalji kollha. Din l-informazzjoni hija Cached għall-użu fil-futur.';
+$lang['software_updates_please_be_patient'] = 'Jekk jogħġbok kun pazjent!';
+$lang['software_updates_progress_help'] = 'Your sistema bħalissa qed tiġi aġġornata. Dan il-proċess jista &#39;jieħu ftit taż-żmien, għalhekk jekk jogħġbok kun pazjent!';
+$lang['software_updates_progress'] = 'progress';
+$lang['software_updates_recent_software_activity'] = 'Attività Riċenti Software';
+$lang['software_updates_repository'] = 'repożitorju';
+$lang['software_updates_return_to_overview'] = 'Ritorn għall-ħarsa ġenerali';
+$lang['software_updates_software_update_in_progress'] = 'aġġornament tas-softwer tkun għaddejja. Jekk jogħġbok terga &#39;lura aktar tard.';
+$lang['software_updates_software_updates_busy'] = 'Softwer Aġġornamenti Busy';
+$lang['software_updates_software_updates'] = 'softwer Aġġornamenti';
+$lang['software_updates_software_updates_system_busy'] = 'Sistema aġġornamenti tas-softwer hija okkupata.';
+$lang['software_updates_software_up_to_date'] = 'Softwer Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'Sistema huwa up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'L-aġġornamenti tas-softwer aħħar huma installati.';
+$lang['software_updates_type'] = 'tip';
+$lang['software_updates_update_all'] = 'aġġornament kollha';
+$lang['software_updates_updates_complete'] = 'Softwer Aġġornamenti Tlesti';
+$lang['software_updates_updates'] = 'aġġornamenti';
+$lang['software_updates_upgrade'] = 'Taġġorna';
+$lang['software_updates_wizard_description'] = 'Issa dak in-netwerk tiegħek huwa kkonfigurat, aġġornamenti kritiċi għas-sistema prinċipali issa huma installati.';
+$lang['software_updates_wizard_latest_necessary'] = 'Jekk jogħġbok aġġorna softwer ta &#39;sistema tiegħek qabel ikompli.';
