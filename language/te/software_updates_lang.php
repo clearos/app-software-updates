@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'అదనపు నవీకరణలను';
+$lang['software_updates_app_description'] = 'సాఫ్ట్వేర్ నవీకరణలు అనువర్తనం అంతర్లీన ఆపరేటింగ్ వ్యవస్థ భాగాలు కోసం నవీకరణలను అందిస్తుంది.';
+$lang['software_updates_app_name'] = 'సాఫ్ట్వేర్ నవీకరణలు';
+$lang['software_updates_automatic_updates'] = 'స్వయంచాలక నవీకరణలు';
+$lang['software_updates_available_updates'] = 'అందుబాటులో నవీకరణలు';
+$lang['software_updates_busy_message'] = 'మరో వినియోగదారుకు లేదా సేవ ప్రస్తుతానికి సాఫ్ట్వేర్ నవీకరణలను వ్యవస్థను ఉపయోగిస్తోంది. ప్రక్రియ పూర్తి చేసినప్పుడు, ఈ అనువర్తనం మళ్ళీ అందుబాటులో అవుతుంది.';
+$lang['software_updates_current_progress'] = 'ప్రస్తుత ప్రోగ్రెస్';
+$lang['software_updates_details'] = 'వివరాలు';
+$lang['software_updates_install_progress'] = 'ప్రోగ్రెస్ ఇన్స్టాల్';
+$lang['software_updates_loading_updates_message'] = 'లోడ్ అవుతున్నాయి సాఫ్ట్వేర్ నవీకరణలను జాబితా, దయచేసి వేచి ఉండండి.';
+$lang['software_updates_no_data_available'] = 'డేటా అందుబాటులో లేదు.';
+$lang['software_updates_overall_progress'] = 'మొత్తంమీద ప్రోగ్రెస్';
+$lang['software_updates_package'] = 'ప్యాకేజీ';
+$lang['software_updates_please_be_patient_detail'] = 'ఇది అన్ని రిపోజిటరీ మరియు నవీకరణ వివరాలను అప్డేట్ ఒక నిమిషం లేదా రెండు రోజులు పట్టవచ్చు. ఈ సమాచారం భవిష్య ఉపయోగం కాష్ ఉంది.';
+$lang['software_updates_please_be_patient'] = 'దయచేసి ఓపిక పట్టండి!';
+$lang['software_updates_progress_help'] = 'మీ సిస్టమ్ ప్రస్తుతం నవీకరించబడింది. ఈ ప్రక్రియ కొంత సమయం పడుతుంది, కాబట్టి దయచేసి ఓర్పు వహించండి!';
+$lang['software_updates_progress'] = 'పురోగతి';
+$lang['software_updates_recent_software_activity'] = 'ఇటీవలి సాఫ్ట్వేర్ కార్యాచరణ';
+$lang['software_updates_repository'] = 'రిపోజిటరీ';
+$lang['software_updates_return_to_overview'] = 'ఓవర్వ్యూ తిరిగి';
+$lang['software_updates_software_update_in_progress'] = 'సాఫ్ట్వేర్ నవీకరణ ప్రోగ్రెస్లో ఉంది. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి.';
+$lang['software_updates_software_updates_busy'] = 'సాఫ్ట్వేర్ నవీకరణలు బిజీ';
+$lang['software_updates_software_updates'] = 'సాఫ్ట్వేర్ నవీకరణలు';
+$lang['software_updates_software_updates_system_busy'] = 'సాఫ్ట్వేర్ నవీకరణలు సిస్టమ్ బిజీగా ఉంది.';
+$lang['software_updates_software_up_to_date'] = 'అప్ నవీనమైన సాఫ్ట్వేర్';
+$lang['software_updates_system_is_up_to_date'] = 'వ్యవస్థ అప్ టు తేదీ.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'తాజా సాఫ్ట్వేర్ నవీకరణలను సంస్థాపించిన.';
+$lang['software_updates_type'] = 'రకం';
+$lang['software_updates_update_all'] = 'సరిచేయబడిన';
+$lang['software_updates_updates_complete'] = 'సాఫ్ట్వేర్ నవీకరణలు పూర్తి';
+$lang['software_updates_updates'] = 'నవీకరణలు';
+$lang['software_updates_upgrade'] = 'నవీకరణ';
+$lang['software_updates_wizard_description'] = 'ఇప్పుడు మీ నెట్వర్క్ ఆకృతీకరణను, కోర్ వ్యవస్థ క్లిష్టమైన నవీకరణలను ఇప్పుడు సంస్థాపించిన.';
+$lang['software_updates_wizard_latest_necessary'] = 'కొనసాగే ముందు మీ సిస్టమ్ సాఫ్ట్వేర్ అప్డేట్.';
