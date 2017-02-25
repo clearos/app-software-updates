@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'karagdagang mga update';
+$lang['software_updates_app_description'] = 'Ang Software Update app ay nagbibigay ng mga update para sa mga pinagbabatayan components operating system.';
+$lang['software_updates_app_name'] = 'Pag-update ng software';
+$lang['software_updates_automatic_updates'] = 'Awtomatikong Pagpapasariwa';
+$lang['software_updates_available_updates'] = 'magagamit Update';
+$lang['software_updates_busy_message'] = 'Ang isa pang user o serbisyo ay kasalukuyang gumagamit ng mga update ng software system. Kapag ang proseso ay tapos na, ang app na ito ay magiging magagamit muli.';
+$lang['software_updates_current_progress'] = 'kasalukuyang Progress';
+$lang['software_updates_details'] = 'Detalye';
+$lang['software_updates_install_progress'] = 'I-install Progress';
+$lang['software_updates_loading_updates_message'] = 'Nilo-load ang listahan update ng software, mangyaring maging mahinahon.';
+$lang['software_updates_no_data_available'] = 'magagamit walang data.';
+$lang['software_updates_overall_progress'] = 'pangkalahatang Progress';
+$lang['software_updates_package'] = 'pakete';
+$lang['software_updates_please_be_patient_detail'] = 'Maaari itong tumagal ng isang minuto o dalawa upang i-update ang lahat ng mga repository at i-update sa mga detalye. Ang impormasyon na ito ay naka-cache para sa magamit sa hinaharap.';
+$lang['software_updates_please_be_patient'] = 'Mangyaring maging pasyente!';
+$lang['software_updates_progress_help'] = 'Ang iyong sistema ay kasalukuyang ina-update. Ang prosesong ito ay maaaring tumagal ng ilang oras, kaya mangyaring maging mahinahon!';
+$lang['software_updates_progress'] = 'pag-unlad';
+$lang['software_updates_recent_software_activity'] = 'Kamakailang Aktibidad Software';
+$lang['software_updates_repository'] = 'taguan';
+$lang['software_updates_return_to_overview'] = 'Bumalik sa Pangkalahatang-ideya ng';
+$lang['software_updates_software_update_in_progress'] = 'Software update may ginagawang pagpapasabog. Mangyaring bumalik sa ibang pagkakataon.';
+$lang['software_updates_software_updates_busy'] = 'Software Update Busy';
+$lang['software_updates_software_updates'] = 'Pag-update ng software';
+$lang['software_updates_software_updates_system_busy'] = 'Software update ng system ay abala.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'System ay up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Ang pinakabagong update ng software ay naka-install.';
+$lang['software_updates_type'] = 'uri';
+$lang['software_updates_update_all'] = 'update lahat';
+$lang['software_updates_updates_complete'] = 'Software Update Complete';
+$lang['software_updates_updates'] = 'update';
+$lang['software_updates_upgrade'] = 'I-upgrade';
+$lang['software_updates_wizard_description'] = 'Ngayon na ang iyong network ay isinaayos, kritikal na mga update sa core system ay ngayon naka-install.';
+$lang['software_updates_wizard_latest_necessary'] = 'Mangyaring i-update ang iyong system software bago magpatuloy.';
