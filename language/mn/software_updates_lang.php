@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'нэмэлт шинэчлэлтүүд';
+$lang['software_updates_app_description'] = 'Програм хангамж Шинэчлэлтүүд нь апп нь үндсэн үйлдлийн системийн бүрэлдэхүүн хэсэг нь шинэчлэлтүүдийг олгодог.';
+$lang['software_updates_app_name'] = 'Програм хангамж Шинэчлэлтүүд нь';
+$lang['software_updates_automatic_updates'] = 'автомат Шинэчлэлтүүд нь';
+$lang['software_updates_available_updates'] = 'Боломжит Шинэчлэлтүүд нь';
+$lang['software_updates_busy_message'] = 'Өөр нэг хэрэглэгч эсвэл үйлчилгээ нь одоогоор програм хангамжийн шинэчлэл системийг ашиглаж байна. процесс дууссаны дараа энэ апп дахин авах боломжтой болно.';
+$lang['software_updates_current_progress'] = 'одоогийн дэвшил';
+$lang['software_updates_details'] = 'дэлгэрэнгүй';
+$lang['software_updates_install_progress'] = 'хөгжил дэвшил суулгах';
+$lang['software_updates_loading_updates_message'] = 'програм хангамжийн шинэчлэл жагсаалтыг ачааллаж байна, тэвчээртэй байх уу.';
+$lang['software_updates_no_data_available'] = 'Ямар ч мэдээлэл байхгүй байна.';
+$lang['software_updates_overall_progress'] = 'Ер нь дэвшил';
+$lang['software_updates_package'] = 'Багц';
+$lang['software_updates_please_be_patient_detail'] = 'Энэ нь бүх архив, шинэчлэх дэлгэрэнгүй мэдээллийг шинэчлэх нь нэг, хоёр минут авч болно. Энэхүү мэдээлэл нь ирээдүйд ашиглах кэш хийгдсэн байна.';
+$lang['software_updates_please_be_patient'] = 'Тэвчээртэй байна уу!';
+$lang['software_updates_progress_help'] = 'Таны систем одоогоор шинэчлэгдэж байна. Энэ үйл явц нь тодорхой хэмжээний цаг авах болно, тиймээс тэвчээртэй байж уу!';
+$lang['software_updates_progress'] = 'дэвшил';
+$lang['software_updates_recent_software_activity'] = 'Сүүлийн үеийн Програм хангамжийн үйл ажиллагаа';
+$lang['software_updates_repository'] = 'репозитор';
+$lang['software_updates_return_to_overview'] = 'Тойм руу буцах';
+$lang['software_updates_software_update_in_progress'] = 'Програм хангамжийн шинэчлэл хийгдэж байна. дараа нь буцаж ирнэ үү.';
+$lang['software_updates_software_updates_busy'] = 'Програм хангамж Шинэчлэл Борви бохисхийх завгүй';
+$lang['software_updates_software_updates'] = 'Програм хангамж Шинэчлэлтүүд нь';
+$lang['software_updates_software_updates_system_busy'] = 'Програм хангамжийн шинэчлэл систем завгүй байна.';
+$lang['software_updates_software_up_to_date'] = 'Програм хангамж Up-тулд-огноо';
+$lang['software_updates_system_is_up_to_date'] = 'Систем дээр үеийн юм.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Хамгийн сүүлийн үеийн програм хангамжийн шинэчлэл суулгасан байна.';
+$lang['software_updates_type'] = 'Санал авах';
+$lang['software_updates_update_all'] = 'Бүгдийг шинэчил';
+$lang['software_updates_updates_complete'] = 'Програм хангамжийн шинэчлэлийг иж бүрэн';
+$lang['software_updates_updates'] = 'Шинэчлэл';
+$lang['software_updates_upgrade'] = 'Upgrade';
+$lang['software_updates_wizard_description'] = 'Одоо таны сүлжээний тохируулсан байгаа, үндсэн системд чухал шинэчлэлтүүд одоо суугдсан байгаа.';
+$lang['software_updates_wizard_latest_necessary'] = 'Цааш үргэлжлүүлэхээсээ өмнө нь таны системийн програм хангамжийг шинэчилнэ үү.';
