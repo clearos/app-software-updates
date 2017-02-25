@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'actualizări suplimentare';
+$lang['software_updates_app_description'] = 'Aplicația Actualizări software oferă actualizări pentru componentele sistemului de operare care stau la baza.';
+$lang['software_updates_app_name'] = 'Software-ul Actualizări';
+$lang['software_updates_automatic_updates'] = 'Actualizari automate';
+$lang['software_updates_available_updates'] = 'Actualizări disponibile';
+$lang['software_updates_busy_message'] = 'Un alt utilizator sau un serviciu este în prezent folosind sistemul actualizări de software. În cazul în care procesul este complet, această aplicație va deveni din nou disponibil.';
+$lang['software_updates_current_progress'] = 'Progresul actual';
+$lang['software_updates_details'] = 'Detalii';
+$lang['software_updates_install_progress'] = 'Instalati Progress';
+$lang['software_updates_loading_updates_message'] = 'Se încarcă lista de actualizări de software, vă rugăm să aveți răbdare.';
+$lang['software_updates_no_data_available'] = 'Nici o informatie disponibila.';
+$lang['software_updates_overall_progress'] = 'Progres total';
+$lang['software_updates_package'] = 'Pachet';
+$lang['software_updates_please_be_patient_detail'] = 'Aceasta poate dura un minut sau două pentru a actualiza toate magazia și actualiza detaliile. Această informație este stocată în cache pentru utilizare ulterioară.';
+$lang['software_updates_please_be_patient'] = 'Te rog fii rabdator!';
+$lang['software_updates_progress_help'] = 'Sistemul dvs. este în prezent în curs de actualizare. Acest proces poate dura ceva timp, așa că vă rugăm să aveți răbdare!';
+$lang['software_updates_progress'] = 'progres';
+$lang['software_updates_recent_software_activity'] = 'Software-Activitate recentă';
+$lang['software_updates_repository'] = 'Repertoriu';
+$lang['software_updates_return_to_overview'] = 'Privire de ansamblu a reveni la';
+$lang['software_updates_software_update_in_progress'] = 'actualizare software este în curs de desfășurare. Te rog intoarce-te mai tarziu.';
+$lang['software_updates_software_updates_busy'] = 'Software-ul Actualizări Ocupat';
+$lang['software_updates_software_updates'] = 'Software-ul Actualizări';
+$lang['software_updates_software_updates_system_busy'] = 'Sistemul actualizări de software este ocupat.';
+$lang['software_updates_software_up_to_date'] = 'Software-ul Up-to-data';
+$lang['software_updates_system_is_up_to_date'] = 'Sistemul este de până la zi.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Cele mai recente actualizări de software sunt instalate.';
+$lang['software_updates_type'] = 'Tip';
+$lang['software_updates_update_all'] = 'actualizarea tuturor';
+$lang['software_updates_updates_complete'] = 'Software-ul Actualizări complete';
+$lang['software_updates_updates'] = 'actualizări';
+$lang['software_updates_upgrade'] = 'Actualizare';
+$lang['software_updates_wizard_description'] = 'Acum, că rețeaua este configurată, actualizări critice ale sistemului de bază sunt acum instalate.';
+$lang['software_updates_wizard_latest_necessary'] = 'Vă rugăm să actualizați software-ul sistemului înainte de a continua.';
