@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'ການປັບປຸງເພີ່ມເຕີມ';
+$lang['software_updates_app_description'] = 'ການ app ການປັບປຸງຊອບແວໃຫ້ການປັບປຸງສໍາລັບອົງປະກອບຂອງລະບົບປະຕິບັດການທີ່ຕິດພັນ.';
+$lang['software_updates_app_name'] = 'ການປັບປຸງຊອບແວ';
+$lang['software_updates_automatic_updates'] = 'ການປັບປຸງອັດຕະໂນມັດ';
+$lang['software_updates_available_updates'] = 'ການປັບປຸງທີ່ມີຢູ່';
+$lang['software_updates_busy_message'] = 'ຜູ້ໃຊ້ຫລືບໍລິການອື່ນຂະນະນີ້ການນໍາໃຊ້ລະບົບການປັບປຸງຊອບແວ. ໃນເວລາທີ່ຂະບວນການແມ່ນສໍາເລັດສົມບູນ, app ນີ້ຈະກາຍເປັນທີ່ມີອີກເທື່ອຫນຶ່ງ.';
+$lang['software_updates_current_progress'] = 'ຄວາມຄືບຫນ້າໃນປັດຈຸບັນ';
+$lang['software_updates_details'] = 'ລາຍລະອຽດ';
+$lang['software_updates_install_progress'] = 'ຕິດຕັ້ງ Progress';
+$lang['software_updates_loading_updates_message'] = 'Loading ບັນຊີລາຍຊື່ການປັບປຸງຊອບແວ, ກະລຸນາຄວາມອົດທົນ.';
+$lang['software_updates_no_data_available'] = 'ບໍ່ມີຂໍ້ມູນ.';
+$lang['software_updates_overall_progress'] = 'ຄວາມຄືບຫນ້າໂດຍລວມ';
+$lang['software_updates_package'] = 'Package';
+$lang['software_updates_please_be_patient_detail'] = 'ມັນສາມາດໃຊ້ເວລາເປັນນາທີຫຼືສອງການປັບປຸງທັງຫມົດທີ່ເກັບຂໍ້ມູນແລະການປັບປຸງລາຍລະອຽດ. ຂໍ້ມູນນີ້ແມ່ນໄດ້ຖືກເກັບໄວ້ສໍາລັບການນໍາໃຊ້ໃນອະນາຄົດ.';
+$lang['software_updates_please_be_patient'] = 'ກະລຸນາຄວາມອົດທົນ!';
+$lang['software_updates_progress_help'] = 'ລະບົບຂອງທ່ານໃນປັດຈຸບັນຈະຖືກປັບປຸງ. ຂະບວນການນີ້ສາມາດໃຊ້ເວລາທີ່ໃຊ້ເວລາບາງ, ສະນັ້ນກະລຸນາຈະຄົນເຈັບ!';
+$lang['software_updates_progress'] = 'ຄວາມຄືບຫນ້າ';
+$lang['software_updates_recent_software_activity'] = 'ກິດຈະກໍາຊອຟແວທີ່ຜ່ານມາ';
+$lang['software_updates_repository'] = 'ເກັບຂໍ້ມູນ';
+$lang['software_updates_return_to_overview'] = 'ກັບຄືນໄປທີ່ພາບລວມ';
+$lang['software_updates_software_update_in_progress'] = 'ການປັບປຸງຊອບແວແມ່ນຢູ່ໃນຄວາມຄືບຫນ້າ. ກະລຸນາກັບຄືນມາຕໍ່ມາ.';
+$lang['software_updates_software_updates_busy'] = 'ຊອບແວການປັບປຸງທຸລະກິດ';
+$lang['software_updates_software_updates'] = 'ການປັບປຸງຊອບແວ';
+$lang['software_updates_software_updates_system_busy'] = 'ລະບົບການປັບປຸງຊອບແວເປັນທຸລະກິດ.';
+$lang['software_updates_software_up_to_date'] = 'Software ຂຶ້ນກັບ, ວັນທີ';
+$lang['software_updates_system_is_up_to_date'] = 'ລະບົບການແມ່ນຂຶ້ນກັບ, ວັນທີ.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'ການປັບປຸງຊອບແວຫລ້າສຸດມີການຕິດຕັ້ງ.';
+$lang['software_updates_type'] = 'ປະເພດ';
+$lang['software_updates_update_all'] = 'ການປັບປຸງທັງຫມົດ';
+$lang['software_updates_updates_complete'] = 'ຊອບແວການປັບປຸງສໍາເລັດ';
+$lang['software_updates_updates'] = 'ການປັບປຸງ';
+$lang['software_updates_upgrade'] = 'ການຍົກລະດັບ';
+$lang['software_updates_wizard_description'] = 'ໃນປັດຈຸບັນວ່າເຄືອຂ່າຍຂອງທ່ານຖືກຕັ້ງຄ່າ, ປັບປຸງທີ່ສໍາຄັນກັບລະບົບຫຼັກການມີການຕິດຕັ້ງໃນປັດຈຸບັນ.';
+$lang['software_updates_wizard_latest_necessary'] = 'ກະລຸນາປັບປຸງຊອບແວລະບົບຂອງທ່ານກ່ອນທີ່ຈະດໍາເນີນການຕໍ່.';
