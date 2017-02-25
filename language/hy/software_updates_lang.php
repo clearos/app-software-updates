@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'լրացուցիչ թարմացումները';
+$lang['software_updates_app_description'] = 'The Software Updates ծրագիրը նախատեսում թարմացումները հիմքում ընկած օպերացիոն համակարգի բաղադրիչների:';
+$lang['software_updates_app_name'] = 'Software Updates';
+$lang['software_updates_automatic_updates'] = 'Ավտոմատ արդիացումներ';
+$lang['software_updates_available_updates'] = 'Դուք փնտրել էք - թարմացումներ';
+$lang['software_updates_busy_message'] = 'Մեկ այլ օգտատեր կամ ծառայությունը ներկայումս օգտագործում է ծրագրային թարմացումները համակարգը: Երբ այդ գործընթացը ավարտված է, այս ծրագիրը կդառնա կրկին հասանելի.';
+$lang['software_updates_current_progress'] = 'Ընթացիկ Progress';
+$lang['software_updates_details'] = 'Մանրամասներ';
+$lang['software_updates_install_progress'] = 'Տեղադրեք Պրոգրես';
+$lang['software_updates_loading_updates_message'] = 'Բեռնվում ծրագրային թարմացումները ցուցակը, խնդրում ենք լինել համբերատար:';
+$lang['software_updates_no_data_available'] = 'Տվյալներ չկան:';
+$lang['software_updates_overall_progress'] = 'Ընդհանուր Progress';
+$lang['software_updates_package'] = 'փաթեթ';
+$lang['software_updates_please_be_patient_detail'] = 'Դա կարող է տեւել մի քանի րոպե, կամ երկու թարմացնել բոլոր շտեմարան եւ թարմացնել մանրամասները: Այս տեղեկատվությունը վերցված են քեշից հետագա օգտագործման համար:';
+$lang['software_updates_please_be_patient'] = 'Խնդրում ենք լինել համբերատար!';
+$lang['software_updates_progress_help'] = 'Ձեր համակարգը ներկայումս թարմացվում է: Այս գործընթացը կարող է տեւել որոշ ժամանակ, ուստի խնդրում ենք լինել համբերատար.';
+$lang['software_updates_progress'] = 'առաջխաղացում';
+$lang['software_updates_recent_software_activity'] = 'Վերջերս Software Ակտիվություն';
+$lang['software_updates_repository'] = 'շտեմարան';
+$lang['software_updates_return_to_overview'] = 'Վերադարձ դեպի Overview';
+$lang['software_updates_software_update_in_progress'] = 'Ծրագրակազմի թարմացումը ընթացքի մեջ է: Խնդրում ենք վերադառնալ ավելի ուշ:';
+$lang['software_updates_software_updates_busy'] = 'Software Updates Busy';
+$lang['software_updates_software_updates'] = 'Software Updates';
+$lang['software_updates_software_updates_system_busy'] = 'Թարմացումներ համակարգը զբաղված է:';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to- ամսաթիվը';
+$lang['software_updates_system_is_up_to_date'] = 'System է up-to- ամսաթիվը.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Այն վերջին թարմացումներ են տեղադրվել:';
+$lang['software_updates_type'] = 'Տիպ';
+$lang['software_updates_update_all'] = 'Թարմացնել Բոլոր';
+$lang['software_updates_updates_complete'] = 'Software Updates Complete';
+$lang['software_updates_updates'] = 'թարմացումները';
+$lang['software_updates_upgrade'] = 'բարելավում';
+$lang['software_updates_wizard_description'] = 'Այժմ, երբ ձեր ցանցը կազմաձեւված, քննադատական ​​թարմացումներընդհատել հիմնական համակարգում այժմ տեղադրվել:';
+$lang['software_updates_wizard_latest_necessary'] = 'Խնդրում ենք նորացնել Ձեր համակարգի ծրագրային ապահովման նախքան շարունակելը:';
