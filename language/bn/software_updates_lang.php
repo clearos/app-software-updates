@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'অতিরিক্ত আপডেট';
+$lang['software_updates_app_description'] = 'সফ্টওয়্যার আপডেট অ্যাপ্লিকেশন অন্তর্নিহিত অপারেটিং সিস্টেম উপাদান জন্য আপডেট প্রদান করে.';
+$lang['software_updates_app_name'] = 'সফটওয়্যার আপডেট';
+$lang['software_updates_automatic_updates'] = 'স্বয়ংক্রিয় আপডেট';
+$lang['software_updates_available_updates'] = 'উপলব্ধ আপডেট';
+$lang['software_updates_busy_message'] = 'আরেকজন ব্যবহারকারী বা সেবা বর্তমানে সফ্টওয়্যার আপডেট সিস্টেম ব্যবহার করা হয়. যখন প্রক্রিয়া সম্পূর্ণ হয়, এই অ্যাপ্লিকেশন আবার পাওয়া যাবে.';
+$lang['software_updates_current_progress'] = 'বর্তমান অগ্রগতি';
+$lang['software_updates_details'] = 'বিস্তারিত';
+$lang['software_updates_install_progress'] = 'অগ্রগতি ইনস্টল';
+$lang['software_updates_loading_updates_message'] = 'লোড সফ্টওয়্যার আপডেট তালিকা, দয়া করে ধৈর্য ধরুন.';
+$lang['software_updates_no_data_available'] = 'কোন তথ্য নেই.';
+$lang['software_updates_overall_progress'] = 'সামগ্রিক অগ্রগতি';
+$lang['software_updates_package'] = 'প্যাকেজ';
+$lang['software_updates_please_be_patient_detail'] = 'এটা সব সংগ্রহস্থলের এবং আপডেটের জন্য এখানে ক্লিক করুন আপডেট করার জন্য একটি বা দুটি মিনিট সময় লাগতে পারে. এই তথ্য ভবিষ্যতে ব্যবহারের জন্য সংরক্ষিত করা হয়েছে.';
+$lang['software_updates_please_be_patient'] = 'দয়া করে ধৈর্য ধরুন!';
+$lang['software_updates_progress_help'] = 'আপনার সিস্টেমে বর্তমানে আপডেট করা হচ্ছে. এই প্রক্রিয়া কিছুটা সময় লাগতে পারে, তাই দয়া করে ধৈর্য ধরুন!';
+$lang['software_updates_progress'] = 'উন্নতি';
+$lang['software_updates_recent_software_activity'] = 'সাম্প্রতিক সফটওয়্যার ভ্রমণ';
+$lang['software_updates_repository'] = 'সংগ্রহস্থলের প্রয়োগ';
+$lang['software_updates_return_to_overview'] = 'নিরিক্ষায় ফেরা';
+$lang['software_updates_software_update_in_progress'] = 'সফটওয়্যার আপডেট প্রগতিতে রয়েছে. অনুগ্রহ করে পরে আসুন.';
+$lang['software_updates_software_updates_busy'] = 'সফ্টওয়্যার আপডেট ব্যস্ত';
+$lang['software_updates_software_updates'] = 'সফটওয়্যার আপডেট';
+$lang['software_updates_software_updates_system_busy'] = 'সফটওয়্যার আপডেট সিস্টেম ব্যস্ত আছে.';
+$lang['software_updates_software_up_to_date'] = 'আপ-টু-ডেট সফটওয়্যার';
+$lang['software_updates_system_is_up_to_date'] = 'সিস্টেম আপ-টু-ডেট হয়.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'সর্বশেষ সফ্টওয়্যার আপডেট ইনস্টল করা হয়.';
+$lang['software_updates_type'] = 'আদর্শ';
+$lang['software_updates_update_all'] = 'সকল আপডেট';
+$lang['software_updates_updates_complete'] = 'সফ্টওয়্যার আপডেট সমাপ্তি';
+$lang['software_updates_updates'] = 'আপডেট';
+$lang['software_updates_upgrade'] = 'আপগ্রেড';
+$lang['software_updates_wizard_description'] = 'এখন আপনার নেটওয়ার্ক কনফিগার করা হয়, কোর সিস্টেম সমালোচনামূলক আপডেট বর্তমানে ইনস্টল করা হয়.';
+$lang['software_updates_wizard_latest_necessary'] = 'চালিয়ে যাওয়ার আগে আপনার সিস্টেম সফ্টওয়্যার আপডেট করুন.';
