@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'updates ya ziada';
+$lang['software_updates_app_description'] = 'programu Programu Updates hutoa updates kwa msingi vipengele mfumo wa uendeshaji.';
+$lang['software_updates_app_name'] = 'Programu Updates';
+$lang['software_updates_automatic_updates'] = 'moja kwa moja Updates';
+$lang['software_updates_available_updates'] = 'inapatikana Updates';
+$lang['software_updates_busy_message'] = 'user au huduma nyingine sasa kwa kutumia programu updates mfumo. Wakati mchakato ni kamili, programu hii itakuwa inapatikana tena.';
+$lang['software_updates_current_progress'] = 'sasa Maendeleo';
+$lang['software_updates_details'] = 'maelezo';
+$lang['software_updates_install_progress'] = 'kufunga Maendeleo';
+$lang['software_updates_loading_updates_message'] = 'Loading programu updates orodha, tafadhali kuwa na subira.';
+$lang['software_updates_no_data_available'] = 'Hakuna data za kutosha.';
+$lang['software_updates_overall_progress'] = 'Kwa ujumla Maendeleo';
+$lang['software_updates_package'] = 'mfuko';
+$lang['software_updates_please_be_patient_detail'] = 'Ni inaweza kuchukua dakika moja au mbili kwa update there na update maelezo yote. Hii habari ni cached kwa matumizi ya baadaye.';
+$lang['software_updates_please_be_patient'] = 'Tafadhali kuwa mgonjwa!';
+$lang['software_updates_progress_help'] = 'mfumo wako kwa sasa ni kuwa updated. Mchakato huu unaweza kuchukua muda, hivyo tafadhali kuwa na subira!';
+$lang['software_updates_progress'] = 'maendeleo';
+$lang['software_updates_recent_software_activity'] = 'Hivi karibuni Programu Shughuli za';
+$lang['software_updates_repository'] = 'there';
+$lang['software_updates_return_to_overview'] = 'Kurudi Overview';
+$lang['software_updates_software_update_in_progress'] = 'Programu update ni katika maendeleo. Tafadhali rudi tena baadaye.';
+$lang['software_updates_software_updates_busy'] = 'Programu Updates Busy';
+$lang['software_updates_software_updates'] = 'Programu Updates';
+$lang['software_updates_software_updates_system_busy'] = 'Programu updates mfumo ni busy.';
+$lang['software_updates_software_up_to_date'] = 'Programu Up-to-tarehe';
+$lang['software_updates_system_is_up_to_date'] = 'System ni up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'updates karibuni programu ni imewekwa.';
+$lang['software_updates_type'] = 'aina';
+$lang['software_updates_update_all'] = 'Mwisho All';
+$lang['software_updates_updates_complete'] = 'Programu Updates Complete';
+$lang['software_updates_updates'] = 'updates';
+$lang['software_updates_upgrade'] = 'Upgrade';
+$lang['software_updates_wizard_description'] = 'Sasa kwa kuwa mtandao wako kimeundwa, updates muhimu kwa mfumo wa msingi ni sasa imewekwa.';
+$lang['software_updates_wizard_latest_necessary'] = 'Tafadhali update mfumo wa programu yako kabla ya kuendelea.';
