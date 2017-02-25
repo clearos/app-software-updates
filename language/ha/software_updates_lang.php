@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'm updates';
+$lang['software_updates_app_description'] = 'The Software Updates app bayar da updates ga tamkar tsarin aiki aka gyara.';
+$lang['software_updates_app_name'] = 'software Updates';
+$lang['software_updates_automatic_updates'] = 'atomatik Updates';
+$lang['software_updates_available_updates'] = 'Rasu Updates';
+$lang['software_updates_busy_message'] = 'Wani mai amfani ko sabis da ake a halin yanzu ta amfani da software updates tsarin. Lokacin da tsari ne cikakke, wannan app za ta zama available sake.';
+$lang['software_updates_current_progress'] = 'Current Ci gaban';
+$lang['software_updates_details'] = 'details';
+$lang['software_updates_install_progress'] = 'shigar Ci gaban';
+$lang['software_updates_loading_updates_message'] = 'Loading software updates list, don Allah ka yi haƙuri.';
+$lang['software_updates_no_data_available'] = 'No data available.';
+$lang['software_updates_overall_progress'] = 'overall Ci gaban';
+$lang['software_updates_package'] = 'Package';
+$lang['software_updates_please_be_patient_detail'] = 'Zai iya šaukar minti ko biyu don ɗaukaka dukan mangaza kuma ta karshe cikakken bayani. Wannan bayani ne Kama don nan gaba amfani.';
+$lang['software_updates_please_be_patient'] = 'Don Allah ku yi haƙuri!';
+$lang['software_updates_progress_help'] = 'Your tsarin a halin yanzu ake updated. Wannan tsari na iya daukar wani lokaci, don haka don Allah ka yi haƙuri!';
+$lang['software_updates_progress'] = 'Ci gaban';
+$lang['software_updates_recent_software_activity'] = 'Recent Software Activity';
+$lang['software_updates_repository'] = 'mangaza';
+$lang['software_updates_return_to_overview'] = 'Komawa zuwa Siffar';
+$lang['software_updates_software_update_in_progress'] = 'Software ta karshe ne a ci gaba. Don Allah dawo daga baya.';
+$lang['software_updates_software_updates_busy'] = 'Software Updates Kan aiki';
+$lang['software_updates_software_updates'] = 'software Updates';
+$lang['software_updates_software_updates_system_busy'] = 'Software updates tsarin ne m.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'System ne up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'The latest updates software da ake shigar.';
+$lang['software_updates_type'] = 'type';
+$lang['software_updates_update_all'] = 'Update All';
+$lang['software_updates_updates_complete'] = 'Software Updates Complete';
+$lang['software_updates_updates'] = 'updates';
+$lang['software_updates_upgrade'] = 'inganci';
+$lang['software_updates_wizard_description'] = 'Yanzu da afaretan cibiyar aka kaga, m updates to da zuciyar tsarin yanzu shigar.';
+$lang['software_updates_wizard_latest_necessary'] = 'Don Allah sabunta tsarin software da ci gaba.';
