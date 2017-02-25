@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'နောက်ထပ်အသစ်ပြောင်းခြင်း';
+$lang['software_updates_app_description'] = 'အဆိုပါဆော့ဖ်ဝဲလ်အပ်ဒိတ်များ app ကိုအခြေခံ operating system ကိုစိတျအပိုငျးအဘို့အ updates များကိုပေးစွမ်းသည်။';
+$lang['software_updates_app_name'] = 'Software ကိုအပ်ဒိတ်များ';
+$lang['software_updates_automatic_updates'] = 'အလိုအလျောက် Updates ကို';
+$lang['software_updates_available_updates'] = 'ရရှိနိုင်ပါအပ်ဒိတ်များ';
+$lang['software_updates_busy_message'] = 'နောက်ထပ်အသုံးပြုသူသို့မဟုတ်ဝန်ဆောင်မှုလက်ရှိတွင် software ကို updates များကို system ကိုအသုံးပြုနေသည်။ ဖြစ်စဉ်ပြည့်စုံသောအခါ, ဒီ app ကိုနောက်တဖန်မရရှိနိုင်ဖြစ်လာပါလိမ့်မယ်။';
+$lang['software_updates_current_progress'] = 'လက်ရှိတိုးတက်မှု';
+$lang['software_updates_details'] = 'အသေးစိတ်';
+$lang['software_updates_install_progress'] = 'တိုးတက်မှု Install';
+$lang['software_updates_loading_updates_message'] = 'ဆော့ဖျဝဲ updates များကိုစာရင်း Loading, လူနာဖြစ်ပါ။';
+$lang['software_updates_no_data_available'] = 'ရရှိနိုင်ပါဒေတာမရှိပါ။';
+$lang['software_updates_overall_progress'] = 'ယေဘုယျအားတိုးတက်ရေးပါတီ';
+$lang['software_updates_package'] = 'အထုပ်';
+$lang['software_updates_please_be_patient_detail'] = 'ဒါဟာအပေါငျးတို့သ repository ကိုနှင့် update ကိုအသေးစိတျကို update လုပ်ဖို့တစ်မိနစ်သို့မဟုတ်နှစ်ဦးယူနိုင်ပါတယ်။ ဤအချက်အလက်သည်အနာဂတ်အသုံးပြုမှုအတွက် cached ဖြစ်ပါတယ်။';
+$lang['software_updates_please_be_patient'] = 'လူနာဖြစ်ပါ';
+$lang['software_updates_progress_help'] = 'သင်၏ system လက်ရှိ update လုပ်လျက်ရှိသည်။ ဤလုပ်ငန်းစဉ်ကိုအချိန်အနည်းငယ်ကြာနိုင်ပါတယ်, ဒါကြောင့်လူနာဖြစ်ကျေးဇူးပြုပြီး!';
+$lang['software_updates_progress'] = 'တိုးတက်ခြင်း';
+$lang['software_updates_recent_software_activity'] = 'မကြာမီကဆော့ဝဲလှုပ်ရှားမှု';
+$lang['software_updates_repository'] = 'repository';
+$lang['software_updates_return_to_overview'] = 'အကျဉ်းချုပ်သို့ပြန်သွားသည်';
+$lang['software_updates_software_update_in_progress'] = 'Software ကို update ကိုတိုးတက်မှုအတွက်ဖြစ်ပါတယ်။ နောက်ပိုင်းမှာပြန်လာပေးပါ။';
+$lang['software_updates_software_updates_busy'] = 'Software ကိုအပ်ဒိတ်များအလုပ်များ';
+$lang['software_updates_software_updates'] = 'Software ကိုအပ်ဒိတ်များ';
+$lang['software_updates_software_updates_system_busy'] = 'Software ကို updates များကိုစနစ်ကအလုပ်များဖြစ်ပါသည်။';
+$lang['software_updates_software_up_to_date'] = 'Software ကို Up ကို-to-date ဖြစ်အောင်';
+$lang['software_updates_system_is_up_to_date'] = 'System ကိုကို up-to-date ဖြစ်အောင်ဖြစ်ပါတယ်။';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'နောက်ဆုံးပေါ် software ကို updates တွေကို install လုပ်နေကြတယ်။';
+$lang['software_updates_type'] = 'ပုံစံ';
+$lang['software_updates_update_all'] = 'အားလုံးကိုအပ်ဒိတ်လုပ်';
+$lang['software_updates_updates_complete'] = 'အပြီးအစီး Software ကိုအပ်ဒိတ်များ';
+$lang['software_updates_updates'] = 'အပ်ဒိတ်များ';
+$lang['software_updates_upgrade'] = 'upgrade';
+$lang['software_updates_wizard_description'] = 'သင့် network configure လုပ်ကြောင်းအခုဆိုရင်အဓိကစနစ်ဝေဖန် updates များကိုယခုအခါ Install ကြသည်။';
+$lang['software_updates_wizard_latest_necessary'] = 'ဆက်လက်မလုပ်ဆောင်မီသင့် system software ကို update လုပ်ပါ။';
