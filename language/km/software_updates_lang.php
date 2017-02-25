@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'ការធ្វើបច្ចុប្បន្នភាពបន្ថែម';
+$lang['software_updates_app_description'] = 'ការធ្វើឱ្យទាន់សម័យកម្មវិធីកម្មវិធីនេះបានផ្ដល់នូវការធ្វើឱ្យទាន់សម័យសម្រាប់សមាសភាគប្រព័ន្ធប្រតិបត្តិការមូលដ្ឋាន។';
+$lang['software_updates_app_name'] = 'ធ្វើឱ្យទាន់សម័យកម្មវិធី';
+$lang['software_updates_automatic_updates'] = 'ការធ្វើឱ្យទាន់សម័យដោយស្វ័យប្រវត្តិ';
+$lang['software_updates_available_updates'] = 'ដែលអាចប្រើបានធ្វើឱ្យទាន់សម័យ';
+$lang['software_updates_busy_message'] = 'អ្នកប្រើផ្សេងទៀតឬសេវាបច្ចុប្បន្នកំពុងប្រើប្រព័ន្ធធ្វើឱ្យទាន់សម័យកម្មវិធី។ នៅពេលដំណើរការនេះត្រូវបានបញ្ចប់, កម្មវិធីនេះនឹងក្លាយជាអាចប្រើម្តងទៀត។';
+$lang['software_updates_current_progress'] = 'វឌ្ឍនភាពបច្ចុប្បន្ន';
+$lang['software_updates_details'] = 'សេចក្ដីលម្អិត';
+$lang['software_updates_install_progress'] = 'ដំឡើងវឌ្ឍនភាព';
+$lang['software_updates_loading_updates_message'] = 'កំពុងផ្ទុកបញ្ជីឱ្យទាន់សម័យកម្មវិធី, សូមអត់ធ្មត់។';
+$lang['software_updates_no_data_available'] = 'មិនមានទិន្នន័យដែលអាចប្រើបាន។';
+$lang['software_updates_overall_progress'] = 'វឌ្ឍនភាពសរុប';
+$lang['software_updates_package'] = 'កញ្ចប់';
+$lang['software_updates_please_be_patient_detail'] = 'វាអាចចំណាយពេលមួយឬពីរនាទីដើម្បីធ្វើឱ្យទាន់សម័យនិងការធ្វើឱ្យទាន់សម័យលម្អិតឃ្លាំងទាំងអស់។ ព័តមាននេះបានទុកក្នុងឃ្លាំងសម្ងាត់សម្រាប់ប្រើនាពេលអនាគត។';
+$lang['software_updates_please_be_patient'] = 'សូម​អត់ធ្មត់!';
+$lang['software_updates_progress_help'] = 'ប្រព័ន្ធរបស់អ្នកត្រូវបានធ្វើឱ្យទាន់សម័យនាពេលបច្ចុប្បន្ន។ ដំណើរការនេះអាចចំណាយពេលមួយចំនួនដូច្នេះសូមមានចិត្ដអត់ធ្មត់!';
+$lang['software_updates_progress'] = 'ការរីកចំរើន';
+$lang['software_updates_recent_software_activity'] = 'សកម្មភាពកម្មវិធីថ្មី';
+$lang['software_updates_repository'] = 'ឃ្លាំង';
+$lang['software_updates_return_to_overview'] = 'ត្រឡប់ទៅទិដ្ឋភាពទូទៅ';
+$lang['software_updates_software_update_in_progress'] = 'ធ្វើឱ្យទាន់សម័យកម្មវិធីកុំព្យូទ័រគឺដំណើរការ។ សូមត្រឡប់មកវិញនៅពេលក្រោយ។';
+$lang['software_updates_software_updates_busy'] = 'ធ្វើឱ្យទាន់សម័យកម្មវិធីរវល់';
+$lang['software_updates_software_updates'] = 'ធ្វើឱ្យទាន់សម័យកម្មវិធី';
+$lang['software_updates_software_updates_system_busy'] = 'ប្រព័ន្ធធ្វើឱ្យទាន់សម័យកម្មវិធីកុំព្យូទ័រគឺរវល់។';
+$lang['software_updates_software_up_to_date'] = 'កម្មវិធីដែលបានឡើងដល់កាលបរិច្ឆេទ';
+$lang['software_updates_system_is_up_to_date'] = 'ប្រព័ន្ធគឺមានរហូតដល់កាលបរិច្ឆេទ។';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'ធ្វើឱ្យទាន់សម័យកម្មវិធីថ្មីបំផុតត្រូវបានដំឡើង។';
+$lang['software_updates_type'] = 'ប្រភេទ';
+$lang['software_updates_update_all'] = 'ធ្វើ​បច្ចុប្បន្នភាព​ទាំងអស់';
+$lang['software_updates_updates_complete'] = 'ធ្វើឱ្យទាន់សម័យកម្មវិធីពេញលេញ';
+$lang['software_updates_updates'] = 'ការធ្វើឱ្យទាន់សម័យ';
+$lang['software_updates_upgrade'] = 'ធ្វើឱ្យប្រសើរឡើង';
+$lang['software_updates_wizard_description'] = 'ឥឡូវនេះថាបណ្ដាញរបស់អ្នកត្រូវបានកំណត់រចនាសម្ព័ន្ធធ្វើឱ្យទាន់សម័យសំខាន់ដើម្បីប្រព័ន្ធស្នូលត្រូវបានដំឡើងឥឡូវ។';
+$lang['software_updates_wizard_latest_necessary'] = 'សូមធ្វើឱ្យទាន់សម័យកម្មវិធីដែលប្រព័ន្ធរបស់អ្នកមុននឹងបន្ត។';
