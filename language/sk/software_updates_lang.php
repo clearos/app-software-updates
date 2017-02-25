@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'ďalšie aktualizácie';
+$lang['software_updates_app_description'] = 'Aplikácia Aktualizácia softvéru poskytuje aktualizácie pre podkladové súčasti operačného systému.';
+$lang['software_updates_app_name'] = 'aktualizácia softvéru';
+$lang['software_updates_automatic_updates'] = 'automatické aktualizácie';
+$lang['software_updates_available_updates'] = 'k dispozícii aktualizácia';
+$lang['software_updates_busy_message'] = 'Iný používateľ alebo služba je v súčasnej dobe používa systém aktualizácií softvéru. Keď je proces dokončený, bude táto aplikácia opäť k dispozícii.';
+$lang['software_updates_current_progress'] = 'aktuálne Progress';
+$lang['software_updates_details'] = 'podrobnosti';
+$lang['software_updates_install_progress'] = 'nainštalovať Progress';
+$lang['software_updates_loading_updates_message'] = 'Vkladanie zoznam aktualizácií softvéru, prosím, buďte trpezliví.';
+$lang['software_updates_no_data_available'] = 'Žiadne údaje nie sú k dispozícii.';
+$lang['software_updates_overall_progress'] = 'celkový pokrok';
+$lang['software_updates_package'] = 'balíček';
+$lang['software_updates_please_be_patient_detail'] = 'To môže trvať minútu alebo dve aktualizovať všetky úložiska a aktualizovať údaje. Tieto informácie sú ukladané do pamäte cache pre budúce použitie.';
+$lang['software_updates_please_be_patient'] = 'Prosím, buďte trpezliví!';
+$lang['software_updates_progress_help'] = 'Váš systém je v súčasnej dobe aktualizovaný. Tento proces môže trvať nejakú dobu, takže buďte trpezliví!';
+$lang['software_updates_progress'] = 'pokrok';
+$lang['software_updates_recent_software_activity'] = 'Nedávna aktivita Software';
+$lang['software_updates_repository'] = 'sklad';
+$lang['software_updates_return_to_overview'] = 'Späť na prehľad';
+$lang['software_updates_software_update_in_progress'] = 'Aktualizácia softvéru prebieha. Prosím, vráťte sa neskôr.';
+$lang['software_updates_software_updates_busy'] = 'Aktualizácia softvéru Busy';
+$lang['software_updates_software_updates'] = 'aktualizácia softvéru';
+$lang['software_updates_software_updates_system_busy'] = 'Aktualizácia softvéru Systém je zaneprázdnený.';
+$lang['software_updates_software_up_to_date'] = 'Softvér Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'Systém je up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Najnovšie aktualizácie softvéru sú inštalované.';
+$lang['software_updates_type'] = 'typ';
+$lang['software_updates_update_all'] = 'Aktualizovať všetko';
+$lang['software_updates_updates_complete'] = 'Aktualizácia softvéru Complete';
+$lang['software_updates_updates'] = 'aktualizácie';
+$lang['software_updates_upgrade'] = 'upgrade';
+$lang['software_updates_wizard_description'] = 'Teraz, keď je vaša sieť nakonfigurovaná, kritické aktualizácie jadra systému sú teraz nainštalované.';
+$lang['software_updates_wizard_latest_necessary'] = 'Pred pokračovaním Prosím aktualizujte systémový softvér.';
