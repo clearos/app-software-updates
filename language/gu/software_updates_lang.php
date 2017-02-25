@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'વધારાના સુધારાઓ';
+$lang['software_updates_app_description'] = 'સોફ્ટવેર સુધારાઓ એપ્લિકેશન અંતર્ગત ઓપરેટિંગ સિસ્ટમ ઘટકો માટે સુધારાઓ પૂરા પાડે છે.';
+$lang['software_updates_app_name'] = 'સોફ્ટવેર સુધારાઓ';
+$lang['software_updates_automatic_updates'] = 'સ્વચાલિત અપડેટ્સ';
+$lang['software_updates_available_updates'] = 'ઉપલબ્ધ સુધારાઓ';
+$lang['software_updates_busy_message'] = 'અન્ય વપરાશકર્તા અથવા સેવા હાલમાં સોફ્ટવેર સુધારાઓ સિસ્ટમ ઉપયોગ કરે છે. જ્યારે પ્રક્રિયા પૂર્ણ થઈ છે, આ એપ્લિકેશન ફરીથી ઉપલબ્ધ બની જશે.';
+$lang['software_updates_current_progress'] = 'વર્તમાન પ્રગતિ';
+$lang['software_updates_details'] = 'વિગતો';
+$lang['software_updates_install_progress'] = 'સ્થાપન પ્રગતિ';
+$lang['software_updates_loading_updates_message'] = 'લોડ કરી રહ્યું છે સોફ્ટવેર સુધારાઓ યાદી, કૃપા કરીને ધીરજ ધરો.';
+$lang['software_updates_no_data_available'] = 'કોઈ ડેટા ઉપલબ્ધ નથી.';
+$lang['software_updates_overall_progress'] = 'એકંદરે પ્રગતિ';
+$lang['software_updates_package'] = 'પેકેજ';
+$lang['software_updates_please_be_patient_detail'] = 'તે બધા રીપોઝીટરી અને સુધારા વિગતો અપડેટ કરવા એક અથવા બે મિનિટ લાગી શકે છે. આ માહિતી ભવિષ્યના ઉપયોગ માટે કેશ થયેલ છે.';
+$lang['software_updates_please_be_patient'] = 'શાંતિ જાળવો!';
+$lang['software_updates_progress_help'] = 'તમારી સિસ્ટમ હાલમાં અપડેટ કરવામાં આવી રહી છે. આ પ્રક્રિયા થોડો સમય લાગી શકે છે, તેથી કૃપા કરીને ધીરજ!';
+$lang['software_updates_progress'] = 'પ્રગતિ';
+$lang['software_updates_recent_software_activity'] = 'તાજેતરના સોફ્ટવેર પ્રવૃત્તિ';
+$lang['software_updates_repository'] = 'રીપોઝીટરી';
+$lang['software_updates_return_to_overview'] = 'ઝાંખી પર પાછા ફરો';
+$lang['software_updates_software_update_in_progress'] = 'સોફ્ટવેર સુધારા ચાલુ છે. કૃપા કરીને પછીથી પાછા આવો.';
+$lang['software_updates_software_updates_busy'] = 'સોફ્ટવેર સુધારાઓ વ્યસ્ત';
+$lang['software_updates_software_updates'] = 'સોફ્ટવેર સુધારાઓ';
+$lang['software_updates_software_updates_system_busy'] = 'સોફ્ટવેર સુધારાઓ સિસ્ટમ વ્યસ્ત છે.';
+$lang['software_updates_software_up_to_date'] = 'અપ-ટુ-ડેટ સોફ્ટવેર';
+$lang['software_updates_system_is_up_to_date'] = 'સિસ્ટમ અપ ટુ ડેટ છે.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'તાજેતરની સોફ્ટવેર સુધારાઓ સ્થાપિત થયેલ છે.';
+$lang['software_updates_type'] = 'પ્રકાર';
+$lang['software_updates_update_all'] = 'સુધારા';
+$lang['software_updates_updates_complete'] = 'સોફ્ટવેર સુધારાઓ પૂર્ણ';
+$lang['software_updates_updates'] = 'સુધારાઓ';
+$lang['software_updates_upgrade'] = 'સુધારો';
+$lang['software_updates_wizard_description'] = 'હવે તમારા નેટવર્ક રૂપરેખાંકિત થયેલ છે, કોર સિસ્ટમ માટે જટિલ સુધારાઓ હવે સ્થાપિત થયેલ છે.';
+$lang['software_updates_wizard_latest_necessary'] = 'ચાલુ રાખવા પહેલાં તમારી સિસ્ટમ સોફ્ટવેર અપડેટ કરો.';
