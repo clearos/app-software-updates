@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'cập nhật bổ sung';
+$lang['software_updates_app_description'] = 'Ứng dụng cập nhật phần mềm cung cấp các bản cập nhật cho các thành phần hệ thống điều hành cơ bản.';
+$lang['software_updates_app_name'] = 'Nâng cấp phần mềm';
+$lang['software_updates_automatic_updates'] = 'Cập nhật tự động';
+$lang['software_updates_available_updates'] = 'Đã có cập nhật';
+$lang['software_updates_busy_message'] = 'Một người sử dụng hoặc dịch vụ hiện đang sử dụng hệ thống cập nhật phần mềm. Khi quá trình hoàn tất, ứng dụng này sẽ trở nên có sẵn một lần nữa.';
+$lang['software_updates_current_progress'] = 'Tiến trình hiện nay';
+$lang['software_updates_details'] = 'Chi tiết';
+$lang['software_updates_install_progress'] = 'cài đặt Progress';
+$lang['software_updates_loading_updates_message'] = 'Đang tải danh sách cập nhật phần mềm, hãy kiên nhẫn.';
+$lang['software_updates_no_data_available'] = 'Không có dữ liệu.';
+$lang['software_updates_overall_progress'] = 'Tiến độ tổng thể';
+$lang['software_updates_package'] = 'gói';
+$lang['software_updates_please_be_patient_detail'] = 'Nó có thể mất một hoặc hai phút để cập nhật tất cả các kho lưu trữ và cập nhật thông tin chi tiết. Thông tin này được lưu lại để sử dụng trong tương lai.';
+$lang['software_updates_please_be_patient'] = 'Làm ơn hãy kiên nhẫn!';
+$lang['software_updates_progress_help'] = 'Hệ thống của bạn hiện đang được cập nhật. Quá trình này có thể mất một thời gian, vì vậy hãy kiên nhẫn!';
+$lang['software_updates_progress'] = 'Tiến độ';
+$lang['software_updates_recent_software_activity'] = 'Hoạt động gần đây phần mềm';
+$lang['software_updates_repository'] = 'Kho';
+$lang['software_updates_return_to_overview'] = 'Quay trở lại Tổng quan';
+$lang['software_updates_software_update_in_progress'] = 'Cập nhật phần mềm được tiến hành. Vui lòng quay lại sau.';
+$lang['software_updates_software_updates_busy'] = 'Cập nhật Phần mềm Busy';
+$lang['software_updates_software_updates'] = 'Nâng cấp phần mềm';
+$lang['software_updates_software_updates_system_busy'] = 'hệ thống thông tin cập nhật phần mềm là bận rộn.';
+$lang['software_updates_software_up_to_date'] = 'Phần mềm cập nhật Up-';
+$lang['software_updates_system_is_up_to_date'] = 'Hệ thống là up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Các bản cập nhật phần mềm mới nhất được cài đặt.';
+$lang['software_updates_type'] = 'Kiểu';
+$lang['software_updates_update_all'] = 'cập nhật Tất cả';
+$lang['software_updates_updates_complete'] = 'Phần mềm cập nhật đầy đủ';
+$lang['software_updates_updates'] = 'cập nhật';
+$lang['software_updates_upgrade'] = 'nâng cấp';
+$lang['software_updates_wizard_description'] = 'Bây giờ trên mạng của bạn được cấu hình, cập nhật quan trọng cho hệ thống cốt lõi hiện đang được cài đặt.';
+$lang['software_updates_wizard_latest_necessary'] = 'Vui lòng cập nhật phần mềm hệ thống của bạn trước khi tiếp tục.';
