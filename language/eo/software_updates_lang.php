@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'aldona ĝisdatigoj';
+$lang['software_updates_app_description'] = 'La programaro ĝisdatigoj app provizas ĝisdatigojn por la subesta operaciumo komponantoj.';
+$lang['software_updates_app_name'] = 'programaro ĝisdatigoj';
+$lang['software_updates_automatic_updates'] = 'aŭtomata ĝisdatigoj';
+$lang['software_updates_available_updates'] = 'disponeblaj ĝisdatigoj';
+$lang['software_updates_busy_message'] = 'Alia uzanto aŭ servo aktuale uzas la programaron ĝisdatigojn sistemo. Kiam la procezo estas kompleta, ĉi app fariĝos havebla denove.';
+$lang['software_updates_current_progress'] = 'Nuna Progreso';
+$lang['software_updates_details'] = 'detaloj';
+$lang['software_updates_install_progress'] = 'instali Progreso';
+$lang['software_updates_loading_updates_message'] = 'Ŝargado programaro ĝisdatigojn listo, bonvolu esti pacienca.';
+$lang['software_updates_no_data_available'] = 'Datumoj disponeblaj.';
+$lang['software_updates_overall_progress'] = 'entute Progreso';
+$lang['software_updates_package'] = 'pakaĵo';
+$lang['software_updates_please_be_patient_detail'] = 'Ĝi povas preni momenton aŭ du ĝisdatigi ĉiujn dosierujo kaj ĝisdatigo detaloj. Tiuj informoj estas provizoraj por estonta uzo.';
+$lang['software_updates_please_be_patient'] = 'Bonvolu pacienci!';
+$lang['software_updates_progress_help'] = 'Via sistemo nun estas ĝisdatigata. Tiu procezo povas preni iom da tempo, do bonvolu pacienci!';
+$lang['software_updates_progress'] = 'progreso';
+$lang['software_updates_recent_software_activity'] = 'Lastaj Programaro Aktiveco';
+$lang['software_updates_repository'] = 'dosieraro';
+$lang['software_updates_return_to_overview'] = 'Reiri al Superrigardo';
+$lang['software_updates_software_update_in_progress'] = 'Programaro ĝisdatigo estas en progreso. Bonvolu reveni poste.';
+$lang['software_updates_software_updates_busy'] = 'Programaro ĝisdatigoj Busy';
+$lang['software_updates_software_updates'] = 'programaro ĝisdatigoj';
+$lang['software_updates_software_updates_system_busy'] = 'Programaro ĝisdatigoj sistemo estas okupata.';
+$lang['software_updates_software_up_to_date'] = 'Programaro Supren ĝisdatigita';
+$lang['software_updates_system_is_up_to_date'] = 'Sistemo estas supren-ĝis-dato.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'La lasta programaro ĝisdatigoj estas instalitaj.';
+$lang['software_updates_type'] = 'tipo';
+$lang['software_updates_update_all'] = 'Ĝisdatigu Ĉiuj';
+$lang['software_updates_updates_complete'] = 'Programaro Ĝisdatigoj Kompleta';
+$lang['software_updates_updates'] = 'ĝisdatigoj';
+$lang['software_updates_upgrade'] = 'Altgradigon';
+$lang['software_updates_wizard_description'] = 'Nun ke via reto estas agordita, kritika ĝisdatigoj al la kerno sistemo estas nun instalita.';
+$lang['software_updates_wizard_latest_necessary'] = 'Bonvolu ĝisdatigi vian sistemon programaro antaŭ daŭrigi.';
