@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'dodatne posodobitve';
+$lang['software_updates_app_description'] = 'Aplikacija Posodobitve programske opreme zagotavlja posodobitve za osnovnih komponent operacijskega sistema.';
+$lang['software_updates_app_name'] = 'Posodobitve programske opreme';
+$lang['software_updates_automatic_updates'] = 'Samodejne posodobitve';
+$lang['software_updates_available_updates'] = 'voljo posodobitve';
+$lang['software_updates_busy_message'] = 'Drug uporabnik ali storitev, ki je trenutno uporabljajo sistem posodobitve programske opreme. Ko je postopek končan, bo ta aplikacija ponovno na voljo.';
+$lang['software_updates_current_progress'] = 'Trenutni napredek';
+$lang['software_updates_details'] = 'podrobnosti';
+$lang['software_updates_install_progress'] = 'Namesti Progress';
+$lang['software_updates_loading_updates_message'] = 'Nalaganje seznama posodobitve programske opreme, bodite potrpežljivi.';
+$lang['software_updates_no_data_available'] = 'Ni podatkov.';
+$lang['software_updates_overall_progress'] = 'V splošnem napredku';
+$lang['software_updates_package'] = 'paket';
+$lang['software_updates_please_be_patient_detail'] = 'To lahko traja minuto ali dve, da posodobite vse v skladišču in posodobitev podrobnosti. Ti podatki so shranjeni v predpomnilniku za prihodnjo uporabo.';
+$lang['software_updates_please_be_patient'] = 'Prosim, bodite potrpežljivi!';
+$lang['software_updates_progress_help'] = 'Sistem se trenutno posodablja. Ta postopek lahko traja nekaj časa, zato bodite potrpežljivi!';
+$lang['software_updates_progress'] = 'napredek';
+$lang['software_updates_recent_software_activity'] = 'Nedavne Software Activity';
+$lang['software_updates_repository'] = 'Skladišče';
+$lang['software_updates_return_to_overview'] = 'Vrnitev na pregled';
+$lang['software_updates_software_update_in_progress'] = 'Posodobitev programske opreme je v teku. Vrnite se kasneje.';
+$lang['software_updates_software_updates_busy'] = 'Posodobitve programske opreme zaseden';
+$lang['software_updates_software_updates'] = 'Posodobitve programske opreme';
+$lang['software_updates_software_updates_system_busy'] = 'posodobitve programske opreme Sistem je zaseden.';
+$lang['software_updates_software_up_to_date'] = 'Programska oprema Up-to-datum';
+$lang['software_updates_system_is_up_to_date'] = 'Sistem je up-to-datum.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Najnovejša posodobitev programske opreme so nameščeni.';
+$lang['software_updates_type'] = 'Vrsta';
+$lang['software_updates_update_all'] = 'Update All';
+$lang['software_updates_updates_complete'] = 'Posodobitve programske opreme Complete';
+$lang['software_updates_updates'] = 'posodobitve';
+$lang['software_updates_upgrade'] = 'nadgradnja';
+$lang['software_updates_wizard_description'] = 'Zdaj, ko je omrežje konfigurirano, so kritične posodobitve za osnovni sistem sedaj nameščen.';
+$lang['software_updates_wizard_latest_necessary'] = 'Prosimo, posodobite sistemske programske opreme pred nadaljevanjem.';
