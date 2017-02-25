@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'dènye adisyonèl';
+$lang['software_updates_app_description'] = 'App a Software Updates bay dènye enfòmasyon pou eleman yo sistèm opere kache.';
+$lang['software_updates_app_name'] = 'Software Updates';
+$lang['software_updates_automatic_updates'] = 'Otomatik Updates';
+$lang['software_updates_available_updates'] = 'Disponib Updates';
+$lang['software_updates_busy_message'] = 'Yon lòt itilizatè oswa sèvis se kounye a lè l sèvi avèk sistèm lan dènye lojisyèl. Lè pwosesis la se konplè, app sa a pral vin disponib ankò.';
+$lang['software_updates_current_progress'] = 'Pwogrè Kouran';
+$lang['software_updates_details'] = 'Detay';
+$lang['software_updates_install_progress'] = 'enstale Pwogrè';
+$lang['software_updates_loading_updates_message'] = 'Loading dènye lojisyèl lis, tanpri pran pasyans.';
+$lang['software_updates_no_data_available'] = 'Pa gen done ki disponib.';
+$lang['software_updates_overall_progress'] = 'Pwogrè An jeneral';
+$lang['software_updates_package'] = 'Pake';
+$lang['software_updates_please_be_patient_detail'] = 'Li ka pran yon minit oubyen de mete ajou tout repozitwa epi mete ajou detay yo. Enfòmasyon sa a kach pou itilize nan lavni.';
+$lang['software_updates_please_be_patient'] = 'Tanpri pran pasyans!';
+$lang['software_updates_progress_help'] = 'Se sistèm ou aktyèlman ap mete ajou. Pwosesis sa a ka pran kèk tan, kidonk, tanpri pran pasyans!';
+$lang['software_updates_progress'] = 'Pwogrè';
+$lang['software_updates_recent_software_activity'] = 'Dènye aktivite Software';
+$lang['software_updates_repository'] = 'referansyèl';
+$lang['software_updates_return_to_overview'] = 'Retounen nan Apèsi sou lekòl la';
+$lang['software_updates_software_update_in_progress'] = 'Software aktyalizasyon se nan pwogrè. Tanpri tounen vin pita.';
+$lang['software_updates_software_updates_busy'] = 'Software Updates Okipe';
+$lang['software_updates_software_updates'] = 'Software Updates';
+$lang['software_updates_software_updates_system_busy'] = 'dènye lojisyèl sistèm se ki okipe yo.';
+$lang['software_updates_software_up_to_date'] = 'Software moute-a-dat';
+$lang['software_updates_system_is_up_to_date'] = 'Sistèm se monte-a-dat.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'dènye yo lojisyèl dènye yo enstale.';
+$lang['software_updates_type'] = 'Kalite';
+$lang['software_updates_update_all'] = 'Mizajou tout';
+$lang['software_updates_updates_complete'] = 'Software Updates Ranpli';
+$lang['software_updates_updates'] = 'Updates';
+$lang['software_updates_upgrade'] = 'Upgrade';
+$lang['software_updates_wizard_description'] = 'Kounye a ke se rezo ou configuré, dènye kritik nan sistèm nan debaz yo kounye a se enstale.';
+$lang['software_updates_wizard_latest_necessary'] = 'Tanpri, chanje lojisyèl sistèm ou anvan kontinye.';
