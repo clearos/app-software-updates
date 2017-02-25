@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'ọzọ mmelite';
+$lang['software_updates_app_description'] = 'The Software mmelite ngwa na-enye mmelite maka isi sistemụ components.';
+$lang['software_updates_app_name'] = 'software mmelite';
+$lang['software_updates_automatic_updates'] = 'akpaka mmelite';
+$lang['software_updates_available_updates'] = 'dị Updates';
+$lang['software_updates_busy_message'] = 'Ọzọ ọrụ ma ọ bụ ọrụ a ugbu a site na iji software mmelite usoro. Mgbe usoro zuru ezu, nke a ngwa ga-adịkwara ọzọ.';
+$lang['software_updates_current_progress'] = 'Ugbu Ọganihu';
+$lang['software_updates_details'] = 'Details';
+$lang['software_updates_install_progress'] = 'wụnye Ọganihu';
+$lang['software_updates_loading_updates_message'] = 'Loading software mmelite ndepụta, biko na-enwe ndidi.';
+$lang['software_updates_no_data_available'] = 'Ọ dịghị data dị.';
+$lang['software_updates_overall_progress'] = 'n&#39;ozuzu Ọganihu';
+$lang['software_updates_package'] = 'ngwugwu';
+$lang['software_updates_please_be_patient_detail'] = 'Ọ nwere ike a nkeji ma ọ bụ abụọ imelite niile repository na update nkọwa. Ozi a cached ga-eme n&#39;ọdịnihu ojiji.';
+$lang['software_updates_please_be_patient'] = 'Biko, nwee ndidi!';
+$lang['software_updates_progress_help'] = 'Gị usoro a ugbu a na-emelite. Usoro a nwere ike ewe oge, ya mere, biko na-enwe ndidi!';
+$lang['software_updates_progress'] = 'ọganihu';
+$lang['software_updates_recent_software_activity'] = '-Adịbeghị anya Software Arụ Ọrụ';
+$lang['software_updates_repository'] = 'repository';
+$lang['software_updates_return_to_overview'] = 'Laghachi nnyocha';
+$lang['software_updates_software_update_in_progress'] = 'Software update-aga n&#39;ihu. Biko abịa azụ mgbe e mesịrị.';
+$lang['software_updates_software_updates_busy'] = 'Software mmelite Anọghị';
+$lang['software_updates_software_updates'] = 'software mmelite';
+$lang['software_updates_software_updates_system_busy'] = 'Software mmelite usoro ahụ nọ n&#39;ọrụ.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-ụbọchị';
+$lang['software_updates_system_is_up_to_date'] = 'System bụ elu na-ụbọchị.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Ndị ọhụrụ software mmelite na-arụnyere.';
+$lang['software_updates_type'] = 'ụdị';
+$lang['software_updates_update_all'] = 'update All';
+$lang['software_updates_updates_complete'] = 'Software mmelite Complete';
+$lang['software_updates_updates'] = 'mmelite';
+$lang['software_updates_upgrade'] = 'nweta nkwalite';
+$lang['software_updates_wizard_description'] = 'Ugbu a, na netwọk gị na-ahazi, oké egwu mmelite na isi usoro na-now arụnyere.';
+$lang['software_updates_wizard_latest_necessary'] = 'Biko imelite gị usoro software tupu iso.';
