@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = '其他更新';
+$lang['software_updates_app_description'] = '软件更新应用程序提供了底层的操作系统组件的更新。';
+$lang['software_updates_app_name'] = '软件更新';
+$lang['software_updates_automatic_updates'] = '自动更新';
+$lang['software_updates_available_updates'] = '可用更新';
+$lang['software_updates_busy_message'] = '目前其他用户或服务使用软件更新系统。 当这个过程完成后，这个程序将再次变为可用。';
+$lang['software_updates_current_progress'] = '目前进展';
+$lang['software_updates_details'] = '细节';
+$lang['software_updates_install_progress'] = '安装进度';
+$lang['software_updates_loading_updates_message'] = '加载软件更新列表中，请耐心等待。';
+$lang['software_updates_no_data_available'] = '无可用数据。';
+$lang['software_updates_overall_progress'] = '总体进程';
+$lang['software_updates_package'] = '包';
+$lang['software_updates_please_be_patient_detail'] = '它可以在一两分钟更新所有的资料库和更新的详细信息。 这个信息被缓存以供将来使用。';
+$lang['software_updates_please_be_patient'] = '请耐心等待！';
+$lang['software_updates_progress_help'] = '您的系统目前正在更新。 这个过程可能需要一些时间，所以请耐心等待！';
+$lang['software_updates_progress'] = '进展';
+$lang['software_updates_recent_software_activity'] = '最新的软件活动';
+$lang['software_updates_repository'] = '知识库';
+$lang['software_updates_return_to_overview'] = '返回概述';
+$lang['software_updates_software_update_in_progress'] = '软件更新正在进行中。 请待会再过来。';
+$lang['software_updates_software_updates_busy'] = '软件更新忙';
+$lang['software_updates_software_updates'] = '软件更新';
+$lang['software_updates_software_updates_system_busy'] = '软件更新系统正忙。';
+$lang['software_updates_software_up_to_date'] = '软件保持最新';
+$lang['software_updates_system_is_up_to_date'] = '系统是最新最新的。';
+$lang['software_updates_the_latest_software_updates_are_installed'] = '最新的软件更新安装。';
+$lang['software_updates_type'] = '类型';
+$lang['software_updates_update_all'] = '全部更新';
+$lang['software_updates_updates_complete'] = '软件更新完成';
+$lang['software_updates_updates'] = '更新';
+$lang['software_updates_upgrade'] = '升级';
+$lang['software_updates_wizard_description'] = '现在，您的网络配置，核心系统的关键更新已经安装。';
+$lang['software_updates_wizard_latest_necessary'] = '继续之前请更新您的系统软件。';
