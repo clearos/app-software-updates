@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'aanvullende updates';
+$lang['software_updates_app_description'] = 'De Software Updates app biedt updates voor de onderliggende onderdelen van het besturingssysteem.';
+$lang['software_updates_app_name'] = 'Software updates';
+$lang['software_updates_automatic_updates'] = 'Automatische updates';
+$lang['software_updates_available_updates'] = 'beschikbare updates';
+$lang['software_updates_busy_message'] = 'Een andere gebruiker of de dienst wordt momenteel met behulp van de software-updates systeem. Wanneer het proces voltooid is, zal deze app weer beschikbaar zijn.';
+$lang['software_updates_current_progress'] = 'Huidige vooruitgang';
+$lang['software_updates_details'] = 'Details';
+$lang['software_updates_install_progress'] = 'Installeer Progress';
+$lang['software_updates_loading_updates_message'] = 'Laden lijst met software-updates, wees geduldig.';
+$lang['software_updates_no_data_available'] = 'Geen gegevens beschikbaar.';
+$lang['software_updates_overall_progress'] = 'Overall Progress';
+$lang['software_updates_package'] = 'Pakket';
+$lang['software_updates_please_be_patient_detail'] = 'Het kan een minuut of twee duren om alle de repository en updaten van gegevens bij te werken. Deze informatie wordt in de cache voor toekomstig gebruik.';
+$lang['software_updates_please_be_patient'] = 'Wees alstublieft geduldig!';
+$lang['software_updates_progress_help'] = 'Het systeem wordt momenteel geactualiseerd. Dit proces kan enige tijd duren, dus wees geduldig!';
+$lang['software_updates_progress'] = 'Vooruitgang';
+$lang['software_updates_recent_software_activity'] = 'Recente Software Activiteit';
+$lang['software_updates_repository'] = 'bewaarplaats';
+$lang['software_updates_return_to_overview'] = 'Terug naar overzicht';
+$lang['software_updates_software_update_in_progress'] = 'Software-update wordt uitgevoerd. Kom alstublieft later terug.';
+$lang['software_updates_software_updates_busy'] = 'Software Updates Busy';
+$lang['software_updates_software_updates'] = 'Software updates';
+$lang['software_updates_software_updates_system_busy'] = 'Software-updates systeem is bezet.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'Systeem is up-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'De nieuwste software-updates zijn geïnstalleerd.';
+$lang['software_updates_type'] = 'Type';
+$lang['software_updates_update_all'] = 'Update alles';
+$lang['software_updates_updates_complete'] = 'Software-updates Compleet';
+$lang['software_updates_updates'] = 'updates';
+$lang['software_updates_upgrade'] = 'Upgrade';
+$lang['software_updates_wizard_description'] = 'Nu dat uw netwerk is geconfigureerd, zijn essentiële updates naar de kern van het systeem nu geïnstalleerd.';
+$lang['software_updates_wizard_latest_necessary'] = 'Werkt u uw systeemsoftware voordat u verder gaat.';
