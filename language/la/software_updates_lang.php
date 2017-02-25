@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'additional updates';
+$lang['software_updates_app_description'] = 'Updates suggero updates software app quod est subiectum operans system components.';
+$lang['software_updates_app_name'] = 'Software Updates';
+$lang['software_updates_automatic_updates'] = 'Automatic Updates';
+$lang['software_updates_available_updates'] = 'Available Updates';
+$lang['software_updates_busy_message'] = 'Alius usura software updates user vel lorem sit amet lectus. Processus autem impleretur, addendum etiam praesto erunt App.';
+$lang['software_updates_current_progress'] = 'current profectus';
+$lang['software_updates_details'] = 'Details';
+$lang['software_updates_install_progress'] = 'Install Progress';
+$lang['software_updates_loading_updates_message'] = 'Loading software updates codicem placere patientes.';
+$lang['software_updates_no_data_available'] = 'Non available notitia.';
+$lang['software_updates_overall_progress'] = 'altiore progressum';
+$lang['software_updates_package'] = 'sarcina';
+$lang['software_updates_please_be_patient_detail'] = 'Accipere potest duobus minutis update update omnia et singula reposito. Haec est enim uti print.';
+$lang['software_updates_please_be_patient'] = 'Placere patientes estote!';
+$lang['software_updates_progress_help'] = 'Tua ratio est currently updated. Hoc potest aliquando placet patientiam!';
+$lang['software_updates_progress'] = 'Progress';
+$lang['software_updates_recent_software_activity'] = 'Activity Recent Books';
+$lang['software_updates_repository'] = 'Repository';
+$lang['software_updates_return_to_overview'] = 'Return to Overview';
+$lang['software_updates_software_update_in_progress'] = 'Software Update est profectus. Venite post tergum.';
+$lang['software_updates_software_updates_busy'] = 'Software Updates Occupatus';
+$lang['software_updates_software_updates'] = 'Software Updates';
+$lang['software_updates_software_updates_system_busy'] = 'Updates software ratio est occupatus.';
+$lang['software_updates_software_up_to_date'] = 'Software-Up to-Date';
+$lang['software_updates_system_is_up_to_date'] = 'Ratio est sursum-ut-balanus.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Aliquam in elit software updates.';
+$lang['software_updates_type'] = 'Type';
+$lang['software_updates_update_all'] = 'Omnia Update';
+$lang['software_updates_updates_complete'] = 'The Updates Software';
+$lang['software_updates_updates'] = 'updates';
+$lang['software_updates_upgrade'] = 'Upgrade';
+$lang['software_updates_wizard_description'] = 'Sed felis dolor sit, amet nunc elit systema updates medullas.';
+$lang['software_updates_wizard_latest_necessary'] = 'Placere update vestri software jugis.';
