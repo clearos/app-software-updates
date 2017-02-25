@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'fanampiny vaovao farany';
+$lang['software_updates_app_description'] = 'Ny Software dia manome fanavaozam-baovao farany fampiharana ny rafitra fandidiana singa fototra.';
+$lang['software_updates_app_name'] = 'Software Updates';
+$lang['software_updates_automatic_updates'] = 'Automatic Updates';
+$lang['software_updates_available_updates'] = 'Available Updates';
+$lang['software_updates_busy_message'] = 'Mpampiasa iray hafa na ny asa fanompoana amin&#39;izao fotoana izao mampiasa ny rindrambaiko fanavaozam-baovao rafitra. Raha ny dingana dia tanteraka, dia ho fampiharana io hita indray.';
+$lang['software_updates_current_progress'] = 'Current Fandrosoana';
+$lang['software_updates_details'] = 'Details';
+$lang['software_updates_install_progress'] = 'hametraka Progress';
+$lang['software_updates_loading_updates_message'] = 'Loading rindrambaiko fanavaozam-baovao lisitra, azafady hanam-paharetana.';
+$lang['software_updates_no_data_available'] = 'Tsy misy tahirin-kevitra misy.';
+$lang['software_updates_overall_progress'] = 'amin&#39;ny ankapobeny Fandrosoana';
+$lang['software_updates_package'] = 'Package';
+$lang['software_updates_please_be_patient_detail'] = 'Mety haka minitra na roa ny vaovao farany rehetra sy ny fanavaozana ny repository antsipirihany. Io fanazavan io dia Voatakona ho an&#39;ny hoavy ny fampiasana.';
+$lang['software_updates_please_be_patient'] = 'Mba hanam-paharetana!';
+$lang['software_updates_progress_help'] = 'Ny rafitra ho baovao amin&#39;izao fotoana izao. Ity dingana ity dia afaka maka fotoana, koa miangavy hanam-paharetana!';
+$lang['software_updates_progress'] = 'Progress';
+$lang['software_updates_recent_software_activity'] = 'Tantaran&#39;ny Software Activity';
+$lang['software_updates_repository'] = 'repository';
+$lang['software_updates_return_to_overview'] = 'Miverena any Overview';
+$lang['software_updates_software_update_in_progress'] = 'Software vaovao farany dia amin&#39;ny fandrosoana. Mba niverina tatỳ aoriana.';
+$lang['software_updates_software_updates_busy'] = 'Software Updates Be Atao';
+$lang['software_updates_software_updates'] = 'Software Updates';
+$lang['software_updates_software_updates_system_busy'] = 'Software rafitra vaovao farany dia be atao.';
+$lang['software_updates_software_up_to_date'] = 'Software Up-to-daty';
+$lang['software_updates_system_is_up_to_date'] = 'System dia niakatra-to-daty.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Ny farany rindrambaiko fanavaozam-baovao dia napetraka.';
+$lang['software_updates_type'] = 'Type';
+$lang['software_updates_update_all'] = 'Update rehetra';
+$lang['software_updates_updates_complete'] = 'Software Updates Complete';
+$lang['software_updates_updates'] = 'Updates';
+$lang['software_updates_upgrade'] = 'fanavaozana';
+$lang['software_updates_wizard_description'] = 'Ary fa ny tambajotra dia voaendrika, mitsikera ny vaovao farany ny fototra ankehitriny rafitra napetraka.';
+$lang['software_updates_wizard_latest_necessary'] = 'Azafady vaovao farany ny rafitra rindrambaiko alohan&#39;ny hanohizany.';
