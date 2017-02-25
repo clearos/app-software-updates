@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'qo&#39;shimcha yangilanishlar';
+$lang['software_updates_app_description'] = 'Software Updates ilova asosiy operatsion tizimi komponentlar uchun yangilanishlar imkonini beradi.';
+$lang['software_updates_app_name'] = 'Dastur ta&#39;minoti yangilanishlari';
+$lang['software_updates_automatic_updates'] = 'avtomatik yangilanishlar';
+$lang['software_updates_available_updates'] = 'mavjud yangilanishlar';
+$lang['software_updates_busy_message'] = 'Yana bir foydalanuvchi yoki xizmat bugungi kunda dasturiy ta&#39;minot yangilanishlar tizimi foydalanadi. jarayoni tugallangach, bu dasturni yana mavjud bo&#39;ladi.';
+$lang['software_updates_current_progress'] = 'Hozirgi Progress';
+$lang['software_updates_details'] = 'Tafsilotlar';
+$lang['software_updates_install_progress'] = 'Harakatlanuvchi o&#39;rnating';
+$lang['software_updates_loading_updates_message'] = 'dasturiy ta&#39;minot yangilanishlar ro&#39;yxatini Yuklab, iltimos, sabr qiling.';
+$lang['software_updates_no_data_available'] = 'Ma&#39;lumot yo&#39;q mavjud.';
+$lang['software_updates_overall_progress'] = 'Bosh Progress';
+$lang['software_updates_package'] = 'To&#39;plam';
+$lang['software_updates_please_be_patient_detail'] = 'Bu hamma jihozi va yangilash ma&#39;lumotlarni yangilash bir daqiqa yoki ikki olishi mumkin. Bu ma&#39;lumotlar kelajakda foydalanish uchun keshlash etiladi.';
+$lang['software_updates_please_be_patient'] = 'Iltimos, sabr qiling!';
+$lang['software_updates_progress_help'] = 'Tizim hozirda yangilanmoqda. Bu jarayon bir oz vaqt olib, shunday sabr qiling mumkin!';
+$lang['software_updates_progress'] = 'taraqqiyot';
+$lang['software_updates_recent_software_activity'] = 'Recent Software faoliyati';
+$lang['software_updates_repository'] = 'Repository';
+$lang['software_updates_return_to_overview'] = 'Sarlavhalari qaytish';
+$lang['software_updates_software_update_in_progress'] = 'Dastur yangilash davom etmoqda. Keyinroq qayta urinib.';
+$lang['software_updates_software_updates_busy'] = 'Software Updates Band';
+$lang['software_updates_software_updates'] = 'Dastur ta&#39;minoti yangilanishlari';
+$lang['software_updates_software_updates_system_busy'] = 'Dasturlar yangilanishi tizimi band.';
+$lang['software_updates_software_up_to_date'] = 'Dastur hozirgi';
+$lang['software_updates_system_is_up_to_date'] = 'System hozirgi hisoblanadi.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'eng so&#39;nggi dasturiy ta&#39;minot o&#39;rnatilgan.';
+$lang['software_updates_type'] = 'shrift';
+$lang['software_updates_update_all'] = 'Update barcha';
+$lang['software_updates_updates_complete'] = 'Software Updates Complete';
+$lang['software_updates_updates'] = 'yangilanishlar';
+$lang['software_updates_upgrade'] = 'Upgrade';
+$lang['software_updates_wizard_description'] = 'Endi tarmoq tuzilgan, deb, asosiy tizim uchun juda muhim yangilanishlar, endi o&#39;rnatilgan.';
+$lang['software_updates_wizard_latest_necessary'] = 'davom ettirishdan oldin tizim dasturiy ta&#39;minotini yangilash, iltimos.';
