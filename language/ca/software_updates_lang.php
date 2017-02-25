@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'actualitzacions addicionals';
+$lang['software_updates_app_description'] = 'L&#39;aplicació d&#39;actualitzacions de programari proporciona actualitzacions per als components del sistema operatiu subjacent.';
+$lang['software_updates_app_name'] = 'Actualitzacions de programari';
+$lang['software_updates_automatic_updates'] = 'actualitzacions automàtiques';
+$lang['software_updates_available_updates'] = 'actualitzacions disponibles';
+$lang['software_updates_busy_message'] = 'Un altre usuari o servei està utilitzant actualment el sistema d&#39;actualitzacions de programari. Quan el procés s&#39;hagi completat, aquesta aplicació tornarà a estar disponible.';
+$lang['software_updates_current_progress'] = 'El progrés actual';
+$lang['software_updates_details'] = 'Detalls';
+$lang['software_updates_install_progress'] = 'Progrés de la instal·lació';
+$lang['software_updates_loading_updates_message'] = 'Carregant llista d&#39;actualitzacions de programari, per favor, sigui pacient.';
+$lang['software_updates_no_data_available'] = 'No hi ha dades disponibles.';
+$lang['software_updates_overall_progress'] = 'El progrés global';
+$lang['software_updates_package'] = 'paquet';
+$lang['software_updates_please_be_patient_detail'] = 'Es pot prendre un minut o dos per actualitzar tots els repositoris i actualitzar les dades. Aquesta informació s&#39;emmagatzema en memòria cau per al seu ús futur.';
+$lang['software_updates_please_be_patient'] = 'Si us plau sigui pacient!';
+$lang['software_updates_progress_help'] = 'El sistema està sent actualitzada. Aquest procés pot trigar algun temps, així que si us plau sigui pacient!';
+$lang['software_updates_progress'] = 'Progrés, progressar';
+$lang['software_updates_recent_software_activity'] = 'Activitat recent del programari';
+$lang['software_updates_repository'] = 'repositori';
+$lang['software_updates_return_to_overview'] = 'Tornar a l&#39;inici';
+$lang['software_updates_software_update_in_progress'] = 'actualització de programari està en curs. Si us plau, torni més tard.';
+$lang['software_updates_software_updates_busy'] = 'Actualitzacions de programari Ocupat';
+$lang['software_updates_software_updates'] = 'Actualitzacions de programari';
+$lang['software_updates_software_updates_system_busy'] = 'Les actualitzacions de programari del sistema està ocupat.';
+$lang['software_updates_software_up_to_date'] = 'Programari-Up-fins a la data';
+$lang['software_updates_system_is_up_to_date'] = 'El sistema està al dia.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'Les últimes actualitzacions de programari s&#39;instal·len.';
+$lang['software_updates_type'] = 'tipus';
+$lang['software_updates_update_all'] = 'actualitzar tot';
+$lang['software_updates_updates_complete'] = 'Actualitzacions de programari completa';
+$lang['software_updates_updates'] = 'actualitzacions';
+$lang['software_updates_upgrade'] = 'modernització';
+$lang['software_updates_wizard_description'] = 'Ara que la xarxa està configurada, les actualitzacions crítiques per al sistema central estiguin instal·lades.';
+$lang['software_updates_wizard_latest_necessary'] = 'Si us plau, actualitzi el programari del sistema abans de continuar.';
