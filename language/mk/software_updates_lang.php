@@ -1,0 +1,36 @@
+<?php
+
+$lang['software_updates_additional_updates'] = 'дополнителни надградби';
+$lang['software_updates_app_description'] = 'Апликацијата на софтвер Новости обезбедува надградби за компонентите на основниот оперативен систем.';
+$lang['software_updates_app_name'] = 'софтверски ажурирања';
+$lang['software_updates_automatic_updates'] = 'Automatic Updates';
+$lang['software_updates_available_updates'] = 'достапни ажурирања';
+$lang['software_updates_busy_message'] = 'Друг корисник или услуга во моментов со користење на системот за надградби на софтвер. Кога ќе заврши процесот, овој стан ќе биде повторно достапна.';
+$lang['software_updates_current_progress'] = 'досегашниот напредок';
+$lang['software_updates_details'] = 'детали за';
+$lang['software_updates_install_progress'] = 'Инсталирајте напредок';
+$lang['software_updates_loading_updates_message'] = 'Loading листа на надградби на софтвер, ве молиме да бидете трпеливи.';
+$lang['software_updates_no_data_available'] = 'Нема достапни податоци.';
+$lang['software_updates_overall_progress'] = 'севкупниот напредок';
+$lang['software_updates_package'] = 'пакет';
+$lang['software_updates_please_be_patient_detail'] = 'Тоа може да потрае една минута или две да се ажурира сите индекси и ажурирање детали. Оваа информација се кеширани за понатамошна употреба.';
+$lang['software_updates_please_be_patient'] = 'Ве молиме бидете трпеливи!';
+$lang['software_updates_progress_help'] = 'Вашиот систем во моментов се ажурира. Овој процес може да потрае некое време, па ве молиме да бидете трпеливи!';
+$lang['software_updates_progress'] = 'напредок';
+$lang['software_updates_recent_software_activity'] = 'Активност на софтвер';
+$lang['software_updates_repository'] = 'складиштето';
+$lang['software_updates_return_to_overview'] = 'Врати се на Преглед';
+$lang['software_updates_software_update_in_progress'] = 'надградба на софтвер е во тек. Ве молиме да се врати подоцна.';
+$lang['software_updates_software_updates_busy'] = 'Софтверски ажурирања Зафатен';
+$lang['software_updates_software_updates'] = 'софтверски ажурирања';
+$lang['software_updates_software_updates_system_busy'] = 'Софтверски ажурирања на системот е зафатен.';
+$lang['software_updates_software_up_to_date'] = 'Софтвер до-to-date';
+$lang['software_updates_system_is_up_to_date'] = 'Системот е до-to-date.';
+$lang['software_updates_the_latest_software_updates_are_installed'] = 'се инсталирани најновите ажурирања на софтверот.';
+$lang['software_updates_type'] = 'тип';
+$lang['software_updates_update_all'] = 'ажурирање на сите';
+$lang['software_updates_updates_complete'] = 'Софтверски ажурирања Целосно';
+$lang['software_updates_updates'] = 'новости';
+$lang['software_updates_upgrade'] = 'надградба';
+$lang['software_updates_wizard_description'] = 'Сега дека вашата мрежа е конфигуриран, сега се инсталирани критични надградби за јадрото на системот.';
+$lang['software_updates_wizard_latest_necessary'] = 'Ве молиме обновете го вашиот систем софтвер пред да продолжите.';
