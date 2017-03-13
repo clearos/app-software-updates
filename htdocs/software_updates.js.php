@@ -115,6 +115,7 @@ function get_progress() {
             show_progress(json);
         },
         error: function(xhr, text, err) {
+            window.setTimeout(get_progress, 5000);
         }
     });
 }
