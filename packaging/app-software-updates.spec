@@ -1,11 +1,13 @@
 
 Name: app-software-updates
 Epoch: 1
-Version: 2.4.0
+Version: 2.5.0
 Release: 1%{dist}
 Summary: Software Updates
 License: GPLv3
-Group: ClearOS/Apps
+Group: Applications/Apps
+Packager: ClearFoundation
+Vendor: ClearFoundation
 Source: %{name}-%{version}.tar.gz
 Buildarch: noarch
 Requires: %{name}-core = 1:%{version}-%{release}
@@ -16,9 +18,9 @@ Requires: app-network
 The Software Updates app provides updates for the underlying operating system components.
 
 %package core
-Summary: Software Updates - Core
+Summary: Software Updates - API
 License: LGPLv3
-Group: ClearOS/Libraries
+Group: Applications/API
 Requires: app-base-core
 Requires: app-events-core
 Requires: app-network-core

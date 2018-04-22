@@ -5,8 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'software_updates';
-$app['version'] = '2.4.0';
-$app['release'] = '1';
+$app['version'] = '2.5.0';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
 $app['license'] = 'GPLv3';
