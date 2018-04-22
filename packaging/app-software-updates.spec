@@ -26,6 +26,7 @@ Requires: app-events-core
 Requires: app-network-core
 Requires: app-tasks-core
 Requires: app-dashboard-core => 1:2.1.22
+Requires: yum-utils
 
 %description core
 The Software Updates app provides updates for the underlying operating system components.

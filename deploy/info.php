@@ -48,7 +48,8 @@ $app['core_requires'] = array(
     'app-events-core',
     'app-network-core',
     'app-tasks-core',
-    'app-dashboard-core => 1:2.1.22'
+    'app-dashboard-core => 1:2.1.22',
+    'yum-utils'
 );
 
 $app['core_directory_manifest'] = array(
